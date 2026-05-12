@@ -1,0 +1,23 @@
+name: devbox-apm
+version: 0.1.0
+description: DevBox agentic toolkit — curated plugins, skills, and MCP servers for Claude Code and cross-runtime agents
+author: mstlaure
+
+# Automatically deploy primitives from .apm/ when present
+includes: auto
+
+dependencies:
+  # Claude Code plugins and cross-runtime agent skills
+  apm:
+    - obra/superpowers
+    - anthropics/claude-code/plugins/code-review
+    - anthropics/claude-code/plugins/security-guidance
+    - anthropics/claude-code/plugins/frontend-design
+
+  # MCP servers wired into all detected clients (Claude, Cursor, Codex, etc.)
+  mcp:
+    - io.github.github/github-mcp-server
+
+scripts:
+  # Installs Google Workspace CLI (gws) — a binary, not an APM primitive
+  postinstall: bash scripts/install-gws.sh
