@@ -23,7 +23,3 @@ dependencies:
   # MCP servers wired into all detected clients (Claude, Cursor, Codex, etc.)
   mcp:
     - io.github.github/github-mcp-server
-
-scripts:
-  # Installs Google Workspace CLI (gws) — a binary, not an APM primitive
-  postinstall: bash scripts/install-gws.sh

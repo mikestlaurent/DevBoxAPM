@@ -5,7 +5,7 @@
 ```yaml
 # Quick facts
 install: "apm install mstlaure/DevBoxAPM#v0.1.0"
-components: 9        # 7 plugins, 1 MCP server, 1 CLI binary
+components: 8        # 7 plugins, 1 MCP server
 runtimes: [claude-code, cursor, codex, opencode, gemini-cli]
 manifest: apm.yml    # only file engineers need to edit
 ```
@@ -26,7 +26,6 @@ A configuration-driven distribution of agentic tools built on [Microsoft's Agent
 | [commit-commands](https://github.com/anthropics/claude-code/tree/main/plugins/commit-commands) | `anthropics/claude-code/plugins/commit-commands` | Plugin (Claude Code) | `/commit` |
 | [pr-review-toolkit](https://github.com/anthropics/claude-code/tree/main/plugins/pr-review-toolkit) | `anthropics/claude-code/plugins/pr-review-toolkit` | Plugin (Claude Code) | `/review-pr` |
 | [GitHub MCP](https://github.com/github/github-mcp-server) | `io.github.github/github-mcp-server` | MCP server | auto-wired |
-| [Google Workspace CLI](https://github.com/googleworkspace/cli) | `@googleworkspace/cli` (npm) | CLI binary (postinstall) | `gws mcp` |
 
 ---
 
@@ -43,26 +42,7 @@ A configuration-driven distribution of agentic tools built on [Microsoft's Agent
 apm install mstlaure/DevBoxAPM#v0.1.0
 ```
 
-APM resolves all dependencies, deploys plugins into `.claude/` (Claude Code) and `.agents/` (cross-runtime), wires the GitHub MCP server into every detected client config, and runs `scripts/install-gws.sh` to install the Google Workspace CLI.
-
-### Skip GWS in headless CI
-
-```bash
-DEVBOX_APM_SKIP_GWS=1 apm install mstlaure/DevBoxAPM#v0.1.0
-```
-
-### Authenticate Google Workspace
-
-```bash
-gws auth login
-```
-
-To expose GWS as an MCP server so agents can call Workspace APIs directly:
-
-```bash
-gws mcp                            # all services
-gws mcp -s drive,gmail,calendar    # specific services
-```
+APM resolves all dependencies, deploys plugins into `.claude/` (Claude Code) and `.agents/` (cross-runtime), and wires the GitHub MCP server into every detected client config.
 
 ---
 
@@ -118,7 +98,6 @@ The [release workflow](.github/workflows/release.yml) runs automatically: it pac
 ```bash
 apm install              # resolve and deploy locally
 apm pack --dry-run       # verify the bundle builds cleanly
-bash scripts/install-gws.sh --check --json   # probe gws state (read-only)
 ```
 
 ---
@@ -135,8 +114,6 @@ RUN npm install -g @microsoft/apm
 WORKDIR /workspace
 RUN apm install mstlaure/DevBoxAPM#v0.1.0
 
-ENV DEVBOX_APM_SKIP_GWS=1   # no interactive auth in containers
-
 CMD ["bash"]
 ```
 
@@ -149,10 +126,7 @@ CMD ["bash"]
   "features": {
     "ghcr.io/devcontainers/features/node:1": { "version": "20" }
   },
-  "postCreateCommand": "npm install -g @microsoft/apm && apm install mstlaure/DevBoxAPM#v0.1.0",
-  "remoteEnv": {
-    "DEVBOX_APM_SKIP_GWS": "1"
-  }
+  "postCreateCommand": "npm install -g @microsoft/apm && apm install mstlaure/DevBoxAPM#v0.1.0"
 }
 ```
 
@@ -173,8 +147,6 @@ jobs:
         with:
           node-version: '20'
       - name: Install DevBoxAPM
-        env:
-          DEVBOX_APM_SKIP_GWS: '1'
         run: |
           npm install -g @microsoft/apm
           apm install mstlaure/DevBoxAPM#v0.1.0
@@ -192,33 +164,8 @@ These interfaces are stable across semver-compatible releases. Automation toolin
 |------|------|
 | `apm.yml` | Manifest — edit to add/remove components |
 | `apm.lock.yaml` | Lockfile — commit after every `apm install` |
-| `scripts/install-gws.sh` | GWS install entry point |
 | `.claude/` | Claude Code deploy target (gitignored) |
 | `.agents/` | Cross-runtime deploy target (gitignored) |
-
-### Environment variables
-
-| Variable | Effect |
-|----------|--------|
-| `DEVBOX_APM_SKIP_GWS=1` | Skip gws installation; exit 0. Use in headless CI. |
-| `DEVBOX_APM_VERBOSE=1` | Force verbose output from `install-gws.sh`. |
-
-### `install-gws.sh` flags
-
-| Flag | Effect |
-|------|--------|
-| `--check` | Read-only probe; reports state without mutating. |
-| `--json` | Emit structured JSON to stdout (see [AGENTS.md](AGENTS.md#contracts)). |
-| `--quiet` | Suppress human-readable log output. |
-
-### Exit codes — `install-gws.sh`
-
-| Code | Meaning |
-|------|---------|
-| `0` | gws is present or installation succeeded |
-| `10` | npm not found; cannot install |
-| `11` | npm install failed |
-| `20` | Unrecognized flag or no supported package manager |
 
 ---
 
@@ -227,10 +174,7 @@ These interfaces are stable across semver-compatible releases. Automation toolin
 | Symptom | Likely cause | Fix |
 |---------|-------------|-----|
 | `apm: command not found` | APM CLI not installed | `npm install -g @microsoft/apm` |
-| `gws: command not found` after install | npm missing during postinstall | Install Node.js, then `bash scripts/install-gws.sh` |
-| `install-gws.sh` exits `10` | npm not on PATH | Install Node.js from https://nodejs.org |
 | `apm.lock.yaml` drift in CI | Lockfile not committed after local `apm install` | `apm install && git add apm.lock.yaml && git commit` |
-| Workspace MCP tools not available | GWS not running as MCP server | Run `gws mcp` before starting your agent |
 
 ---
 
@@ -241,8 +185,6 @@ DevBoxAPM/
 ├── apm.yml                         # Edit this to change the distribution
 ├── apm.lock.yaml                   # Auto-generated; commit after `apm install`
 ├── AGENTS.md                       # Structured reference for AI agents
-├── scripts/
-│   └── install-gws.sh              # Postinstall: installs gws CLI (supports --check --json)
 ├── .apm/                           # Reserved for future local primitives
 └── .github/
     └── workflows/
