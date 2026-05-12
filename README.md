@@ -5,7 +5,7 @@
 ```yaml
 # Quick facts
 install: "apm install mstlaure/DevBoxAPM#v0.1.0"
-components: 6        # 4 plugins, 1 MCP server, 1 CLI binary
+components: 9        # 7 plugins, 1 MCP server, 1 CLI binary
 runtimes: [claude-code, cursor, codex, opencode, gemini-cli]
 manifest: apm.yml    # only file engineers need to edit
 ```
@@ -22,6 +22,9 @@ A configuration-driven distribution of agentic tools built on [Microsoft's Agent
 | [code-review](https://github.com/anthropics/claude-code/tree/main/plugins/code-review) | `anthropics/claude-code/plugins/code-review` | Plugin (Claude Code) | `/code-review` |
 | [security-guidance](https://github.com/anthropics/claude-code/tree/main/plugins/security-guidance) | `anthropics/claude-code/plugins/security-guidance` | Plugin (Claude Code) | `/security-review` |
 | [frontend-design](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design) | `anthropics/claude-code/plugins/frontend-design` | Plugin (Claude Code) | `/frontend-design` |
+| [feature-dev](https://github.com/anthropics/claude-code/tree/main/plugins/feature-dev) | `anthropics/claude-code/plugins/feature-dev` | Plugin (Claude Code) | `/feature-dev` |
+| [commit-commands](https://github.com/anthropics/claude-code/tree/main/plugins/commit-commands) | `anthropics/claude-code/plugins/commit-commands` | Plugin (Claude Code) | `/commit` |
+| [pr-review-toolkit](https://github.com/anthropics/claude-code/tree/main/plugins/pr-review-toolkit) | `anthropics/claude-code/plugins/pr-review-toolkit` | Plugin (Claude Code) | `/review-pr` |
 | [GitHub MCP](https://github.com/github/github-mcp-server) | `io.github.github/github-mcp-server` | MCP server | auto-wired |
 | [Google Workspace CLI](https://github.com/googleworkspace/cli) | `@googleworkspace/cli` (npm) | CLI binary (postinstall) | `gws mcp` |
 
@@ -76,6 +79,9 @@ dependencies:
     - anthropics/claude-code/plugins/code-review
     - anthropics/claude-code/plugins/security-guidance
     - anthropics/claude-code/plugins/frontend-design
+    - anthropics/claude-code/plugins/feature-dev
+    - anthropics/claude-code/plugins/commit-commands
+    - anthropics/claude-code/plugins/pr-review-toolkit
     # - some-org/new-plugin
   mcp:
     - io.github.github/github-mcp-server

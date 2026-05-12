@@ -6,6 +6,9 @@ author: mstlaure
 # Automatically deploy primitives from .apm/ when present
 includes: auto
 
+targets:
+  - claude
+
 dependencies:
   # Claude Code plugins and cross-runtime agent skills
   apm:
@@ -13,6 +16,9 @@ dependencies:
     - anthropics/claude-code/plugins/code-review
     - anthropics/claude-code/plugins/security-guidance
     - anthropics/claude-code/plugins/frontend-design
+    - anthropics/claude-code/plugins/feature-dev
+    - anthropics/claude-code/plugins/commit-commands
+    - anthropics/claude-code/plugins/pr-review-toolkit
 
   # MCP servers wired into all detected clients (Claude, Cursor, Codex, etc.)
   mcp:

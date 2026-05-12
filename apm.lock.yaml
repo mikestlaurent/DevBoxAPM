@@ -1,0 +1,160 @@
+lockfile_version: '1'
+generated_at: '2026-05-12T11:31:04.784741+00:00'
+apm_version: 0.13.0
+dependencies:
+- repo_url: anthropics/claude-code
+  host: github.com
+  resolved_commit: fdfbc06c7a6d9ace49c55b3761b1be05d276da6d
+  virtual_path: plugins/code-review
+  is_virtual: true
+  package_type: marketplace_plugin
+  deployed_files:
+  - .claude/commands/code-review.md
+  - .github/prompts/code-review.prompt.md
+  deployed_file_hashes:
+    .claude/commands/code-review.md: sha256:ecab79f22b6e2bef07a524d2015aaa9e0b7abce82445f38b31a231b19c7bd43a
+    .github/prompts/code-review.prompt.md: sha256:2b0837c5ec0b2e75f8ba4565bdafd76fa916b0dc146608c5733af7ba5802012c
+  content_hash: sha256:d25f797947bbd724551746c24ed4ac40788aaf370a7857eb120180fbb00ac2be
+- repo_url: anthropics/claude-code
+  host: github.com
+  resolved_commit: fdfbc06c7a6d9ace49c55b3761b1be05d276da6d
+  virtual_path: plugins/commit-commands
+  is_virtual: true
+  package_type: marketplace_plugin
+  deployed_files:
+  - .claude/commands/clean_gone.md
+  - .claude/commands/commit-push-pr.md
+  - .claude/commands/commit.md
+  - .github/prompts/clean_gone.prompt.md
+  - .github/prompts/commit-push-pr.prompt.md
+  - .github/prompts/commit.prompt.md
+  deployed_file_hashes:
+    .claude/commands/clean_gone.md: sha256:24ce5c79da87b481d346d26b297cbe327862f1e4bbee05406589f4b5468c7fa3
+    .claude/commands/commit-push-pr.md: sha256:63ee94bcf2a60101d542ec46bf2afa18b31565105ebfc63f1a38e4d308d3cd2f
+    .claude/commands/commit.md: sha256:366740b9d9f45e05bf7cc5b703156f95fe28180012899ceb90d89d34d4110e47
+    .github/prompts/clean_gone.prompt.md: sha256:4f07fa2ccf4f81a69c6455bdc563b53a3d3b20aea6e4e82337c52b172ee02344
+    .github/prompts/commit-push-pr.prompt.md: sha256:3bc3d171939149cbbef141cbced553dce6ba6f97dac4a764f4ef1e055c35064d
+    .github/prompts/commit.prompt.md: sha256:d1acbc2bf0c50164f48d6bda872de6a343cd9390954ce903c3431c3119e7f8c4
+  content_hash: sha256:7d3e0ee5e2fe3b33813102115750fb2df1042a37ad6fd0b75277ac7f07c03794
+- repo_url: anthropics/claude-code
+  host: github.com
+  resolved_commit: fdfbc06c7a6d9ace49c55b3761b1be05d276da6d
+  virtual_path: plugins/feature-dev
+  is_virtual: true
+  package_type: marketplace_plugin
+  deployed_files:
+  - .claude/agents/code-architect.md
+  - .claude/agents/code-explorer.md
+  - .claude/agents/code-reviewer.md
+  - .claude/commands/feature-dev.md
+  - .github/agents/code-architect.agent.md
+  - .github/agents/code-explorer.agent.md
+  - .github/agents/code-reviewer.agent.md
+  - .github/prompts/feature-dev.prompt.md
+  deployed_file_hashes:
+    .claude/agents/code-architect.md: sha256:c50fb08d59a4bbd19660860626a049e44cf1a2b0c1cf782e6c7a99ba7e71b0c3
+    .claude/agents/code-explorer.md: sha256:3b277703de7458988ec3b8021c716f79f642e174950ed332629310f68322029a
+    .claude/agents/code-reviewer.md: sha256:a7df173bf77a00da5584c6401a1061524fdbe477b6fef5dd496d4c7a9113c78c
+    .claude/commands/feature-dev.md: sha256:656a01ce40782ee849c444916362df0e4e4173afcd33313777fa86021d89994b
+    .github/agents/code-architect.agent.md: sha256:c50fb08d59a4bbd19660860626a049e44cf1a2b0c1cf782e6c7a99ba7e71b0c3
+    .github/agents/code-explorer.agent.md: sha256:3b277703de7458988ec3b8021c716f79f642e174950ed332629310f68322029a
+    .github/agents/code-reviewer.agent.md: sha256:a7df173bf77a00da5584c6401a1061524fdbe477b6fef5dd496d4c7a9113c78c
+    .github/prompts/feature-dev.prompt.md: sha256:652e5d6264fd253fcb70c2f84de986a88d77109a02410aacd90230a6ab4bf557
+  content_hash: sha256:24b246eaa5aa8324748879c841e75a28907f85825055b19c4331aa0162ca0f72
+- repo_url: anthropics/claude-code
+  host: github.com
+  resolved_commit: fdfbc06c7a6d9ace49c55b3761b1be05d276da6d
+  virtual_path: plugins/frontend-design
+  is_virtual: true
+  package_type: marketplace_plugin
+  deployed_files:
+  - .agents/skills/frontend-design
+  - .claude/skills/frontend-design
+  content_hash: sha256:880dd1dbc720f598083e2bc099fc66d8bd195c6b2bfc92381c73fed07ec6c0e4
+- repo_url: anthropics/claude-code
+  host: github.com
+  resolved_commit: fdfbc06c7a6d9ace49c55b3761b1be05d276da6d
+  virtual_path: plugins/pr-review-toolkit
+  is_virtual: true
+  package_type: marketplace_plugin
+  deployed_files:
+  - .claude/agents/code-simplifier.md
+  - .claude/agents/comment-analyzer.md
+  - .claude/agents/pr-test-analyzer.md
+  - .claude/agents/silent-failure-hunter.md
+  - .claude/agents/type-design-analyzer.md
+  - .claude/commands/review-pr.md
+  - .github/agents/code-simplifier.agent.md
+  - .github/agents/comment-analyzer.agent.md
+  - .github/agents/pr-test-analyzer.agent.md
+  - .github/agents/silent-failure-hunter.agent.md
+  - .github/agents/type-design-analyzer.agent.md
+  - .github/prompts/review-pr.prompt.md
+  deployed_file_hashes:
+    .claude/agents/code-simplifier.md: sha256:da129a12e959b059a7605d093fbc4f8710755ebf0c914ebc3102b5f78831ead1
+    .claude/agents/comment-analyzer.md: sha256:da0540c507e42a7f66df0b09f81f3c9d3b246620a8f2be4e84b85b97f7b4e2f5
+    .claude/agents/pr-test-analyzer.md: sha256:d369fd3946a814bb7a9d4f32e971722fe259e301878986bc6312d6f6c56014a8
+    .claude/agents/silent-failure-hunter.md: sha256:fa9b0daec5a267e7e66435cc48b3328301fc9f70c3af259fe248881327a1babc
+    .claude/agents/type-design-analyzer.md: sha256:ad160052fd3b45395d531d5e97e54940a1b660443fb513db3feb613848b6e72d
+    .claude/commands/review-pr.md: sha256:1c3ca6f18f9851ac88ffdc3f98b45e9bd19fb139eb14850f2c22cd18c7a167b2
+    .github/agents/code-simplifier.agent.md: sha256:da129a12e959b059a7605d093fbc4f8710755ebf0c914ebc3102b5f78831ead1
+    .github/agents/comment-analyzer.agent.md: sha256:da0540c507e42a7f66df0b09f81f3c9d3b246620a8f2be4e84b85b97f7b4e2f5
+    .github/agents/pr-test-analyzer.agent.md: sha256:d369fd3946a814bb7a9d4f32e971722fe259e301878986bc6312d6f6c56014a8
+    .github/agents/silent-failure-hunter.agent.md: sha256:fa9b0daec5a267e7e66435cc48b3328301fc9f70c3af259fe248881327a1babc
+    .github/agents/type-design-analyzer.agent.md: sha256:ad160052fd3b45395d531d5e97e54940a1b660443fb513db3feb613848b6e72d
+    .github/prompts/review-pr.prompt.md: sha256:5e70c17293a044e1bf9d092c80b5da8b4fd5802ebb07dc53993dec4ba7ce2fc4
+  content_hash: sha256:f954acfeb11964e7b4ab5cf3593aea682a671d461b90627f0e6f904b6bb8190f
+- repo_url: anthropics/claude-code
+  host: github.com
+  resolved_commit: fdfbc06c7a6d9ace49c55b3761b1be05d276da6d
+  virtual_path: plugins/security-guidance
+  is_virtual: true
+  package_type: marketplace_plugin
+  deployed_files:
+  - .claude/hooks/security-guidance/hooks/security_reminder_hook.py
+  - .github/hooks/scripts/security-guidance/hooks/security_reminder_hook.py
+  - .github/hooks/security-guidance-hooks.json
+  deployed_file_hashes:
+    .claude/hooks/security-guidance/hooks/security_reminder_hook.py: sha256:a86fcbcf727d4b32d780c36697b595ae850d48e0ebd18d0d3784cad98fb0f64f
+    .github/hooks/scripts/security-guidance/hooks/security_reminder_hook.py: sha256:a86fcbcf727d4b32d780c36697b595ae850d48e0ebd18d0d3784cad98fb0f64f
+    .github/hooks/security-guidance-hooks.json: sha256:e02bed8949f26511f7fb12ec605542852be0d88796485defc460f29a416742b7
+  content_hash: sha256:8c90aff20de720392dadc08474fa98984f84f5dcbf720e3c1c8c284402eb1bbc
+- repo_url: obra/superpowers
+  host: github.com
+  resolved_commit: f2cbfbefebbfef77321e4c9abc9e949826bea9d7
+  package_type: marketplace_plugin
+  deployed_files:
+  - .agents/skills/brainstorming
+  - .agents/skills/dispatching-parallel-agents
+  - .agents/skills/executing-plans
+  - .agents/skills/finishing-a-development-branch
+  - .agents/skills/receiving-code-review
+  - .agents/skills/requesting-code-review
+  - .agents/skills/subagent-driven-development
+  - .agents/skills/systematic-debugging
+  - .agents/skills/test-driven-development
+  - .agents/skills/using-git-worktrees
+  - .agents/skills/using-superpowers
+  - .agents/skills/verification-before-completion
+  - .agents/skills/writing-plans
+  - .agents/skills/writing-skills
+  - .claude/skills/brainstorming
+  - .claude/skills/dispatching-parallel-agents
+  - .claude/skills/executing-plans
+  - .claude/skills/finishing-a-development-branch
+  - .claude/skills/receiving-code-review
+  - .claude/skills/requesting-code-review
+  - .claude/skills/subagent-driven-development
+  - .claude/skills/systematic-debugging
+  - .claude/skills/test-driven-development
+  - .claude/skills/using-git-worktrees
+  - .claude/skills/using-superpowers
+  - .claude/skills/verification-before-completion
+  - .claude/skills/writing-plans
+  - .claude/skills/writing-skills
+  - .github/hooks/superpowers-hooks-cursor.json
+  - .github/hooks/superpowers-hooks.json
+  deployed_file_hashes:
+    .github/hooks/superpowers-hooks-cursor.json: sha256:53d8ceb3ff5d8bb1c4f283f238cc868b8c1af22e40a3ac30f6d6e4173effefbd
+    .github/hooks/superpowers-hooks.json: sha256:01616c57b96cc234cc984e77d2fc241dfd0e0bfacda54fe54589cd669a0d998e
+  content_hash: sha256:fb4f87bfef928a6d68f5d5aaa29e3eba011961c5f03bbf171c3c348d8d161abb
