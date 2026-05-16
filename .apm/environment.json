@@ -1,0 +1,16 @@
+{
+  "$schema": "https://aka.ms/apm.environment.schema.json",
+  "name": "DevBoxAPM",
+  "version": "0.2.0",
+
+  "registries": {
+    "github": {
+      "type": "mcp",
+      "url": "https://github.com/modelcontextprotocol/registry"
+    }
+  },
+
+  "runtimes": {
+    "node": ">=18"
+  }
+}

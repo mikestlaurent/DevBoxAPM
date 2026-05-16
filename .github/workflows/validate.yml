@@ -1,0 +1,36 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate environment.json
+        run: node -e "JSON.parse(require('fs').readFileSync('.apm/environment.json', 'utf8'))"
+
+      - name: Validate apm.yml (YAML syntax)
+        run: node -e "require('fs').readFileSync('apm.yml', 'utf8')" && echo "apm.yml is valid text"
+
+      - name: Install APM CLI
+        run: npm install -g @microsoft/apm
+
+      - name: Install dependencies
+        run: apm install
+
+      - name: Check lockfile is in sync
+        run: git diff --exit-code apm.lock.yaml
+
+      - name: Pack dry-run
+        run: apm pack --dry-run

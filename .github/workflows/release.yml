@@ -1,0 +1,49 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install APM CLI
+        run: npm install -g @microsoft/apm
+
+      - name: Validate environment
+        run: |
+          apm install
+          apm pack --dry-run
+
+      - name: Build source zip
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          zip -r "DevBoxAPM-${TAG}.zip" \
+            apm.yml \
+            apm.lock.yaml \
+            .apm/ \
+            src/ \
+            README.md \
+            AGENTS.md \
+            APM_MCP_Guide.md \
+            .gitignore \
+            -x "*.DS_Store"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: DevBoxAPM-${{ github.ref_name }}.zip
+          generate_release_notes: true

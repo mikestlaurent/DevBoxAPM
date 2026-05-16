@@ -1,16 +1,14 @@
 name: devbox-apm
-version: 0.1.0
-description: DevBox agentic toolkit — curated plugins, skills, and MCP servers for Claude Code and cross-runtime agents
+version: 0.2.0
+description: DevBox agentic toolkit — curated MCP servers and skills for Claude Code and cross-runtime agents
 author: mstlaure
-
-# Automatically deploy primitives from .apm/ when present
-includes: auto
+owner: mstlaure
 
 targets:
   - claude
+includes: auto
 
 dependencies:
-  # Claude Code plugins and cross-runtime agent skills
   apm:
     - obra/superpowers
     - anthropics/claude-code/plugins/code-review
@@ -20,7 +18,5 @@ dependencies:
     - anthropics/claude-code/plugins/commit-commands
     - anthropics/claude-code/plugins/pr-review-toolkit
 
-  # MCP servers wired into all detected clients (Claude, Cursor, Codex, etc.)
   mcp:
     - io.github.github/github-mcp-server
-    - io.github.taylorwilsdon/workspace-mcp
