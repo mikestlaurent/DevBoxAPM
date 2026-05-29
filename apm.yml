@@ -1,5 +1,5 @@
 name: devbox-apm
-version: 0.3.0
+version: 0.4.0
 description: DevBox agentic toolkit — curated MCP servers and skills for Claude Code and cross-runtime agents
 author: mstlaure
 owner: mstlaure
@@ -17,6 +17,12 @@ dependencies:
     - anthropics/claude-code/plugins/feature-dev
     - anthropics/claude-code/plugins/commit-commands
     - anthropics/claude-code/plugins/pr-review-toolkit
+    - likec4/likec4/skills/likec4-dsl
 
   mcp:
     - io.github.github/github-mcp-server
+    - name: likec4
+      registry: false
+      transport: stdio
+      command: npx
+      args: ["-y", "@likec4/mcp"]

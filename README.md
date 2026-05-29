@@ -12,7 +12,7 @@ A configuration-driven distribution of agentic tools built on [Microsoft's Agent
 ## Install
 
 ```bash
-apm install mstlaure/DevBoxAPM#v0.2.0
+apm install mstlaure/DevBoxAPM#v0.4.0
 ```
 
 APM resolves all dependencies, installs MCP servers, and deploys skills into the appropriate runtime directories.
@@ -30,12 +30,14 @@ APM resolves all dependencies, installs MCP servers, and deploys skills into the
 | `anthropics/claude-code/plugins/feature-dev` | `/feature-dev` slash command |
 | `anthropics/claude-code/plugins/commit-commands` | `/commit` slash command |
 | `anthropics/claude-code/plugins/pr-review-toolkit` | `/review-pr` slash command |
+| `likec4/likec4/skills/likec4-dsl` | LikeC4 DSL reference for `.c4`/`.likec4` files |
 
 **MCP servers** (`apm.yml → dependencies.mcp`):
 
 | Package | How |
 |---|---|
 | `io.github.github/github-mcp-server` | Registry (auto-wired) |
+| `@likec4/mcp` | Self-defined (npx), user-scoped via `wire-mcp-user-scope.sh` |
 
 ## Add a dependency
 
