@@ -130,7 +130,7 @@ for name in "${MCP_NAMES[@]}"; do
 
   # ── Remove project-scope entries ─────────────────────────────────────────────
 
-  for _p in "${proj_paths[@]}"; do
+  for _p in "${proj_paths[@]+"${proj_paths[@]}"}"; do
     TMP=$(mktemp)
     jq --arg n "${name}" --arg p "${_p}" \
       'del(.projects[$p].mcpServers[$n])' "${CLAUDE_JSON}" > "${TMP}" && mv "${TMP}" "${CLAUDE_JSON}"
