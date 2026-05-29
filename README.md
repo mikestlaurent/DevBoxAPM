@@ -37,7 +37,7 @@ APM resolves all dependencies, installs MCP servers, and deploys skills into the
 | Package | How |
 |---|---|
 | `io.github.github/github-mcp-server` | Registry (auto-wired) |
-| `@likec4/mcp` | Self-defined (npx), user-scoped via `wire-mcp-user-scope.sh` |
+| `likec4 mcp` | Built-in CLI subcommand, user-scoped via `wire-mcp-user-scope.sh` (requires Homebrew `likec4`) |
 
 ## Add a dependency
 

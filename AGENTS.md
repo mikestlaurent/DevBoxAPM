@@ -29,15 +29,17 @@ dependencies:
     - anthropics/claude-code/plugins/feature-dev
     - anthropics/claude-code/plugins/commit-commands
     - anthropics/claude-code/plugins/pr-review-toolkit
-    - likec4/likec4/skills/likec4-dsl
+    - git: https://github.com/likec4/likec4.git
+      path: skills/likec4-dsl
+      ref: v1.57.0
 
   mcp:
     - io.github.github/github-mcp-server
     - name: likec4
       registry: false
       transport: stdio
-      command: npx
-      args: ["-y", "@likec4/mcp"]
+      command: likec4
+      args: ["mcp"]
 ```
 
 ---
