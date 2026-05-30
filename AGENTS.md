@@ -12,7 +12,7 @@ name: devbox-apm
 manifest: apm.yml                  # authoritative dependency manifest
 lockfile: apm.lock.yaml
 package_manager: apm  # npm install -g @microsoft/apm
-install_command: "apm install mstlaure/DevBoxAPM#v0.4.0"
+install_command: "apm install mstlaure/DevBoxAPM#v0.5.0"
 ```
 
 ---
@@ -35,6 +35,7 @@ dependencies:
 
   mcp:
     - io.github.github/github-mcp-server
+    - app.linear/linear
     - name: likec4
       registry: false
       transport: stdio
@@ -48,7 +49,7 @@ dependencies:
 
 | Intent | Command |
 |--------|---------|
-| Install DevBoxAPM | `apm install mstlaure/DevBoxAPM#v0.4.0` |
+| Install DevBoxAPM | `apm install mstlaure/DevBoxAPM#v0.5.0` |
 | Verify install state | `apm install && apm pack --dry-run` |
 | Add a dependency | Edit `dependencies` in `apm.yml`, then `apm install` |
 | Release a new version | `git tag vX.Y.Z -m "<reason>" && git push origin vX.Y.Z` |

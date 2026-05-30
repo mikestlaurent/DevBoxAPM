@@ -12,7 +12,7 @@ A configuration-driven distribution of agentic tools built on [Microsoft's Agent
 ## Install
 
 ```bash
-apm install mstlaure/DevBoxAPM#v0.4.0
+apm install mstlaure/DevBoxAPM#v0.5.0
 ```
 
 APM resolves all dependencies, installs MCP servers, and deploys skills into the appropriate runtime directories.
@@ -36,7 +36,8 @@ APM resolves all dependencies, installs MCP servers, and deploys skills into the
 
 | Package | How |
 |---|---|
-| `io.github.github/github-mcp-server` | Registry (auto-wired) |
+| `io.github.github/github-mcp-server` | Registry, user-scoped via `wire-mcp-user-scope.sh` |
+| `app.linear/linear` | Registry; Code user-scoped via `wire-mcp-user-scope.sh`, Desktop via `wire-mcp-claude-desktop.sh`; auth via `/mcp` (Code) or browser OAuth (Desktop) |
 | `likec4 mcp` | Built-in CLI subcommand, user-scoped via `wire-mcp-user-scope.sh` (requires Homebrew `likec4`) |
 
 ## Add a dependency
