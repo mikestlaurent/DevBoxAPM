@@ -24,7 +24,10 @@ jobs:
         run: node -e "require('fs').readFileSync('apm.yml', 'utf8')" && echo "apm.yml is valid text"
 
       - name: Install APM CLI
-        run: npm install -g @microsoft/apm
+        uses: microsoft/apm-action@e5650fb81c4b5965090a17bd1ed1956071e95d17 # v1
+        with:
+          setup-only: 'true'
+          apm-version: '0.13.0'
 
       - name: Install dependencies
         run: apm install
