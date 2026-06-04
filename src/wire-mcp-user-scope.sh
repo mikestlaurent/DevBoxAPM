@@ -22,7 +22,7 @@ CLAUDE_JSON="${HOME}/.claude.json"
 DEVBOX_MCP_JSON="${HOME}/.devbox-apm/.mcp.json"
 
 # Servers to promote to user scope
-MCP_NAMES=("github" "likec4" "linear")
+MCP_NAMES=("github" "likec4")
 
 # ── Prerequisites ─────────────────────────────────────────────────────────────
 
@@ -115,9 +115,6 @@ for name in "${MCP_NAMES[@]}"; do
     if [[ -z "${mcp_config}" ]] || [[ "${mcp_config}" == "null" ]]; then
       if [[ "${name}" == "github" ]]; then
         mcp_config='{"type":"http","url":"https://api.githubcopilot.com/mcp/","headers":{}}'
-        echo "[mcp-scope] WARNING: no existing config found for ${name} — registering HTTP default"
-      elif [[ "${name}" == "linear" ]]; then
-        mcp_config='{"type":"http","url":"https://mcp.linear.app/mcp","headers":{}}'
         echo "[mcp-scope] WARNING: no existing config found for ${name} — registering HTTP default"
       else
         echo "[mcp-scope] WARNING: no config found for ${name} — skipping"

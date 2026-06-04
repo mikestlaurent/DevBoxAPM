@@ -35,7 +35,6 @@ dependencies:
 
   mcp:
     - io.github.github/github-mcp-server
-    - app.linear/linear
     - name: likec4
       registry: false
       transport: stdio
