@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-05-12T11:31:04.784741+00:00'
+generated_at: '2026-06-04T17:36:23.117342+00:00'
 apm_version: 0.13.0
 dependencies:
 - repo_url: anthropics/claude-code
@@ -54,11 +54,11 @@ dependencies:
   deployed_file_hashes:
     .claude/agents/code-architect.md: sha256:c50fb08d59a4bbd19660860626a049e44cf1a2b0c1cf782e6c7a99ba7e71b0c3
     .claude/agents/code-explorer.md: sha256:3b277703de7458988ec3b8021c716f79f642e174950ed332629310f68322029a
-    .claude/agents/code-reviewer.md: sha256:a7df173bf77a00da5584c6401a1061524fdbe477b6fef5dd496d4c7a9113c78c
+    .claude/agents/code-reviewer.md: sha256:533b9967ca21b7e9572236935cada4bfd03d7dd362cb2e680a2d13aa0d699232
     .claude/commands/feature-dev.md: sha256:656a01ce40782ee849c444916362df0e4e4173afcd33313777fa86021d89994b
     .github/agents/code-architect.agent.md: sha256:c50fb08d59a4bbd19660860626a049e44cf1a2b0c1cf782e6c7a99ba7e71b0c3
     .github/agents/code-explorer.agent.md: sha256:3b277703de7458988ec3b8021c716f79f642e174950ed332629310f68322029a
-    .github/agents/code-reviewer.agent.md: sha256:a7df173bf77a00da5584c6401a1061524fdbe477b6fef5dd496d4c7a9113c78c
+    .github/agents/code-reviewer.agent.md: sha256:533b9967ca21b7e9572236935cada4bfd03d7dd362cb2e680a2d13aa0d699232
     .github/prompts/feature-dev.prompt.md: sha256:652e5d6264fd253fcb70c2f84de986a88d77109a02410aacd90230a6ab4bf557
   content_hash: sha256:24b246eaa5aa8324748879c841e75a28907f85825055b19c4331aa0162ca0f72
 - repo_url: anthropics/claude-code
@@ -78,12 +78,14 @@ dependencies:
   is_virtual: true
   package_type: marketplace_plugin
   deployed_files:
+  - .claude/agents/code-reviewer.md
   - .claude/agents/code-simplifier.md
   - .claude/agents/comment-analyzer.md
   - .claude/agents/pr-test-analyzer.md
   - .claude/agents/silent-failure-hunter.md
   - .claude/agents/type-design-analyzer.md
   - .claude/commands/review-pr.md
+  - .github/agents/code-reviewer.agent.md
   - .github/agents/code-simplifier.agent.md
   - .github/agents/comment-analyzer.agent.md
   - .github/agents/pr-test-analyzer.agent.md
@@ -91,12 +93,14 @@ dependencies:
   - .github/agents/type-design-analyzer.agent.md
   - .github/prompts/review-pr.prompt.md
   deployed_file_hashes:
+    .claude/agents/code-reviewer.md: sha256:533b9967ca21b7e9572236935cada4bfd03d7dd362cb2e680a2d13aa0d699232
     .claude/agents/code-simplifier.md: sha256:da129a12e959b059a7605d093fbc4f8710755ebf0c914ebc3102b5f78831ead1
     .claude/agents/comment-analyzer.md: sha256:da0540c507e42a7f66df0b09f81f3c9d3b246620a8f2be4e84b85b97f7b4e2f5
     .claude/agents/pr-test-analyzer.md: sha256:d369fd3946a814bb7a9d4f32e971722fe259e301878986bc6312d6f6c56014a8
     .claude/agents/silent-failure-hunter.md: sha256:fa9b0daec5a267e7e66435cc48b3328301fc9f70c3af259fe248881327a1babc
     .claude/agents/type-design-analyzer.md: sha256:ad160052fd3b45395d531d5e97e54940a1b660443fb513db3feb613848b6e72d
     .claude/commands/review-pr.md: sha256:1c3ca6f18f9851ac88ffdc3f98b45e9bd19fb139eb14850f2c22cd18c7a167b2
+    .github/agents/code-reviewer.agent.md: sha256:533b9967ca21b7e9572236935cada4bfd03d7dd362cb2e680a2d13aa0d699232
     .github/agents/code-simplifier.agent.md: sha256:da129a12e959b059a7605d093fbc4f8710755ebf0c914ebc3102b5f78831ead1
     .github/agents/comment-analyzer.agent.md: sha256:da0540c507e42a7f66df0b09f81f3c9d3b246620a8f2be4e84b85b97f7b4e2f5
     .github/agents/pr-test-analyzer.agent.md: sha256:d369fd3946a814bb7a9d4f32e971722fe259e301878986bc6312d6f6c56014a8
@@ -112,7 +116,10 @@ dependencies:
   package_type: marketplace_plugin
   deployed_files:
   - .claude/hooks/security-guidance/hooks/security_reminder_hook.py
+  - .claude/hooks/security-guidance/hooks/security_reminder_hook.py
   - .github/hooks/scripts/security-guidance/hooks/security_reminder_hook.py
+  - .github/hooks/scripts/security-guidance/hooks/security_reminder_hook.py
+  - .github/hooks/security-guidance-hooks.json
   - .github/hooks/security-guidance-hooks.json
   deployed_file_hashes:
     .claude/hooks/security-guidance/hooks/security_reminder_hook.py: sha256:a86fcbcf727d4b32d780c36697b595ae850d48e0ebd18d0d3784cad98fb0f64f
@@ -153,8 +160,23 @@ dependencies:
   - .claude/skills/writing-plans
   - .claude/skills/writing-skills
   - .github/hooks/superpowers-hooks-cursor.json
+  - .github/hooks/superpowers-hooks-cursor.json
+  - .github/hooks/superpowers-hooks.json
   - .github/hooks/superpowers-hooks.json
   deployed_file_hashes:
     .github/hooks/superpowers-hooks-cursor.json: sha256:53d8ceb3ff5d8bb1c4f283f238cc868b8c1af22e40a3ac30f6d6e4173effefbd
     .github/hooks/superpowers-hooks.json: sha256:01616c57b96cc234cc984e77d2fc241dfd0e0bfacda54fe54589cd669a0d998e
   content_hash: sha256:fb4f87bfef928a6d68f5d5aaa29e3eba011961c5f03bbf171c3c348d8d161abb
+mcp_servers:
+- io.github.github/github-mcp-server
+- likec4
+mcp_configs:
+  io.github.github/github-mcp-server:
+    name: io.github.github/github-mcp-server
+  likec4:
+    name: likec4
+    transport: stdio
+    args:
+    - mcp
+    registry: false
+    command: likec4
