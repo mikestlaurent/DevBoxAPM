@@ -37,7 +37,6 @@ APM resolves all dependencies, installs MCP servers, and deploys skills into the
 | Package | How |
 |---|---|
 | `io.github.github/github-mcp-server` | Registry, user-scoped via `wire-mcp-user-scope.sh` |
-| `app.linear/linear` | Registry; Code user-scoped via `wire-mcp-user-scope.sh`, Desktop via `wire-mcp-claude-desktop.sh`; auth via `/mcp` (Code) or browser OAuth (Desktop) |
 | `likec4 mcp` | Built-in CLI subcommand, user-scoped via `wire-mcp-user-scope.sh` (requires Homebrew `likec4`) |
 
 ## Add a dependency
