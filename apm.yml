@@ -17,6 +17,7 @@ dependencies:
     - anthropics/claude-code/plugins/feature-dev
     - anthropics/claude-code/plugins/commit-commands
     - anthropics/claude-code/plugins/pr-review-toolkit
+    - temporalio/skill-temporal-developer#v0.5.0
 
   mcp:
     - io.github.github/github-mcp-server

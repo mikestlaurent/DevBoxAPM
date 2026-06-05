@@ -31,6 +31,7 @@ APM resolves all dependencies, installs MCP servers, and deploys skills into the
 | `anthropics/claude-code/plugins/commit-commands` | `/commit` slash command |
 | `anthropics/claude-code/plugins/pr-review-toolkit` | `/review-pr` slash command |
 | `likec4/likec4/skills/likec4-dsl` | LikeC4 DSL reference for `.c4`/`.likec4` files |
+| `temporalio/skill-temporal-developer` | Temporal SDK development guidance (Python, TypeScript, Go, Java, .NET, Ruby) |
 
 **MCP servers** (`apm.yml → dependencies.mcp`):
 
