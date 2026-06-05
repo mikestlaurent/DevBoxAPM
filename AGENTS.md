@@ -32,6 +32,7 @@ dependencies:
     - git: https://github.com/likec4/likec4.git
       path: skills/likec4-dsl
       ref: v1.57.0
+    - temporalio/skill-temporal-developer#v0.5.0
 
   mcp:
     - io.github.github/github-mcp-server

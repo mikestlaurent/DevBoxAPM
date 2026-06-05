@@ -27,7 +27,7 @@ jobs:
 
       - name: Validate environment
         run: |
-          apm install
+          apm install --frozen
           apm pack --dry-run
 
       - name: Build source zip
