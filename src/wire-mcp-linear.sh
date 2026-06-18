@@ -28,6 +28,28 @@
 
 set -euo pipefail
 
+# Normalize Homebrew prefix for Apple Silicon (/opt/homebrew) vs Intel (/usr/local).
+# Parent task shells often don't inherit the user's interactive PATH.
+if [[ "$(uname -m)" == "arm64" ]] && [[ -d /opt/homebrew/bin ]]; then
+  export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:${PATH}"
+elif [[ -d /usr/local/bin ]]; then
+  export PATH="/usr/local/bin:${PATH}"
+fi
+echo "[mcp-linear] arch=$(uname -m) PATH normalized"
+
+# Runs a command with a deadline. Uses gtimeout (coreutils), timeout (macOS 13+),
+# or falls back to no-op if neither is available.
+_with_timeout() {
+  local secs=$1; shift
+  if command -v gtimeout &>/dev/null; then
+    gtimeout "$secs" "$@"
+  elif command -v timeout &>/dev/null; then
+    timeout "$secs" "$@"
+  else
+    "$@"
+  fi
+}
+
 LINEAR_URL="https://mcp.linear.app/mcp"
 NAME="linear"
 LEGACY_NAME="linear-server"
@@ -41,18 +63,18 @@ if ! command -v claude &>/dev/null; then
   echo "[mcp-linear] WARNING: claude CLI not found on PATH — skipping Claude Code registration"
 else
   # Idempotency: check if already registered at user scope with correct URL
-  existing=$(claude mcp get "${NAME}" 2>/dev/null || echo "")
+  existing=$(_with_timeout 15 claude mcp get "${NAME}" 2>/dev/null || echo "")
   if echo "${existing}" | grep -q "${LINEAR_URL}"; then
     echo "[mcp-linear] ${NAME} already registered in Claude Code — skipping"
   else
-    claude mcp add --transport http --scope user "${NAME}" "${LINEAR_URL}"
+    _with_timeout 30 claude mcp add --transport http --scope user "${NAME}" "${LINEAR_URL}"
     echo "[mcp-linear] Registered ${NAME} in Claude Code at user scope"
   fi
 
   # Legacy cleanup: remove linear-server if it points to the same endpoint
-  legacy=$(claude mcp get "${LEGACY_NAME}" 2>/dev/null || echo "")
+  legacy=$(_with_timeout 15 claude mcp get "${LEGACY_NAME}" 2>/dev/null || echo "")
   if echo "${legacy}" | grep -q "mcp.linear.app"; then
-    claude mcp remove --scope user "${LEGACY_NAME}" 2>/dev/null || true
+    _with_timeout 15 claude mcp remove --scope user "${LEGACY_NAME}" 2>/dev/null || true
     echo "[mcp-linear] Removed legacy ${LEGACY_NAME} entry from Claude Code"
   fi
 fi

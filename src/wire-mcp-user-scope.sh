@@ -18,6 +18,15 @@
 
 set -euo pipefail
 
+# Normalize Homebrew prefix for Apple Silicon (/opt/homebrew) vs Intel (/usr/local).
+# Parent task shells often don't inherit the user's interactive PATH.
+if [[ "$(uname -m)" == "arm64" ]] && [[ -d /opt/homebrew/bin ]]; then
+  export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:${PATH}"
+elif [[ -d /usr/local/bin ]]; then
+  export PATH="/usr/local/bin:${PATH}"
+fi
+echo "[mcp-scope] arch=$(uname -m) PATH normalized"
+
 CLAUDE_JSON="${HOME}/.claude.json"
 DEVBOX_MCP_JSON="${HOME}/.devbox-apm/.mcp.json"
 
