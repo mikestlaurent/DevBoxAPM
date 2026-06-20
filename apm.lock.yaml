@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-06-05T12:03:17.368979+00:00'
+generated_at: '2026-06-20T01:58:02.151788+00:00'
 apm_version: 0.13.0
 dependencies:
 - repo_url: anthropics/claude-code
@@ -126,6 +126,17 @@ dependencies:
     .github/hooks/scripts/security-guidance/hooks/security_reminder_hook.py: sha256:a86fcbcf727d4b32d780c36697b595ae850d48e0ebd18d0d3784cad98fb0f64f
     .github/hooks/security-guidance-hooks.json: sha256:e02bed8949f26511f7fb12ec605542852be0d88796485defc460f29a416742b7
   content_hash: sha256:8c90aff20de720392dadc08474fa98984f84f5dcbf720e3c1c8c284402eb1bbc
+- repo_url: likec4/likec4
+  host: github.com
+  resolved_commit: 510a3689be20d7d1733fad96b56d1c8f4df99caa
+  resolved_ref: v1.58.0
+  virtual_path: skills/likec4-dsl
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/likec4-dsl
+  - .claude/skills/likec4-dsl
+  content_hash: sha256:77ce7879a02d5044acca1b87108b42910acf2999d4f3ed6ca1db9098ccca87d3
 - repo_url: obra/superpowers
   host: github.com
   resolved_commit: f2cbfbefebbfef77321e4c9abc9e949826bea9d7
