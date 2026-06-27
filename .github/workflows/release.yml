@@ -2,37 +2,66 @@ name: Release
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches: [main]
 
 permissions:
   contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   release:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
         with:
-          node-version: '20'
+          fetch-depth: 0
+          fetch-tags: true
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
 
       - name: Install APM CLI
-        uses: microsoft/apm-action@e5650fb81c4b5965090a17bd1ed1956071e95d17 # v1
+        uses: microsoft/apm-action@d723bb64ed70c135bbaf87d126b721dd2dae0439 # v1.10.0
         with:
           setup-only: 'true'
-          apm-version: '0.13.0'
+          apm-version: '0.22.0'
 
       - name: Validate environment
         run: |
           apm install --frozen
           apm pack --dry-run
 
+      - name: Derive version tag
+        id: version
+        env:
+          RUN_NUMBER: ${{ github.run_number }}
+        run: |
+          VERSION=$(grep '^version:' apm.yml | awk '{print $2}')
+          CLEAN_TAG="v${VERSION}"
+          if git tag | grep -qx "$CLEAN_TAG"; then
+            TAG="${CLEAN_TAG}-build.${RUN_NUMBER}"
+          else
+            TAG="$CLEAN_TAG"
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Create and push tag
+        env:
+          TAG: ${{ steps.version.outputs.tag }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag "$TAG"
+          git push origin "$TAG"
+
       - name: Build source zip
         env:
-          TAG: ${{ github.ref_name }}
+          TAG: ${{ steps.version.outputs.tag }}
         run: |
           zip -r "DevBoxAPM-${TAG}.zip" \
             apm.yml \
@@ -46,7 +75,8 @@ jobs:
             -x "*.DS_Store"
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
-          files: DevBoxAPM-${{ github.ref_name }}.zip
+          tag_name: ${{ steps.version.outputs.tag }}
+          files: DevBoxAPM-${{ steps.version.outputs.tag }}.zip
           generate_release_notes: true
