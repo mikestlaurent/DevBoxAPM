@@ -16,20 +16,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           fetch-tags: true
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install APM CLI
-        uses: microsoft/apm-action@e5650fb81c4b5965090a17bd1ed1956071e95d17 # v1
+        uses: microsoft/apm-action@d723bb64ed70c135bbaf87d126b721dd2dae0439 # v1.10.0
         with:
           setup-only: 'true'
-          apm-version: '0.13.0'
+          apm-version: '0.22.0'
 
       - name: Validate environment
         run: |
@@ -75,7 +75,7 @@ jobs:
             -x "*.DS_Store"
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.version.outputs.tag }}
           files: DevBoxAPM-${{ steps.version.outputs.tag }}.zip
