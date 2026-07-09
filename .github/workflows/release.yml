@@ -23,13 +23,13 @@ jobs:
 
       - uses: actions/setup-node@v6
         with:
-          node-version: '22'
+          node-version: '24'
 
       - name: Install APM CLI
         uses: microsoft/apm-action@d723bb64ed70c135bbaf87d126b721dd2dae0439 # v1.10.0
         with:
           setup-only: 'true'
-          apm-version: '0.22.0'
+          apm-version: '0.24.0'
 
       - name: Validate environment
         run: |
