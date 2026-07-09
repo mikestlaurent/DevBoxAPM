@@ -30,7 +30,7 @@ jobs:
           apm-version: '0.24.0'
 
       - name: Install dependencies (verify lockfile in sync)
-        run: apm install --frozen
+        run: apm install --frozen --target claude,agent-skills
 
       - name: Pack dry-run
         run: apm pack --dry-run

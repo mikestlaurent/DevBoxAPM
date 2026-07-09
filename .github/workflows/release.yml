@@ -33,7 +33,7 @@ jobs:
 
       - name: Validate environment
         run: |
-          apm install --frozen
+          apm install --frozen --target claude,agent-skills
           apm pack --dry-run
 
       - name: Derive version tag
