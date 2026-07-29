@@ -1,26 +1,24 @@
 lockfile_version: '1'
-generated_at: '2026-07-09T20:54:57.648628+00:00'
-apm_version: 0.24.0
+generated_at: '2026-07-29T11:59:13.481713+00:00'
+apm_version: 0.26.0
 dependencies:
 - repo_url: anthropics/claude-code
   name: code-review
   host: github.com
-  resolved_commit: be02c39841a59e2ac1f35ac12285def02acdbb5a
+  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
   version: 1.0.0
   virtual_path: plugins/code-review
   is_virtual: true
   package_type: marketplace_plugin
   deployed_files:
   - .claude/commands/code-review.md
-  - .github/prompts/code-review.prompt.md
   deployed_file_hashes:
     .claude/commands/code-review.md: sha256:ecab79f22b6e2bef07a524d2015aaa9e0b7abce82445f38b31a231b19c7bd43a
-    .github/prompts/code-review.prompt.md: sha256:2b0837c5ec0b2e75f8ba4565bdafd76fa916b0dc146608c5733af7ba5802012c
   content_hash: sha256:d25f797947bbd724551746c24ed4ac40788aaf370a7857eb120180fbb00ac2be
 - repo_url: anthropics/claude-code
   name: commit-commands
   host: github.com
-  resolved_commit: be02c39841a59e2ac1f35ac12285def02acdbb5a
+  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
   version: 1.0.0
   virtual_path: plugins/commit-commands
   is_virtual: true
@@ -29,21 +27,15 @@ dependencies:
   - .claude/commands/clean_gone.md
   - .claude/commands/commit-push-pr.md
   - .claude/commands/commit.md
-  - .github/prompts/clean_gone.prompt.md
-  - .github/prompts/commit-push-pr.prompt.md
-  - .github/prompts/commit.prompt.md
   deployed_file_hashes:
     .claude/commands/clean_gone.md: sha256:24ce5c79da87b481d346d26b297cbe327862f1e4bbee05406589f4b5468c7fa3
     .claude/commands/commit-push-pr.md: sha256:63ee94bcf2a60101d542ec46bf2afa18b31565105ebfc63f1a38e4d308d3cd2f
     .claude/commands/commit.md: sha256:366740b9d9f45e05bf7cc5b703156f95fe28180012899ceb90d89d34d4110e47
-    .github/prompts/clean_gone.prompt.md: sha256:4f07fa2ccf4f81a69c6455bdc563b53a3d3b20aea6e4e82337c52b172ee02344
-    .github/prompts/commit-push-pr.prompt.md: sha256:3bc3d171939149cbbef141cbced553dce6ba6f97dac4a764f4ef1e055c35064d
-    .github/prompts/commit.prompt.md: sha256:d1acbc2bf0c50164f48d6bda872de6a343cd9390954ce903c3431c3119e7f8c4
   content_hash: sha256:7d3e0ee5e2fe3b33813102115750fb2df1042a37ad6fd0b75277ac7f07c03794
 - repo_url: anthropics/claude-code
   name: feature-dev
   host: github.com
-  resolved_commit: be02c39841a59e2ac1f35ac12285def02acdbb5a
+  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
   version: 1.0.0
   virtual_path: plugins/feature-dev
   is_virtual: true
@@ -51,26 +43,16 @@ dependencies:
   deployed_files:
   - .claude/agents/code-architect.md
   - .claude/agents/code-explorer.md
-  - .claude/agents/code-reviewer.md
   - .claude/commands/feature-dev.md
-  - .github/agents/code-architect.agent.md
-  - .github/agents/code-explorer.agent.md
-  - .github/agents/code-reviewer.agent.md
-  - .github/prompts/feature-dev.prompt.md
   deployed_file_hashes:
     .claude/agents/code-architect.md: sha256:c50fb08d59a4bbd19660860626a049e44cf1a2b0c1cf782e6c7a99ba7e71b0c3
     .claude/agents/code-explorer.md: sha256:3b277703de7458988ec3b8021c716f79f642e174950ed332629310f68322029a
-    .claude/agents/code-reviewer.md: sha256:533b9967ca21b7e9572236935cada4bfd03d7dd362cb2e680a2d13aa0d699232
     .claude/commands/feature-dev.md: sha256:656a01ce40782ee849c444916362df0e4e4173afcd33313777fa86021d89994b
-    .github/agents/code-architect.agent.md: sha256:c50fb08d59a4bbd19660860626a049e44cf1a2b0c1cf782e6c7a99ba7e71b0c3
-    .github/agents/code-explorer.agent.md: sha256:3b277703de7458988ec3b8021c716f79f642e174950ed332629310f68322029a
-    .github/agents/code-reviewer.agent.md: sha256:533b9967ca21b7e9572236935cada4bfd03d7dd362cb2e680a2d13aa0d699232
-    .github/prompts/feature-dev.prompt.md: sha256:652e5d6264fd253fcb70c2f84de986a88d77109a02410aacd90230a6ab4bf557
   content_hash: sha256:24b246eaa5aa8324748879c841e75a28907f85825055b19c4331aa0162ca0f72
 - repo_url: anthropics/claude-code
   name: frontend-design
   host: github.com
-  resolved_commit: be02c39841a59e2ac1f35ac12285def02acdbb5a
+  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
   version: 1.1.0
   virtual_path: plugins/frontend-design
   is_virtual: true
@@ -87,7 +69,7 @@ dependencies:
 - repo_url: anthropics/claude-code
   name: pr-review-toolkit
   host: github.com
-  resolved_commit: be02c39841a59e2ac1f35ac12285def02acdbb5a
+  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
   version: 1.0.0
   virtual_path: plugins/pr-review-toolkit
   is_virtual: true
@@ -100,13 +82,6 @@ dependencies:
   - .claude/agents/silent-failure-hunter.md
   - .claude/agents/type-design-analyzer.md
   - .claude/commands/review-pr.md
-  - .github/agents/code-reviewer.agent.md
-  - .github/agents/code-simplifier.agent.md
-  - .github/agents/comment-analyzer.agent.md
-  - .github/agents/pr-test-analyzer.agent.md
-  - .github/agents/silent-failure-hunter.agent.md
-  - .github/agents/type-design-analyzer.agent.md
-  - .github/prompts/review-pr.prompt.md
   deployed_file_hashes:
     .claude/agents/code-reviewer.md: sha256:533b9967ca21b7e9572236935cada4bfd03d7dd362cb2e680a2d13aa0d699232
     .claude/agents/code-simplifier.md: sha256:da129a12e959b059a7605d093fbc4f8710755ebf0c914ebc3102b5f78831ead1
@@ -115,18 +90,11 @@ dependencies:
     .claude/agents/silent-failure-hunter.md: sha256:fa9b0daec5a267e7e66435cc48b3328301fc9f70c3af259fe248881327a1babc
     .claude/agents/type-design-analyzer.md: sha256:ad160052fd3b45395d531d5e97e54940a1b660443fb513db3feb613848b6e72d
     .claude/commands/review-pr.md: sha256:1c3ca6f18f9851ac88ffdc3f98b45e9bd19fb139eb14850f2c22cd18c7a167b2
-    .github/agents/code-reviewer.agent.md: sha256:533b9967ca21b7e9572236935cada4bfd03d7dd362cb2e680a2d13aa0d699232
-    .github/agents/code-simplifier.agent.md: sha256:da129a12e959b059a7605d093fbc4f8710755ebf0c914ebc3102b5f78831ead1
-    .github/agents/comment-analyzer.agent.md: sha256:da0540c507e42a7f66df0b09f81f3c9d3b246620a8f2be4e84b85b97f7b4e2f5
-    .github/agents/pr-test-analyzer.agent.md: sha256:d369fd3946a814bb7a9d4f32e971722fe259e301878986bc6312d6f6c56014a8
-    .github/agents/silent-failure-hunter.agent.md: sha256:fa9b0daec5a267e7e66435cc48b3328301fc9f70c3af259fe248881327a1babc
-    .github/agents/type-design-analyzer.agent.md: sha256:ad160052fd3b45395d531d5e97e54940a1b660443fb513db3feb613848b6e72d
-    .github/prompts/review-pr.prompt.md: sha256:5e70c17293a044e1bf9d092c80b5da8b4fd5802ebb07dc53993dec4ba7ce2fc4
   content_hash: sha256:f954acfeb11964e7b4ab5cf3593aea682a671d461b90627f0e6f904b6bb8190f
 - repo_url: anthropics/claude-code
   name: security-guidance
   host: github.com
-  resolved_commit: be02c39841a59e2ac1f35ac12285def02acdbb5a
+  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
   version: 2.0.0
   virtual_path: plugins/security-guidance
   is_virtual: true
@@ -143,8 +111,6 @@ dependencies:
   - .claude/hooks/security-guidance/hooks/security_reminder_hook.py
   - .claude/hooks/security-guidance/hooks/session_state.py
   - .claude/hooks/security-guidance/hooks/sg-python.sh
-  - .github/hooks/scripts/security-guidance/hooks/security_reminder_hook.py
-  - .github/hooks/security-guidance-hooks.json
   deployed_file_hashes:
     .claude/hooks/security-guidance/hooks/_base.py: sha256:46b037d6d36405472c3193fb9e643719e413c0d9259d92c263cdbccafa23f2fd
     .claude/hooks/security-guidance/hooks/diffstate.py: sha256:2acce7933c82301c3cf72b41a09f81790138546a5b53b949a25b4545127d779e
@@ -157,14 +123,12 @@ dependencies:
     .claude/hooks/security-guidance/hooks/security_reminder_hook.py: sha256:e9921af9fa85fa1cfd9b8db9589d1f767c365374619c647c7369e7b84cae8411
     .claude/hooks/security-guidance/hooks/session_state.py: sha256:f74455e57109595eb6fc267babd8f1dd26172014561ec919bdfd38e7ad096380
     .claude/hooks/security-guidance/hooks/sg-python.sh: sha256:5acbfc6a50dffa7422a813117fd1ae42e63f1571e768d0da991117b36dee96b9
-    .github/hooks/scripts/security-guidance/hooks/security_reminder_hook.py: sha256:a86fcbcf727d4b32d780c36697b595ae850d48e0ebd18d0d3784cad98fb0f64f
-    .github/hooks/security-guidance-hooks.json: sha256:e02bed8949f26511f7fb12ec605542852be0d88796485defc460f29a416742b7
   content_hash: sha256:a51cbdc8307c8add140fd58462b4e61f1f57ebdbd15038676984dae0a58eb367
 - repo_url: likec4/likec4
-  name: likec4
+  name: likec4-dsl
   host: github.com
-  resolved_commit: 510a3689be20d7d1733fad96b56d1c8f4df99caa
-  resolved_ref: v1.58.0
+  resolved_commit: f9700621c2bd8cc6c002d54b813a4d251e3f7bd8
+  resolved_ref: v1.59.2
   version: unknown
   virtual_path: skills/likec4-dsl
   is_virtual: true
@@ -209,48 +173,48 @@ dependencies:
   - .claude/skills/likec4-dsl/references/troubleshooting.md
   - .claude/skills/likec4-dsl/references/views.md
   deployed_file_hashes:
-    .agents/skills/likec4-dsl/SKILL.md: sha256:37b7d5aa89ede5ad0b33964a1e80dcbd2df7dbc1db5a3e555859f4f0f73893c0
-    .agents/skills/likec4-dsl/evals/evals-public.json: sha256:edea8dd443ef76c12c64be3314c2192af541f37499b049c27bd06e724603b5bb
-    .agents/skills/likec4-dsl/evals/grading-spec.json: sha256:526dafa2602e5c754cc19f2edb7a3530034e23515bce0c63c9b08401a74298db
+    .agents/skills/likec4-dsl/SKILL.md: sha256:7a05826fe49ce9dc592cdefa25fea3d8287189509054efc2fa0c8cf2965ad962
+    .agents/skills/likec4-dsl/evals/evals-public.json: sha256:fe468e77c06ff66982cd8249c3ec55ddbdb2c6e43c8fc806a5b2f95b40b3b1c0
+    .agents/skills/likec4-dsl/evals/grading-spec.json: sha256:0458fea0fb779d2be11cf68082f6bd2288889f284e0b52b62df6983253a0aa98
     .agents/skills/likec4-dsl/references/bridge-leanix-drawio.md: sha256:920a338bea6ffb1a6acc282e0898a53300ed01eb431b077600f7d4c640d84d57
     .agents/skills/likec4-dsl/references/cli.md: sha256:84f1b7fc172d4c7bc33d514f2b190b639701bcf23751c89aa2c848e6ddae70a5
     .agents/skills/likec4-dsl/references/configuration.md: sha256:7b93d8ed30545571e4c0f2f8fe6b6ea9501e760954544e6f359bd7ab39211313
     .agents/skills/likec4-dsl/references/deployment.md: sha256:86746299ae774def257371d09fff6cc8a9ebed3c0884a7bd55b8500367cf7681
-    .agents/skills/likec4-dsl/references/dynamic-views.md: sha256:bac29bfbff180d5aec551e8dc4dae0ba7f216187563d2615c6d955bb1698a9fd
-    .agents/skills/likec4-dsl/references/examples.md: sha256:faba7dc0e0ddc87ac8cada93ca12db75778dfb8f91b5a7a927bdec8eaeb69d33
+    .agents/skills/likec4-dsl/references/dynamic-views.md: sha256:5fbea86dc954d033b202ee8b443f9c887af657a92a131e9aae970661aaa79c50
+    .agents/skills/likec4-dsl/references/examples.md: sha256:209762dbef6dc0d79b05ca015aa7fd4ea163d64417e11c265091526f61ee6ef0
     .agents/skills/likec4-dsl/references/identifier-validity.md: sha256:8f2b2d68138f7eff6ba809556384e85e5a58fd2821c43972d650358a23f171d4
     .agents/skills/likec4-dsl/references/include-predicates-wildcards.md: sha256:6d5621dac31ffa21d7cb5be96f8b0092f135c43c608b1aebf96fe2598cf1100d
     .agents/skills/likec4-dsl/references/model.md: sha256:e76995bb40431a6232373558567d682b558989135fcef7a884cdac9058af6d2f
     .agents/skills/likec4-dsl/references/predicates.md: sha256:cf4eb07094f03cacfce24ead191f2318d0174b552c0abd567c0e646b1a53a5d8
-    .agents/skills/likec4-dsl/references/relationships-bidirectional.md: sha256:92cb7609b9392a647d524a2328709b2a9a33172646bc6e61a0185814f31eb4b3
+    .agents/skills/likec4-dsl/references/relationships-bidirectional.md: sha256:a95ca40cf2289363bda162a2e788e82d0a0103b3da92928e41a6bf3f4efa8c34
     .agents/skills/likec4-dsl/references/specification.md: sha256:124098a42223e4f6aed64ea50f9752f3e3ff8ec04c546999e89d4119d7d1b11f
     .agents/skills/likec4-dsl/references/style-tokens-colors.md: sha256:12637c777840ee7e722c37be069d187f869124b10dd82b9911f2ece666b36f33
-    .agents/skills/likec4-dsl/references/troubleshooting.md: sha256:70dab4ae3374d8f997022b856e20ee23fdab2ef3231327e109e337cdb85f9074
+    .agents/skills/likec4-dsl/references/troubleshooting.md: sha256:28fe644ca6b970285bc0e99318c9ebc40bb46abffc68c2ded96bc63738fdec49
     .agents/skills/likec4-dsl/references/views.md: sha256:5c548a3a90027cb05ccf00acb5983f4609543d931836a4edc7acc4d97be50a55
-    .claude/skills/likec4-dsl/SKILL.md: sha256:37b7d5aa89ede5ad0b33964a1e80dcbd2df7dbc1db5a3e555859f4f0f73893c0
-    .claude/skills/likec4-dsl/evals/evals-public.json: sha256:edea8dd443ef76c12c64be3314c2192af541f37499b049c27bd06e724603b5bb
-    .claude/skills/likec4-dsl/evals/grading-spec.json: sha256:526dafa2602e5c754cc19f2edb7a3530034e23515bce0c63c9b08401a74298db
+    .claude/skills/likec4-dsl/SKILL.md: sha256:7a05826fe49ce9dc592cdefa25fea3d8287189509054efc2fa0c8cf2965ad962
+    .claude/skills/likec4-dsl/evals/evals-public.json: sha256:fe468e77c06ff66982cd8249c3ec55ddbdb2c6e43c8fc806a5b2f95b40b3b1c0
+    .claude/skills/likec4-dsl/evals/grading-spec.json: sha256:0458fea0fb779d2be11cf68082f6bd2288889f284e0b52b62df6983253a0aa98
     .claude/skills/likec4-dsl/references/bridge-leanix-drawio.md: sha256:920a338bea6ffb1a6acc282e0898a53300ed01eb431b077600f7d4c640d84d57
     .claude/skills/likec4-dsl/references/cli.md: sha256:84f1b7fc172d4c7bc33d514f2b190b639701bcf23751c89aa2c848e6ddae70a5
     .claude/skills/likec4-dsl/references/configuration.md: sha256:7b93d8ed30545571e4c0f2f8fe6b6ea9501e760954544e6f359bd7ab39211313
     .claude/skills/likec4-dsl/references/deployment.md: sha256:86746299ae774def257371d09fff6cc8a9ebed3c0884a7bd55b8500367cf7681
-    .claude/skills/likec4-dsl/references/dynamic-views.md: sha256:bac29bfbff180d5aec551e8dc4dae0ba7f216187563d2615c6d955bb1698a9fd
-    .claude/skills/likec4-dsl/references/examples.md: sha256:faba7dc0e0ddc87ac8cada93ca12db75778dfb8f91b5a7a927bdec8eaeb69d33
+    .claude/skills/likec4-dsl/references/dynamic-views.md: sha256:5fbea86dc954d033b202ee8b443f9c887af657a92a131e9aae970661aaa79c50
+    .claude/skills/likec4-dsl/references/examples.md: sha256:209762dbef6dc0d79b05ca015aa7fd4ea163d64417e11c265091526f61ee6ef0
     .claude/skills/likec4-dsl/references/identifier-validity.md: sha256:8f2b2d68138f7eff6ba809556384e85e5a58fd2821c43972d650358a23f171d4
     .claude/skills/likec4-dsl/references/include-predicates-wildcards.md: sha256:6d5621dac31ffa21d7cb5be96f8b0092f135c43c608b1aebf96fe2598cf1100d
     .claude/skills/likec4-dsl/references/model.md: sha256:e76995bb40431a6232373558567d682b558989135fcef7a884cdac9058af6d2f
     .claude/skills/likec4-dsl/references/predicates.md: sha256:cf4eb07094f03cacfce24ead191f2318d0174b552c0abd567c0e646b1a53a5d8
-    .claude/skills/likec4-dsl/references/relationships-bidirectional.md: sha256:92cb7609b9392a647d524a2328709b2a9a33172646bc6e61a0185814f31eb4b3
+    .claude/skills/likec4-dsl/references/relationships-bidirectional.md: sha256:a95ca40cf2289363bda162a2e788e82d0a0103b3da92928e41a6bf3f4efa8c34
     .claude/skills/likec4-dsl/references/specification.md: sha256:124098a42223e4f6aed64ea50f9752f3e3ff8ec04c546999e89d4119d7d1b11f
     .claude/skills/likec4-dsl/references/style-tokens-colors.md: sha256:12637c777840ee7e722c37be069d187f869124b10dd82b9911f2ece666b36f33
-    .claude/skills/likec4-dsl/references/troubleshooting.md: sha256:70dab4ae3374d8f997022b856e20ee23fdab2ef3231327e109e337cdb85f9074
+    .claude/skills/likec4-dsl/references/troubleshooting.md: sha256:28fe644ca6b970285bc0e99318c9ebc40bb46abffc68c2ded96bc63738fdec49
     .claude/skills/likec4-dsl/references/views.md: sha256:5c548a3a90027cb05ccf00acb5983f4609543d931836a4edc7acc4d97be50a55
-  content_hash: sha256:77ce7879a02d5044acca1b87108b42910acf2999d4f3ed6ca1db9098ccca87d3
+  content_hash: sha256:cc3580d1c758b11a7f0c1ede54f78916fe55fed0c5a6693f25c72ed370899283
 - repo_url: obra/superpowers
   name: superpowers
   host: github.com
-  resolved_commit: d884ae04edebef577e82ff7c4e143debd0bbec99
-  version: 6.1.1
+  resolved_commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
+  version: 6.2.0
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/brainstorming
@@ -276,6 +240,7 @@ dependencies:
   - .agents/skills/subagent-driven-development
   - .agents/skills/subagent-driven-development/SKILL.md
   - .agents/skills/subagent-driven-development/implementer-prompt.md
+  - .agents/skills/subagent-driven-development/re-review-prompt.md
   - .agents/skills/subagent-driven-development/scripts/review-package
   - .agents/skills/subagent-driven-development/scripts/sdd-workspace
   - .agents/skills/subagent-driven-development/scripts/task-brief
@@ -294,13 +259,14 @@ dependencies:
   - .agents/skills/systematic-debugging/test-pressure-3.md
   - .agents/skills/test-driven-development
   - .agents/skills/test-driven-development/SKILL.md
-  - .agents/skills/test-driven-development/testing-anti-patterns.md
+  - .agents/skills/test-driven-development/writing-good-tests.md
   - .agents/skills/using-git-worktrees
   - .agents/skills/using-git-worktrees/SKILL.md
   - .agents/skills/using-superpowers
   - .agents/skills/using-superpowers/SKILL.md
   - .agents/skills/using-superpowers/references/antigravity-tools.md
   - .agents/skills/using-superpowers/references/codex-tools.md
+  - .agents/skills/using-superpowers/references/gemini-tools.md
   - .agents/skills/using-superpowers/references/pi-tools.md
   - .agents/skills/verification-before-completion
   - .agents/skills/verification-before-completion/SKILL.md
@@ -340,6 +306,7 @@ dependencies:
   - .claude/skills/subagent-driven-development
   - .claude/skills/subagent-driven-development/SKILL.md
   - .claude/skills/subagent-driven-development/implementer-prompt.md
+  - .claude/skills/subagent-driven-development/re-review-prompt.md
   - .claude/skills/subagent-driven-development/scripts/review-package
   - .claude/skills/subagent-driven-development/scripts/sdd-workspace
   - .claude/skills/subagent-driven-development/scripts/task-brief
@@ -358,13 +325,14 @@ dependencies:
   - .claude/skills/systematic-debugging/test-pressure-3.md
   - .claude/skills/test-driven-development
   - .claude/skills/test-driven-development/SKILL.md
-  - .claude/skills/test-driven-development/testing-anti-patterns.md
+  - .claude/skills/test-driven-development/writing-good-tests.md
   - .claude/skills/using-git-worktrees
   - .claude/skills/using-git-worktrees/SKILL.md
   - .claude/skills/using-superpowers
   - .claude/skills/using-superpowers/SKILL.md
   - .claude/skills/using-superpowers/references/antigravity-tools.md
   - .claude/skills/using-superpowers/references/codex-tools.md
+  - .claude/skills/using-superpowers/references/gemini-tools.md
   - .claude/skills/using-superpowers/references/pi-tools.md
   - .claude/skills/verification-before-completion
   - .claude/skills/verification-before-completion/SKILL.md
@@ -379,51 +347,51 @@ dependencies:
   - .claude/skills/writing-skills/persuasion-principles.md
   - .claude/skills/writing-skills/render-graphs.js
   - .claude/skills/writing-skills/testing-skills-with-subagents.md
-  - .github/hooks/superpowers-hooks-cursor.json
-  - .github/hooks/superpowers-hooks.json
   deployed_file_hashes:
-    .agents/skills/brainstorming/SKILL.md: sha256:e14914605f640e0841758e45d0ab2a53243b59b921f929e47921c99668f2e61d
+    .agents/skills/brainstorming/SKILL.md: sha256:4a54a4858b99807f3155ed1614b2f116e35ea5c1b788e793f565dd837fd3891f
     .agents/skills/brainstorming/scripts/frame-template.html: sha256:6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e
     .agents/skills/brainstorming/scripts/helper.js: sha256:43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3
     .agents/skills/brainstorming/scripts/server.cjs: sha256:2d2961ea8d11f56c5f4c3a1a68d22709efa5d7601a2246d8c880774e7e9e8412
     .agents/skills/brainstorming/scripts/start-server.sh: sha256:a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847
     .agents/skills/brainstorming/scripts/stop-server.sh: sha256:0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf
     .agents/skills/brainstorming/spec-document-reviewer-prompt.md: sha256:95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457
-    .agents/skills/brainstorming/visual-companion.md: sha256:3321a044c777d03d7177df41c77bb83155ff2a6d0c16b8a3d752426d29f14ea8
-    .agents/skills/dispatching-parallel-agents/SKILL.md: sha256:f0df13f584049059cc5619f90061405b89dcc6e28ab3f2a8517d27d99c7a46a6
-    .agents/skills/executing-plans/SKILL.md: sha256:bbd8d28bb655a52817cc129ce49f9e46fa7c6303f72ed5de95bfe914ef8e0ce8
-    .agents/skills/finishing-a-development-branch/SKILL.md: sha256:e6d4a812de900d33c6eacfb40747f99427f25c304a7b7099120f9373b115a47f
-    .agents/skills/receiving-code-review/SKILL.md: sha256:647036bbdab7bf2317e14e079595e984c9030f64295e2b4c0fb57dbeb48f25dd
-    .agents/skills/requesting-code-review/SKILL.md: sha256:1017ccdd5bc61fab67c654cf118cbdb520464b313073a0a6b9a6b9aa647a3ad6
+    .agents/skills/brainstorming/visual-companion.md: sha256:60cbad29b9dd7eaf08da020e301c498a72230b2e13c1813fa967a135ffcc1d71
+    .agents/skills/dispatching-parallel-agents/SKILL.md: sha256:1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c
+    .agents/skills/executing-plans/SKILL.md: sha256:c4c3d8b628c51114cd165fb8246fe02744cd8be180032328391252e653028d9b
+    .agents/skills/finishing-a-development-branch/SKILL.md: sha256:d0ac8360ed9d59121776ef95c84bcb38e9747de0d7ae7e227dca81e437593b9b
+    .agents/skills/receiving-code-review/SKILL.md: sha256:091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438
+    .agents/skills/requesting-code-review/SKILL.md: sha256:d71cc01ba56d2325cf8af5f7c11837819b63ecd57de0bfdb812f7f3ff7751df8
     .agents/skills/requesting-code-review/code-reviewer.md: sha256:b2f2ec7596925fe52dac158fdfbca19b3a7d779d619c481e6706a6c0001662d3
-    .agents/skills/subagent-driven-development/SKILL.md: sha256:5e9e846ae67d153ddf7c5f4fd5102af78454c8f3cdaa0720331cec063fc8861a
-    .agents/skills/subagent-driven-development/implementer-prompt.md: sha256:49018b28dc11bc9f3d13a28959bb10ae1a96eabc5d8f19f4079d901f9ff2bf64
-    .agents/skills/subagent-driven-development/scripts/review-package: sha256:0c0629f6e2c46fc8bf68dcfb8a247ab24eb548b7004fe494035e6fcba9b5cdfb
-    .agents/skills/subagent-driven-development/scripts/sdd-workspace: sha256:9430befaff459ed862415b700c1a9efe45fd34838a684802a1d8320de0c3a007
-    .agents/skills/subagent-driven-development/scripts/task-brief: sha256:5380283f00bffa99ab82ae78482b7d248abe10655129c72ca7050bdc0b6a85e1
-    .agents/skills/subagent-driven-development/task-reviewer-prompt.md: sha256:2eb9d54373420de25bc0bd00635d3a3123a6c0eb30c881168e6f3348e2387331
+    .agents/skills/subagent-driven-development/SKILL.md: sha256:ca49b5d6acd6259e47b71b8f04345902a3b43fab8a63eac33532edfcec861376
+    .agents/skills/subagent-driven-development/implementer-prompt.md: sha256:946601616a6f76ab3f165ef98377390968f1ec124ecef87422bc3553404e0332
+    .agents/skills/subagent-driven-development/re-review-prompt.md: sha256:e1d8e0e65e58ccde6dc920843da9148d23e65aeb0f8932bcc30be1341a703c4c
+    .agents/skills/subagent-driven-development/scripts/review-package: sha256:fac3d4bd7f94369e8037b9ead2a8a502dca6ab333902b560b9455dbb3c450ebe
+    .agents/skills/subagent-driven-development/scripts/sdd-workspace: sha256:95a09d9d3983ad1aafd093ca72b4587946dea885c6e302caa02a779a2f911c31
+    .agents/skills/subagent-driven-development/scripts/task-brief: sha256:d6954ef7841c7da3d77373e6ff5118b3f2f2e998606fd95d33e6527851bce044
+    .agents/skills/subagent-driven-development/task-reviewer-prompt.md: sha256:e3b4a1bfe7cd55ed0459e5ca9cdddb6ff086c345b99e9097036db6a18545729e
     .agents/skills/systematic-debugging/CREATION-LOG.md: sha256:c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789
-    .agents/skills/systematic-debugging/SKILL.md: sha256:3b20719eca4f0461cb51a195221320d775dcf03b6859271066a03a5132a6ce7a
+    .agents/skills/systematic-debugging/SKILL.md: sha256:808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787
     .agents/skills/systematic-debugging/condition-based-waiting-example.ts: sha256:40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e
     .agents/skills/systematic-debugging/condition-based-waiting.md: sha256:e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26
     .agents/skills/systematic-debugging/defense-in-depth.md: sha256:1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7
-    .agents/skills/systematic-debugging/find-polluter.sh: sha256:6462747eae9b175ac145b78bcfaeab755654a75e32637f08eb633f065a9e1d7c
+    .agents/skills/systematic-debugging/find-polluter.sh: sha256:dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c
     .agents/skills/systematic-debugging/root-cause-tracing.md: sha256:6b0622269e098ca1399e123e553fd385f0b6412d88ef0e9c4f5a8ea9cf1cec7b
     .agents/skills/systematic-debugging/test-academic.md: sha256:fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486
     .agents/skills/systematic-debugging/test-pressure-1.md: sha256:0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a
     .agents/skills/systematic-debugging/test-pressure-2.md: sha256:b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016
     .agents/skills/systematic-debugging/test-pressure-3.md: sha256:96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708
-    .agents/skills/test-driven-development/SKILL.md: sha256:b5b4717b8b761cce15a6cfe9022e33fd959e0894c0c39d72c9cb49c23486c10e
-    .agents/skills/test-driven-development/testing-anti-patterns.md: sha256:bde453bc258f06543987477c837939afaa774ea2acbd9f308d702fc452bc4283
-    .agents/skills/using-git-worktrees/SKILL.md: sha256:e2c3ec142e52868a51af246c620cd76ab648dcf27d6900d47e6ffd07159a9794
+    .agents/skills/test-driven-development/SKILL.md: sha256:bf1b8216e523851a411e91d429a7c1c2a173e79d88957bc78e348218d50edd54
+    .agents/skills/test-driven-development/writing-good-tests.md: sha256:51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1
+    .agents/skills/using-git-worktrees/SKILL.md: sha256:8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd
     .agents/skills/using-superpowers/SKILL.md: sha256:55379fe7c1c473a02c61961c822996bff30e1320d6921d9062509bc508482c05
-    .agents/skills/using-superpowers/references/antigravity-tools.md: sha256:d0bcfa94dd0fa399fb9606a0f7c9562b43040cad02be167a2b999c3913a1d5e9
-    .agents/skills/using-superpowers/references/codex-tools.md: sha256:9310bb2315eed2c1cebea02cd1c9e8fe121cb788fc6b41e8b8f8b5ff46f85f37
+    .agents/skills/using-superpowers/references/antigravity-tools.md: sha256:4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0
+    .agents/skills/using-superpowers/references/codex-tools.md: sha256:d3f113a8ebbd748e8ba847b09b57b7685442775ca4ee194d693ce3663f8fac68
+    .agents/skills/using-superpowers/references/gemini-tools.md: sha256:62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965
     .agents/skills/using-superpowers/references/pi-tools.md: sha256:703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5
-    .agents/skills/verification-before-completion/SKILL.md: sha256:ea52d15aabaf72bc6b558efe2c126f161b53961090ddcd712000273bfe8c7b6c
-    .agents/skills/writing-plans/SKILL.md: sha256:272e1af349f5062c28dc282b3e21b220d58d683a7314a10c455b7432ec91d845
+    .agents/skills/verification-before-completion/SKILL.md: sha256:2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3
+    .agents/skills/writing-plans/SKILL.md: sha256:72190c88b2b5a67a96b91d66aa72b9161913e10e8769da3f28a226f4cc7b99d0
     .agents/skills/writing-plans/plan-document-reviewer-prompt.md: sha256:aa728b96aad603c8be28875a4305637f6c984aa81ffcadcb13e743202fa2a0c7
-    .agents/skills/writing-skills/SKILL.md: sha256:6b8d08fe863318be8480ae8428e169640309fa9208df84bb0510012764454146
+    .agents/skills/writing-skills/SKILL.md: sha256:16148d03c58f718abe2a9cfbb3edd06159b4a454391c5c2b933dfa1c25f9601e
     .agents/skills/writing-skills/anthropic-best-practices.md: sha256:217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a
     .agents/skills/writing-skills/examples/CLAUDE_MD_TESTING.md: sha256:0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0
     .agents/skills/writing-skills/graphviz-conventions.dot: sha256:e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694
@@ -432,60 +400,60 @@ dependencies:
     .agents/skills/writing-skills/testing-skills-with-subagents.md: sha256:c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade
     .claude/hooks/superpowers/hooks/run-hook.cmd: sha256:d3d9c6199678dab2858e60509dde5e7414f13c2a2b5e48a38b1d368b6e1d6abb
     .claude/hooks/superpowers/hooks/session-start: sha256:88a060272ca8047e0d1cd73a016e1cebba8396807a44be1e296d7c02dcbb9934
-    .claude/skills/brainstorming/SKILL.md: sha256:e14914605f640e0841758e45d0ab2a53243b59b921f929e47921c99668f2e61d
+    .claude/skills/brainstorming/SKILL.md: sha256:4a54a4858b99807f3155ed1614b2f116e35ea5c1b788e793f565dd837fd3891f
     .claude/skills/brainstorming/scripts/frame-template.html: sha256:6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e
     .claude/skills/brainstorming/scripts/helper.js: sha256:43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3
     .claude/skills/brainstorming/scripts/server.cjs: sha256:2d2961ea8d11f56c5f4c3a1a68d22709efa5d7601a2246d8c880774e7e9e8412
     .claude/skills/brainstorming/scripts/start-server.sh: sha256:a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847
     .claude/skills/brainstorming/scripts/stop-server.sh: sha256:0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf
     .claude/skills/brainstorming/spec-document-reviewer-prompt.md: sha256:95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457
-    .claude/skills/brainstorming/visual-companion.md: sha256:3321a044c777d03d7177df41c77bb83155ff2a6d0c16b8a3d752426d29f14ea8
-    .claude/skills/dispatching-parallel-agents/SKILL.md: sha256:f0df13f584049059cc5619f90061405b89dcc6e28ab3f2a8517d27d99c7a46a6
-    .claude/skills/executing-plans/SKILL.md: sha256:bbd8d28bb655a52817cc129ce49f9e46fa7c6303f72ed5de95bfe914ef8e0ce8
-    .claude/skills/finishing-a-development-branch/SKILL.md: sha256:e6d4a812de900d33c6eacfb40747f99427f25c304a7b7099120f9373b115a47f
-    .claude/skills/receiving-code-review/SKILL.md: sha256:647036bbdab7bf2317e14e079595e984c9030f64295e2b4c0fb57dbeb48f25dd
-    .claude/skills/requesting-code-review/SKILL.md: sha256:1017ccdd5bc61fab67c654cf118cbdb520464b313073a0a6b9a6b9aa647a3ad6
+    .claude/skills/brainstorming/visual-companion.md: sha256:60cbad29b9dd7eaf08da020e301c498a72230b2e13c1813fa967a135ffcc1d71
+    .claude/skills/dispatching-parallel-agents/SKILL.md: sha256:1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c
+    .claude/skills/executing-plans/SKILL.md: sha256:c4c3d8b628c51114cd165fb8246fe02744cd8be180032328391252e653028d9b
+    .claude/skills/finishing-a-development-branch/SKILL.md: sha256:d0ac8360ed9d59121776ef95c84bcb38e9747de0d7ae7e227dca81e437593b9b
+    .claude/skills/receiving-code-review/SKILL.md: sha256:091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438
+    .claude/skills/requesting-code-review/SKILL.md: sha256:d71cc01ba56d2325cf8af5f7c11837819b63ecd57de0bfdb812f7f3ff7751df8
     .claude/skills/requesting-code-review/code-reviewer.md: sha256:b2f2ec7596925fe52dac158fdfbca19b3a7d779d619c481e6706a6c0001662d3
-    .claude/skills/subagent-driven-development/SKILL.md: sha256:5e9e846ae67d153ddf7c5f4fd5102af78454c8f3cdaa0720331cec063fc8861a
-    .claude/skills/subagent-driven-development/implementer-prompt.md: sha256:49018b28dc11bc9f3d13a28959bb10ae1a96eabc5d8f19f4079d901f9ff2bf64
-    .claude/skills/subagent-driven-development/scripts/review-package: sha256:0c0629f6e2c46fc8bf68dcfb8a247ab24eb548b7004fe494035e6fcba9b5cdfb
-    .claude/skills/subagent-driven-development/scripts/sdd-workspace: sha256:9430befaff459ed862415b700c1a9efe45fd34838a684802a1d8320de0c3a007
-    .claude/skills/subagent-driven-development/scripts/task-brief: sha256:5380283f00bffa99ab82ae78482b7d248abe10655129c72ca7050bdc0b6a85e1
-    .claude/skills/subagent-driven-development/task-reviewer-prompt.md: sha256:2eb9d54373420de25bc0bd00635d3a3123a6c0eb30c881168e6f3348e2387331
+    .claude/skills/subagent-driven-development/SKILL.md: sha256:ca49b5d6acd6259e47b71b8f04345902a3b43fab8a63eac33532edfcec861376
+    .claude/skills/subagent-driven-development/implementer-prompt.md: sha256:946601616a6f76ab3f165ef98377390968f1ec124ecef87422bc3553404e0332
+    .claude/skills/subagent-driven-development/re-review-prompt.md: sha256:e1d8e0e65e58ccde6dc920843da9148d23e65aeb0f8932bcc30be1341a703c4c
+    .claude/skills/subagent-driven-development/scripts/review-package: sha256:fac3d4bd7f94369e8037b9ead2a8a502dca6ab333902b560b9455dbb3c450ebe
+    .claude/skills/subagent-driven-development/scripts/sdd-workspace: sha256:95a09d9d3983ad1aafd093ca72b4587946dea885c6e302caa02a779a2f911c31
+    .claude/skills/subagent-driven-development/scripts/task-brief: sha256:d6954ef7841c7da3d77373e6ff5118b3f2f2e998606fd95d33e6527851bce044
+    .claude/skills/subagent-driven-development/task-reviewer-prompt.md: sha256:e3b4a1bfe7cd55ed0459e5ca9cdddb6ff086c345b99e9097036db6a18545729e
     .claude/skills/systematic-debugging/CREATION-LOG.md: sha256:c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789
-    .claude/skills/systematic-debugging/SKILL.md: sha256:3b20719eca4f0461cb51a195221320d775dcf03b6859271066a03a5132a6ce7a
+    .claude/skills/systematic-debugging/SKILL.md: sha256:808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787
     .claude/skills/systematic-debugging/condition-based-waiting-example.ts: sha256:40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e
     .claude/skills/systematic-debugging/condition-based-waiting.md: sha256:e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26
     .claude/skills/systematic-debugging/defense-in-depth.md: sha256:1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7
-    .claude/skills/systematic-debugging/find-polluter.sh: sha256:6462747eae9b175ac145b78bcfaeab755654a75e32637f08eb633f065a9e1d7c
+    .claude/skills/systematic-debugging/find-polluter.sh: sha256:dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c
     .claude/skills/systematic-debugging/root-cause-tracing.md: sha256:6b0622269e098ca1399e123e553fd385f0b6412d88ef0e9c4f5a8ea9cf1cec7b
     .claude/skills/systematic-debugging/test-academic.md: sha256:fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486
     .claude/skills/systematic-debugging/test-pressure-1.md: sha256:0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a
     .claude/skills/systematic-debugging/test-pressure-2.md: sha256:b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016
     .claude/skills/systematic-debugging/test-pressure-3.md: sha256:96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708
-    .claude/skills/test-driven-development/SKILL.md: sha256:b5b4717b8b761cce15a6cfe9022e33fd959e0894c0c39d72c9cb49c23486c10e
-    .claude/skills/test-driven-development/testing-anti-patterns.md: sha256:bde453bc258f06543987477c837939afaa774ea2acbd9f308d702fc452bc4283
-    .claude/skills/using-git-worktrees/SKILL.md: sha256:e2c3ec142e52868a51af246c620cd76ab648dcf27d6900d47e6ffd07159a9794
+    .claude/skills/test-driven-development/SKILL.md: sha256:bf1b8216e523851a411e91d429a7c1c2a173e79d88957bc78e348218d50edd54
+    .claude/skills/test-driven-development/writing-good-tests.md: sha256:51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1
+    .claude/skills/using-git-worktrees/SKILL.md: sha256:8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd
     .claude/skills/using-superpowers/SKILL.md: sha256:55379fe7c1c473a02c61961c822996bff30e1320d6921d9062509bc508482c05
-    .claude/skills/using-superpowers/references/antigravity-tools.md: sha256:d0bcfa94dd0fa399fb9606a0f7c9562b43040cad02be167a2b999c3913a1d5e9
-    .claude/skills/using-superpowers/references/codex-tools.md: sha256:9310bb2315eed2c1cebea02cd1c9e8fe121cb788fc6b41e8b8f8b5ff46f85f37
+    .claude/skills/using-superpowers/references/antigravity-tools.md: sha256:4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0
+    .claude/skills/using-superpowers/references/codex-tools.md: sha256:d3f113a8ebbd748e8ba847b09b57b7685442775ca4ee194d693ce3663f8fac68
+    .claude/skills/using-superpowers/references/gemini-tools.md: sha256:62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965
     .claude/skills/using-superpowers/references/pi-tools.md: sha256:703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5
-    .claude/skills/verification-before-completion/SKILL.md: sha256:ea52d15aabaf72bc6b558efe2c126f161b53961090ddcd712000273bfe8c7b6c
-    .claude/skills/writing-plans/SKILL.md: sha256:272e1af349f5062c28dc282b3e21b220d58d683a7314a10c455b7432ec91d845
+    .claude/skills/verification-before-completion/SKILL.md: sha256:2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3
+    .claude/skills/writing-plans/SKILL.md: sha256:72190c88b2b5a67a96b91d66aa72b9161913e10e8769da3f28a226f4cc7b99d0
     .claude/skills/writing-plans/plan-document-reviewer-prompt.md: sha256:aa728b96aad603c8be28875a4305637f6c984aa81ffcadcb13e743202fa2a0c7
-    .claude/skills/writing-skills/SKILL.md: sha256:6b8d08fe863318be8480ae8428e169640309fa9208df84bb0510012764454146
+    .claude/skills/writing-skills/SKILL.md: sha256:16148d03c58f718abe2a9cfbb3edd06159b4a454391c5c2b933dfa1c25f9601e
     .claude/skills/writing-skills/anthropic-best-practices.md: sha256:217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a
     .claude/skills/writing-skills/examples/CLAUDE_MD_TESTING.md: sha256:0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0
     .claude/skills/writing-skills/graphviz-conventions.dot: sha256:e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694
     .claude/skills/writing-skills/persuasion-principles.md: sha256:a51bc9bf75189ea73a27b3fb504a2fdfdb966fb1f7f1cdf03203230a216ccc03
     .claude/skills/writing-skills/render-graphs.js: sha256:ccda971a87bb185f8febf81c56b556a20d026fa980c17b35fa3e8824fbb37852
     .claude/skills/writing-skills/testing-skills-with-subagents.md: sha256:c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade
-    .github/hooks/superpowers-hooks-cursor.json: sha256:53d8ceb3ff5d8bb1c4f283f238cc868b8c1af22e40a3ac30f6d6e4173effefbd
-    .github/hooks/superpowers-hooks.json: sha256:01616c57b96cc234cc984e77d2fc241dfd0e0bfacda54fe54589cd669a0d998e
-  content_hash: sha256:fcec2b6832dc4a4ce8fd0b7883fc72531fb402dd76537b62e495ab5c09742cf4
+  content_hash: sha256:44ac70681642c507d2d708267610f8a01c863fb126a83549b4e303d29d808040
   declared_license: MIT
 - repo_url: temporalio/skill-temporal-developer
-  name: skill-temporal-developer
+  name: temporal-developer
   host: github.com
   resolved_commit: 16bc5715a1a9fd0daa7cd58e538c265c3310ada2
   resolved_ref: v0.5.0
@@ -868,3 +836,3469 @@ dependencies:
     .claude/skills/skill-temporal-developer/references/typescript/typescript.md: sha256:0f8168dd3c3ceaa86c5b1248976c6bceffb40e1aa936da62735c2e1c5838dd96
     .claude/skills/skill-temporal-developer/references/typescript/versioning.md: sha256:21d8f5e1984544042eb5d1fd33b52a7f2c5fc90becd293c5310645862f532f29
   content_hash: sha256:52dacd4d446854e1d62aa2d99db78593da39b0771a9ece3e42ddc03e37b5b517
+deployments:
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/brainstorming
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/brainstorming/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:4a54a4858b99807f3155ed1614b2f116e35ea5c1b788e793f565dd837fd3891f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/brainstorming/scripts/frame-template.html
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/brainstorming/scripts/helper.js
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/brainstorming/scripts/server.cjs
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:2d2961ea8d11f56c5f4c3a1a68d22709efa5d7601a2246d8c880774e7e9e8412
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/brainstorming/scripts/start-server.sh
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/brainstorming/scripts/stop-server.sh
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/brainstorming/spec-document-reviewer-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/brainstorming/visual-companion.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:60cbad29b9dd7eaf08da020e301c498a72230b2e13c1813fa967a135ffcc1d71
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/dispatching-parallel-agents
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/dispatching-parallel-agents/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/executing-plans
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/executing-plans/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:c4c3d8b628c51114cd165fb8246fe02744cd8be180032328391252e653028d9b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/finishing-a-development-branch
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/finishing-a-development-branch/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:d0ac8360ed9d59121776ef95c84bcb38e9747de0d7ae7e227dca81e437593b9b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/frontend-design
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/frontend-design
+  active_owner: anthropics/claude-code/plugins/frontend-design
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/frontend-design/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/frontend-design
+  active_owner: anthropics/claude-code/plugins/frontend-design
+  content_hash: sha256:1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:7a05826fe49ce9dc592cdefa25fea3d8287189509054efc2fa0c8cf2965ad962
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/evals/evals-public.json
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:fe468e77c06ff66982cd8249c3ec55ddbdb2c6e43c8fc806a5b2f95b40b3b1c0
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/evals/grading-spec.json
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:0458fea0fb779d2be11cf68082f6bd2288889f284e0b52b62df6983253a0aa98
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/bridge-leanix-drawio.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:920a338bea6ffb1a6acc282e0898a53300ed01eb431b077600f7d4c640d84d57
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/cli.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:84f1b7fc172d4c7bc33d514f2b190b639701bcf23751c89aa2c848e6ddae70a5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/configuration.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:7b93d8ed30545571e4c0f2f8fe6b6ea9501e760954544e6f359bd7ab39211313
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/deployment.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:86746299ae774def257371d09fff6cc8a9ebed3c0884a7bd55b8500367cf7681
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/dynamic-views.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:5fbea86dc954d033b202ee8b443f9c887af657a92a131e9aae970661aaa79c50
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:209762dbef6dc0d79b05ca015aa7fd4ea163d64417e11c265091526f61ee6ef0
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/identifier-validity.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:8f2b2d68138f7eff6ba809556384e85e5a58fd2821c43972d650358a23f171d4
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/include-predicates-wildcards.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:6d5621dac31ffa21d7cb5be96f8b0092f135c43c608b1aebf96fe2598cf1100d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/model.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:e76995bb40431a6232373558567d682b558989135fcef7a884cdac9058af6d2f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/predicates.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:cf4eb07094f03cacfce24ead191f2318d0174b552c0abd567c0e646b1a53a5d8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/relationships-bidirectional.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:a95ca40cf2289363bda162a2e788e82d0a0103b3da92928e41a6bf3f4efa8c34
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/specification.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:124098a42223e4f6aed64ea50f9752f3e3ff8ec04c546999e89d4119d7d1b11f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/style-tokens-colors.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:12637c777840ee7e722c37be069d187f869124b10dd82b9911f2ece666b36f33
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/troubleshooting.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:28fe644ca6b970285bc0e99318c9ebc40bb46abffc68c2ded96bc63738fdec49
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/likec4-dsl/references/views.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:5c548a3a90027cb05ccf00acb5983f4609543d931836a4edc7acc4d97be50a55
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/receiving-code-review
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/receiving-code-review/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/requesting-code-review
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/requesting-code-review/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:d71cc01ba56d2325cf8af5f7c11837819b63ecd57de0bfdb812f7f3ff7751df8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/requesting-code-review/code-reviewer.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:b2f2ec7596925fe52dac158fdfbca19b3a7d779d619c481e6706a6c0001662d3
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/.github/CODEOWNERS
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:b431f24c0aaeb94fc4ef2a255fc488fd48ecf8cf2c0900f4f80c80c69c5e911a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/.github/workflows/package-skill.yml
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:f719bac75e39495f66060c73f5748b2817b6b3d2414ed2e39348a9d36e45ee50
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:9a7285d76bcfe865691b02e6a42deb9a6f86ce0a0d87a12b79fc6a996ba187a5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/README.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a619a6a3873ded8cec24f2d0973dcb71e9f7f41aff38f1b52771baf88cc72297
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:316835173c827934b674f592201add5e8e1dd4d39a8bb48af2beec45d58b4146
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/ai-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:17031793f57425df51ebb7111e96932abd1294cc3042104865d1cc967fc6aaed
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/cli-workflow-commands.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:b32f811c677915e21cc3bb9717036464f18508b4d4efa72f96845d7bceabacb6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:469bfd18f95487c284d2c4e6d4dc0b07d1cfc006b7257e2ba359403e981d18c2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/dev-management.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0563581f09e5c47c6ad10586c1705a50b87487f898c23510ecdc34654a88c45f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/error-reference.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:43c2cba4b3a086b42a749a3fdb25d9b74efee3a0792de97c8153db6b01591e92
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ce989241dbf911d165c77077c710f383cde1c669c806ee295b898889f079a62b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/install_cli.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:76296b9fa1d37054926900f81b5c2e34dc620c6433ef4cbf22ba3d39e0f2a002
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/interactive-workflows.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:45990a019f108e8ae9539162f7245305a30b99fac9fcddff549a56f908997f80
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:394a1dab91ac55e068db7a8d8b1d0d2117a410d0bee26a45ed5612453bfa56a7
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/priority-fairness.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:77c04fdf523bbab86b1a8a02280a1161908a8b67a5c077245b865bd35843a5a5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/troubleshooting.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a7795771e70344cf100e238d9041dded8f2924a09a62714e82dfe0e84bd55894
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a81b75a1496e48368e8e1cc1bb9ba0420d9e1f3bc8c7440feaf1473566566411
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e10107b171410168c4357d0b3710dd03a295772841380fa3adbe2823245290e5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:d93c7451f838f1e749409fe8f6d66ecccb292ccc30d3a26cf5d3d841a001645f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1d06fdf1e70ec125c85f78a724ce72987129d0610cc368b864e7926a8beb327e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:f970ec51e84972523b60f0503938f2a3e6319bc299a7ddd87319ff2bb82da3d6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/dotnet.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a86722a72a81da715ac56656ab1d573b4250fdfc14c519b8761f14cd5cf2d0a3
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:360517ad5329768b819c448f57a7e649a7d4b1e86cea5a50ffe0c41bcb017d08
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:47256a9c8ad6c06d62412f815d65555bc9043fc8e3851714f7ba4ba1a739f572
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:16d47df13882cec2a2755492fc13179c5d949fffb9c13791408ff786862ff334
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ad417968530161dbf8020500ca86ed71befb86a548b8e45eb92ce4b4f0d86371
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:6ef6eb6384e384fa98aab7d5c4203e66751b75d2ee46d0b85c7312cd3a47d47d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1fe6e1b45ae8a0cef0289e0f3e016b4a0ee78746639131511d664e062e9c1bf2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:25d2565ec2d14e54a83ff70c3c9509bcb5391baf4ef687099eb07df5d10feb54
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:213c11759608dd830e4f820fceb4d4aae2f78a1292fd189dae380b251e5d4b09
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0616d4c89bbc6556a9eed7e40a09a0883434b7fde4ecc0070844f83f89853bf9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ca96508a8d54444d281d6a3250b98ffb90ff4526c5bdeb2061059381f3ad0a56
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1af48891f14bbab81bfa1b1c15b447bc3766275161343965f043395be89ee8ae
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/go.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0e7749362f4d9fe27523faaa2a2de23d88173ec643a08354abf2afb762327a82
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e47dfd4f94e4418a6c7a6d00ca583e8259e874023a16b57b4905f189966b8407
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:3a58e126b27cf10714b998a46d2286410f49f20707c122bd583a277930202728
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:80a4a5b173ff4c728b36a0a4ab83b588271f16e8234ad00736ada349ef247504
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:7481ab059006139aae4c7d777c8510e82ea7d75b24be1f531577e85b11fff788
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a8d2ca506c3d0256f2c1e8903e91cd46fe375ccf8ff0e7f494da8e642bf7494b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/integrations.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1337d729156e55f28715b6074d83aba03fb1d8ec36d826ec54929ab0aeaebef8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0501137bb2f263d0ec0452c4e10417b9fb9e250eed4ee8bef58cfb8aa30ee57d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:fd1254c4d955215536203b231c13c0e53e48f4238e45d550282ae26d571cc0e4
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:c7c1e42b68d2382e3ac3d3e9f5bdec11995a1f3e71dda63a50ab26df0f8a7291
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:21402641db1c8d6d2e7972afe7f2418eadd593ad233618410567cb52549e53a9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:d317b7dad213bf90a93ab337d2f56ce76e1ccdf5f14684118d161457c55e9752
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:b3afd0410674162163af1c0291df76a1dee1010d8f7f5728bae98da1556ed8b6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/integrations/spring-ai.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:79f18e1e89f71a0f8f7fd7a61e073fcdf155d10c48ad7abf5743cec31703a302
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/integrations/spring-boot.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:f2e5565b0d5d41804c57eae6bdd512b7099c6aa6bd7434c8aad52abeeaa27c30
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/java.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2dd613cf00295e6cfa704410acbe43f5fb0c9eca5bd9f70b24ccd6c9b4f2214b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:627657eb636e5b3bb0d2947c639c9c291e8c69c359d9fb911ea8db0f16e3577b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ed5a2f090fd1b0d655c8b20efe2b1700d7c86f4e38d4715607c3e438b6e9d238
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:7221ec40639ef58587fa7655fec6068720ad62cbda8621c9dd474b897a568f04
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a762f55f3e3ce157364a4d16f18c293f97bf3b4b1071c16e0b75ca4de87c58da
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e91930afa2c39adb735c6c84cec55e74633ab6aedba5c3372cc6fd86e3be25c4
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/ai-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2753dd62db4e5dac70175240c6d5adfdeb24b15d14db2c5fe33497d845e2f60c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e009fae68c15c983eebb7876b2bcdc6b7b66afac0ae7c003e6bea367060a17fe
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:98c41dab94de390a5d71bdedf9c06a1ba1754a8918965e8d632a12417698d2fb
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:6cc267bfa631d1514d803733219dff7ebd8d893c94e58d10a4793eb6ff21a3bd
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:cad683db77a5d9ce2554bff866b828a7c0e3b82cf622f16c322f1f7bc9780fc2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e1dab9cca28d20fcbb1d21b98a906c94c6643564efc095e7b0074861766298c2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/integrations/google-adk.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:add8233138e3ea73b192e28c3fe7f712fdd6d6b6fc51cd9827509136622914fd
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/integrations/langgraph.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:9b0e7e21cb1980815abe04556149a92e4991780193e959e22e666cee0b65b505
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/integrations/langsmith.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ae957528c761f49eb805b75e8f3c3e7a745bcbf1be1355191336957a8cd112d5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/integrations/openai-agents-sdk.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0aedc781da07638a1b6fe8224e5966403c88818de0a63eac958c511d7b4155a1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8a17a66cb84e626d619c865773a87f21265fbece0c389bca338a49a444974694
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:5a5e3930ac490073122c2ccff5a1ad44364638fbb3196551ed6a42992ff2ab54
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/python.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a207e520ab8baf18bb77648bd02e6a272756df26804bf7a648516c7bb2791d49
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/sync-vs-async.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0c7b9619bd8fb97f88c6d38309ebadbf3b961cd7ad678fd3dcee19e80380c13a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2bb9bff4217ad2a77da6509990121af5999e00e7fbc08f9a824a562326560997
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8adb65e353d820125e35d0b4346104e5a625279c6c77912888eb3bbe9fe412cc
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/workflow-streams.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e7917f4bb514d22e774cb1a802832a76caf2ef72273f1f6192149bc8ce130107
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/ruby/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:f0bf760459183795c485e2639420b027377d0d696487a30ec0552d36659318ac
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/ruby/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:4c4bc37a8ca83f7c702a16a3ac74496affa89d5a9bcebf443735cae368dbd117
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/ruby/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8a4f15233f9d829171329d51dfc1ddeacd1021e5d8e577a3bd1faf771bf16fd9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/ruby/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a81a7b47841f0b3a55dcdfc19d06c1c32fb7042283f921b06020033511bed61c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/ruby/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:cb2257485116550e6a1ba0e28ec9176f5282f18e39a6d83038645d2c8f991c05
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/ruby/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:5e2268d676bb0639b92156826415a523e6490c769a5740697096a68ae3539554
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/ruby/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8dbe5216e8ab2b58dbfc45326b98ad190de40450d5dacfac8c2ba528509260b2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/ruby/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:746f358cb69372c15fe90cc329836cb33c5393509d53bd0d3a135a500ff677b1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/ruby/ruby.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ca76bc437fe973ac2b29861e28a87e130e8835bb58a641ee3ce177fd51ef7a1a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/ruby/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8cba93dec57c5da81e54754424aeafcb4fca6e8d827cfe50c78e880b22713aca
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/ruby/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2fd1485b70bf8fbc2f3d5d5f74d88bc371fae29051bcf19e40961f07f328e3cc
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a4433dfcd6df2cd26f877ebe3f3b9deba5fe7e6931b5e995d7045843ec06b760
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2604262698516c35dc63c9746f72fe147ea6fe570b7559cd9fce0677c3f9874b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:cc58d49c9716f9b28c7bdd36b3192df20c2c4909f5c4acc6f3ce6f9e56ec1c16
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:55391d93f4aa93f3eeb72c2d8cd1093cd9fcd5fd962848a245d077bfc12e8c2d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:b40078a343f8d251162c320cd98c1e66ff41af60e2c6560df3c86862b6da840a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1443ec107a010374bbbb0293e6a864505f98ec61c8903ff170f26a28a8023968
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:5f583e5584b06f325f773e577a57a12bb8e8e6ebc838ebc7753b3b948035ada9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8bc84381f9d6432301f3011b60a64f0170bc2584fca170cff9e55469cb958613
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a0b378f3c54cde05a84145f229fc7a0006b1fb5c9957867e53c7918a1903deaf
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/typescript.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0f8168dd3c3ceaa86c5b1248976c6bceffb40e1aa936da62735c2e1c5838dd96
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:21d8f5e1984544042eb5d1fd33b52a7f2c5fc90becd293c5310645862f532f29
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/subagent-driven-development
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/subagent-driven-development/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:ca49b5d6acd6259e47b71b8f04345902a3b43fab8a63eac33532edfcec861376
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/subagent-driven-development/implementer-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:946601616a6f76ab3f165ef98377390968f1ec124ecef87422bc3553404e0332
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/subagent-driven-development/re-review-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:e1d8e0e65e58ccde6dc920843da9148d23e65aeb0f8932bcc30be1341a703c4c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/subagent-driven-development/scripts/review-package
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:fac3d4bd7f94369e8037b9ead2a8a502dca6ab333902b560b9455dbb3c450ebe
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/subagent-driven-development/scripts/sdd-workspace
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:95a09d9d3983ad1aafd093ca72b4587946dea885c6e302caa02a779a2f911c31
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/subagent-driven-development/scripts/task-brief
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:d6954ef7841c7da3d77373e6ff5118b3f2f2e998606fd95d33e6527851bce044
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/subagent-driven-development/task-reviewer-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:e3b4a1bfe7cd55ed0459e5ca9cdddb6ff086c345b99e9097036db6a18545729e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging/CREATION-LOG.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging/condition-based-waiting-example.ts
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging/condition-based-waiting.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging/defense-in-depth.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging/find-polluter.sh
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging/root-cause-tracing.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:6b0622269e098ca1399e123e553fd385f0b6412d88ef0e9c4f5a8ea9cf1cec7b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging/test-academic.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging/test-pressure-1.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging/test-pressure-2.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/systematic-debugging/test-pressure-3.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/test-driven-development
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/test-driven-development/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:bf1b8216e523851a411e91d429a7c1c2a173e79d88957bc78e348218d50edd54
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/test-driven-development/writing-good-tests.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/using-git-worktrees
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/using-git-worktrees/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/using-superpowers
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/using-superpowers/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:55379fe7c1c473a02c61961c822996bff30e1320d6921d9062509bc508482c05
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/using-superpowers/references/antigravity-tools.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/using-superpowers/references/codex-tools.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:d3f113a8ebbd748e8ba847b09b57b7685442775ca4ee194d693ce3663f8fac68
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/using-superpowers/references/gemini-tools.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/using-superpowers/references/pi-tools.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/verification-before-completion
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/verification-before-completion/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-plans
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-plans/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:72190c88b2b5a67a96b91d66aa72b9161913e10e8769da3f28a226f4cc7b99d0
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-plans/plan-document-reviewer-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:aa728b96aad603c8be28875a4305637f6c984aa81ffcadcb13e743202fa2a0c7
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-skills
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-skills/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:16148d03c58f718abe2a9cfbb3edd06159b4a454391c5c2b933dfa1c25f9601e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-skills/anthropic-best-practices.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-skills/examples/CLAUDE_MD_TESTING.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-skills/graphviz-conventions.dot
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-skills/persuasion-principles.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:a51bc9bf75189ea73a27b3fb504a2fdfdb966fb1f7f1cdf03203230a216ccc03
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-skills/render-graphs.js
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:ccda971a87bb185f8febf81c56b556a20d026fa980c17b35fa3e8824fbb37852
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-skills/testing-skills-with-subagents.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade
+- kind: project-relative
+  target: claude
+  value: .claude/agents/code-architect.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/feature-dev
+  active_owner: anthropics/claude-code/plugins/feature-dev
+  content_hash: sha256:c50fb08d59a4bbd19660860626a049e44cf1a2b0c1cf782e6c7a99ba7e71b0c3
+- kind: project-relative
+  target: claude
+  value: .claude/agents/code-explorer.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/feature-dev
+  active_owner: anthropics/claude-code/plugins/feature-dev
+  content_hash: sha256:3b277703de7458988ec3b8021c716f79f642e174950ed332629310f68322029a
+- kind: project-relative
+  target: claude
+  value: .claude/agents/code-reviewer.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/pr-review-toolkit
+  active_owner: anthropics/claude-code/plugins/pr-review-toolkit
+  content_hash: sha256:533b9967ca21b7e9572236935cada4bfd03d7dd362cb2e680a2d13aa0d699232
+- kind: project-relative
+  target: claude
+  value: .claude/agents/code-simplifier.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/pr-review-toolkit
+  active_owner: anthropics/claude-code/plugins/pr-review-toolkit
+  content_hash: sha256:da129a12e959b059a7605d093fbc4f8710755ebf0c914ebc3102b5f78831ead1
+- kind: project-relative
+  target: claude
+  value: .claude/agents/comment-analyzer.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/pr-review-toolkit
+  active_owner: anthropics/claude-code/plugins/pr-review-toolkit
+  content_hash: sha256:da0540c507e42a7f66df0b09f81f3c9d3b246620a8f2be4e84b85b97f7b4e2f5
+- kind: project-relative
+  target: claude
+  value: .claude/agents/pr-test-analyzer.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/pr-review-toolkit
+  active_owner: anthropics/claude-code/plugins/pr-review-toolkit
+  content_hash: sha256:d369fd3946a814bb7a9d4f32e971722fe259e301878986bc6312d6f6c56014a8
+- kind: project-relative
+  target: claude
+  value: .claude/agents/silent-failure-hunter.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/pr-review-toolkit
+  active_owner: anthropics/claude-code/plugins/pr-review-toolkit
+  content_hash: sha256:fa9b0daec5a267e7e66435cc48b3328301fc9f70c3af259fe248881327a1babc
+- kind: project-relative
+  target: claude
+  value: .claude/agents/type-design-analyzer.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/pr-review-toolkit
+  active_owner: anthropics/claude-code/plugins/pr-review-toolkit
+  content_hash: sha256:ad160052fd3b45395d531d5e97e54940a1b660443fb513db3feb613848b6e72d
+- kind: project-relative
+  target: claude
+  value: .claude/commands/clean_gone.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/commit-commands
+  active_owner: anthropics/claude-code/plugins/commit-commands
+  content_hash: sha256:24ce5c79da87b481d346d26b297cbe327862f1e4bbee05406589f4b5468c7fa3
+- kind: project-relative
+  target: claude
+  value: .claude/commands/code-review.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/code-review
+  active_owner: anthropics/claude-code/plugins/code-review
+  content_hash: sha256:ecab79f22b6e2bef07a524d2015aaa9e0b7abce82445f38b31a231b19c7bd43a
+- kind: project-relative
+  target: claude
+  value: .claude/commands/commit-push-pr.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/commit-commands
+  active_owner: anthropics/claude-code/plugins/commit-commands
+  content_hash: sha256:63ee94bcf2a60101d542ec46bf2afa18b31565105ebfc63f1a38e4d308d3cd2f
+- kind: project-relative
+  target: claude
+  value: .claude/commands/commit.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/commit-commands
+  active_owner: anthropics/claude-code/plugins/commit-commands
+  content_hash: sha256:366740b9d9f45e05bf7cc5b703156f95fe28180012899ceb90d89d34d4110e47
+- kind: project-relative
+  target: claude
+  value: .claude/commands/feature-dev.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/feature-dev
+  active_owner: anthropics/claude-code/plugins/feature-dev
+  content_hash: sha256:656a01ce40782ee849c444916362df0e4e4173afcd33313777fa86021d89994b
+- kind: project-relative
+  target: claude
+  value: .claude/commands/review-pr.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/pr-review-toolkit
+  active_owner: anthropics/claude-code/plugins/pr-review-toolkit
+  content_hash: sha256:1c3ca6f18f9851ac88ffdc3f98b45e9bd19fb139eb14850f2c22cd18c7a167b2
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/security-guidance/hooks/_base.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/security-guidance
+  active_owner: anthropics/claude-code/plugins/security-guidance
+  content_hash: sha256:46b037d6d36405472c3193fb9e643719e413c0d9259d92c263cdbccafa23f2fd
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/security-guidance/hooks/diffstate.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/security-guidance
+  active_owner: anthropics/claude-code/plugins/security-guidance
+  content_hash: sha256:2acce7933c82301c3cf72b41a09f81790138546a5b53b949a25b4545127d779e
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/security-guidance/hooks/ensure_agent_sdk.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/security-guidance
+  active_owner: anthropics/claude-code/plugins/security-guidance
+  content_hash: sha256:e682d82026521106ec00267078fb4e2190b3a0a501362fc9f4a0753f2d7a1b56
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/security-guidance/hooks/extensibility.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/security-guidance
+  active_owner: anthropics/claude-code/plugins/security-guidance
+  content_hash: sha256:49dec35c1768d35ef13f7733dc3612c6591cbcedfb3d4bb1849679989e2e2435
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/security-guidance/hooks/gitutil.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/security-guidance
+  active_owner: anthropics/claude-code/plugins/security-guidance
+  content_hash: sha256:8a3fc8add69ec3ebbff51c82d73e16a60f322ef6ed95c88f9371b65b06d410c4
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/security-guidance/hooks/llm.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/security-guidance
+  active_owner: anthropics/claude-code/plugins/security-guidance
+  content_hash: sha256:bf2f1e71ac04eea6364b545b69aa876168b928fc767146ba5d86988cfb213b34
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/security-guidance/hooks/patterns.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/security-guidance
+  active_owner: anthropics/claude-code/plugins/security-guidance
+  content_hash: sha256:7870f5cac17034e9bfff829a2bba283bbcb47b416c915d8c8a1ab7ec02c5b4aa
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/security-guidance/hooks/review_api.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/security-guidance
+  active_owner: anthropics/claude-code/plugins/security-guidance
+  content_hash: sha256:b5e5ee59787e174998adb70a53e0b06252449c6e96f2d52e735f8ad5cbe4e319
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/security-guidance/hooks/security_reminder_hook.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/security-guidance
+  active_owner: anthropics/claude-code/plugins/security-guidance
+  content_hash: sha256:e9921af9fa85fa1cfd9b8db9589d1f767c365374619c647c7369e7b84cae8411
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/security-guidance/hooks/session_state.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/security-guidance
+  active_owner: anthropics/claude-code/plugins/security-guidance
+  content_hash: sha256:f74455e57109595eb6fc267babd8f1dd26172014561ec919bdfd38e7ad096380
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/security-guidance/hooks/sg-python.sh
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/security-guidance
+  active_owner: anthropics/claude-code/plugins/security-guidance
+  content_hash: sha256:5acbfc6a50dffa7422a813117fd1ae42e63f1571e768d0da991117b36dee96b9
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/superpowers/hooks/run-hook.cmd
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:d3d9c6199678dab2858e60509dde5e7414f13c2a2b5e48a38b1d368b6e1d6abb
+- kind: project-relative
+  target: claude
+  value: .claude/hooks/superpowers/hooks/session-start
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:88a060272ca8047e0d1cd73a016e1cebba8396807a44be1e296d7c02dcbb9934
+- kind: project-relative
+  target: claude
+  value: .claude/skills/brainstorming
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/brainstorming/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:4a54a4858b99807f3155ed1614b2f116e35ea5c1b788e793f565dd837fd3891f
+- kind: project-relative
+  target: claude
+  value: .claude/skills/brainstorming/scripts/frame-template.html
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e
+- kind: project-relative
+  target: claude
+  value: .claude/skills/brainstorming/scripts/helper.js
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3
+- kind: project-relative
+  target: claude
+  value: .claude/skills/brainstorming/scripts/server.cjs
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:2d2961ea8d11f56c5f4c3a1a68d22709efa5d7601a2246d8c880774e7e9e8412
+- kind: project-relative
+  target: claude
+  value: .claude/skills/brainstorming/scripts/start-server.sh
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847
+- kind: project-relative
+  target: claude
+  value: .claude/skills/brainstorming/scripts/stop-server.sh
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf
+- kind: project-relative
+  target: claude
+  value: .claude/skills/brainstorming/spec-document-reviewer-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457
+- kind: project-relative
+  target: claude
+  value: .claude/skills/brainstorming/visual-companion.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:60cbad29b9dd7eaf08da020e301c498a72230b2e13c1813fa967a135ffcc1d71
+- kind: project-relative
+  target: claude
+  value: .claude/skills/dispatching-parallel-agents
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/dispatching-parallel-agents/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c
+- kind: project-relative
+  target: claude
+  value: .claude/skills/executing-plans
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/executing-plans/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:c4c3d8b628c51114cd165fb8246fe02744cd8be180032328391252e653028d9b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/finishing-a-development-branch
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/finishing-a-development-branch/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:d0ac8360ed9d59121776ef95c84bcb38e9747de0d7ae7e227dca81e437593b9b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/frontend-design
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/frontend-design
+  active_owner: anthropics/claude-code/plugins/frontend-design
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/frontend-design/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/frontend-design
+  active_owner: anthropics/claude-code/plugins/frontend-design
+  content_hash: sha256:1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:7a05826fe49ce9dc592cdefa25fea3d8287189509054efc2fa0c8cf2965ad962
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/evals/evals-public.json
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:fe468e77c06ff66982cd8249c3ec55ddbdb2c6e43c8fc806a5b2f95b40b3b1c0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/evals/grading-spec.json
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:0458fea0fb779d2be11cf68082f6bd2288889f284e0b52b62df6983253a0aa98
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/bridge-leanix-drawio.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:920a338bea6ffb1a6acc282e0898a53300ed01eb431b077600f7d4c640d84d57
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/cli.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:84f1b7fc172d4c7bc33d514f2b190b639701bcf23751c89aa2c848e6ddae70a5
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/configuration.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:7b93d8ed30545571e4c0f2f8fe6b6ea9501e760954544e6f359bd7ab39211313
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/deployment.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:86746299ae774def257371d09fff6cc8a9ebed3c0884a7bd55b8500367cf7681
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/dynamic-views.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:5fbea86dc954d033b202ee8b443f9c887af657a92a131e9aae970661aaa79c50
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:209762dbef6dc0d79b05ca015aa7fd4ea163d64417e11c265091526f61ee6ef0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/identifier-validity.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:8f2b2d68138f7eff6ba809556384e85e5a58fd2821c43972d650358a23f171d4
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/include-predicates-wildcards.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:6d5621dac31ffa21d7cb5be96f8b0092f135c43c608b1aebf96fe2598cf1100d
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/model.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:e76995bb40431a6232373558567d682b558989135fcef7a884cdac9058af6d2f
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/predicates.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:cf4eb07094f03cacfce24ead191f2318d0174b552c0abd567c0e646b1a53a5d8
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/relationships-bidirectional.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:a95ca40cf2289363bda162a2e788e82d0a0103b3da92928e41a6bf3f4efa8c34
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/specification.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:124098a42223e4f6aed64ea50f9752f3e3ff8ec04c546999e89d4119d7d1b11f
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/style-tokens-colors.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:12637c777840ee7e722c37be069d187f869124b10dd82b9911f2ece666b36f33
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/troubleshooting.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:28fe644ca6b970285bc0e99318c9ebc40bb46abffc68c2ded96bc63738fdec49
+- kind: project-relative
+  target: claude
+  value: .claude/skills/likec4-dsl/references/views.md
+  runtime: null
+  scope: project
+  owners:
+  - likec4/likec4/skills/likec4-dsl
+  active_owner: likec4/likec4/skills/likec4-dsl
+  content_hash: sha256:5c548a3a90027cb05ccf00acb5983f4609543d931836a4edc7acc4d97be50a55
+- kind: project-relative
+  target: claude
+  value: .claude/skills/receiving-code-review
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/receiving-code-review/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438
+- kind: project-relative
+  target: claude
+  value: .claude/skills/requesting-code-review
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/requesting-code-review/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:d71cc01ba56d2325cf8af5f7c11837819b63ecd57de0bfdb812f7f3ff7751df8
+- kind: project-relative
+  target: claude
+  value: .claude/skills/requesting-code-review/code-reviewer.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:b2f2ec7596925fe52dac158fdfbca19b3a7d779d619c481e6706a6c0001662d3
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/.github/CODEOWNERS
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:b431f24c0aaeb94fc4ef2a255fc488fd48ecf8cf2c0900f4f80c80c69c5e911a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/.github/workflows/package-skill.yml
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:f719bac75e39495f66060c73f5748b2817b6b3d2414ed2e39348a9d36e45ee50
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:9a7285d76bcfe865691b02e6a42deb9a6f86ce0a0d87a12b79fc6a996ba187a5
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/README.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a619a6a3873ded8cec24f2d0973dcb71e9f7f41aff38f1b52771baf88cc72297
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:316835173c827934b674f592201add5e8e1dd4d39a8bb48af2beec45d58b4146
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/ai-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:17031793f57425df51ebb7111e96932abd1294cc3042104865d1cc967fc6aaed
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/cli-workflow-commands.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:b32f811c677915e21cc3bb9717036464f18508b4d4efa72f96845d7bceabacb6
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:469bfd18f95487c284d2c4e6d4dc0b07d1cfc006b7257e2ba359403e981d18c2
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/dev-management.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0563581f09e5c47c6ad10586c1705a50b87487f898c23510ecdc34654a88c45f
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/error-reference.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:43c2cba4b3a086b42a749a3fdb25d9b74efee3a0792de97c8153db6b01591e92
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ce989241dbf911d165c77077c710f383cde1c669c806ee295b898889f079a62b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/install_cli.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:76296b9fa1d37054926900f81b5c2e34dc620c6433ef4cbf22ba3d39e0f2a002
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/interactive-workflows.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:45990a019f108e8ae9539162f7245305a30b99fac9fcddff549a56f908997f80
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:394a1dab91ac55e068db7a8d8b1d0d2117a410d0bee26a45ed5612453bfa56a7
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/priority-fairness.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:77c04fdf523bbab86b1a8a02280a1161908a8b67a5c077245b865bd35843a5a5
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/troubleshooting.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a7795771e70344cf100e238d9041dded8f2924a09a62714e82dfe0e84bd55894
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a81b75a1496e48368e8e1cc1bb9ba0420d9e1f3bc8c7440feaf1473566566411
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e10107b171410168c4357d0b3710dd03a295772841380fa3adbe2823245290e5
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:d93c7451f838f1e749409fe8f6d66ecccb292ccc30d3a26cf5d3d841a001645f
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1d06fdf1e70ec125c85f78a724ce72987129d0610cc368b864e7926a8beb327e
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:f970ec51e84972523b60f0503938f2a3e6319bc299a7ddd87319ff2bb82da3d6
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/dotnet.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a86722a72a81da715ac56656ab1d573b4250fdfc14c519b8761f14cd5cf2d0a3
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:360517ad5329768b819c448f57a7e649a7d4b1e86cea5a50ffe0c41bcb017d08
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:47256a9c8ad6c06d62412f815d65555bc9043fc8e3851714f7ba4ba1a739f572
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:16d47df13882cec2a2755492fc13179c5d949fffb9c13791408ff786862ff334
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ad417968530161dbf8020500ca86ed71befb86a548b8e45eb92ce4b4f0d86371
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:6ef6eb6384e384fa98aab7d5c4203e66751b75d2ee46d0b85c7312cd3a47d47d
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1fe6e1b45ae8a0cef0289e0f3e016b4a0ee78746639131511d664e062e9c1bf2
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:25d2565ec2d14e54a83ff70c3c9509bcb5391baf4ef687099eb07df5d10feb54
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:213c11759608dd830e4f820fceb4d4aae2f78a1292fd189dae380b251e5d4b09
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0616d4c89bbc6556a9eed7e40a09a0883434b7fde4ecc0070844f83f89853bf9
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ca96508a8d54444d281d6a3250b98ffb90ff4526c5bdeb2061059381f3ad0a56
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1af48891f14bbab81bfa1b1c15b447bc3766275161343965f043395be89ee8ae
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/go.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0e7749362f4d9fe27523faaa2a2de23d88173ec643a08354abf2afb762327a82
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e47dfd4f94e4418a6c7a6d00ca583e8259e874023a16b57b4905f189966b8407
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:3a58e126b27cf10714b998a46d2286410f49f20707c122bd583a277930202728
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:80a4a5b173ff4c728b36a0a4ab83b588271f16e8234ad00736ada349ef247504
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:7481ab059006139aae4c7d777c8510e82ea7d75b24be1f531577e85b11fff788
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a8d2ca506c3d0256f2c1e8903e91cd46fe375ccf8ff0e7f494da8e642bf7494b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/integrations.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1337d729156e55f28715b6074d83aba03fb1d8ec36d826ec54929ab0aeaebef8
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0501137bb2f263d0ec0452c4e10417b9fb9e250eed4ee8bef58cfb8aa30ee57d
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:fd1254c4d955215536203b231c13c0e53e48f4238e45d550282ae26d571cc0e4
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:c7c1e42b68d2382e3ac3d3e9f5bdec11995a1f3e71dda63a50ab26df0f8a7291
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:21402641db1c8d6d2e7972afe7f2418eadd593ad233618410567cb52549e53a9
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:d317b7dad213bf90a93ab337d2f56ce76e1ccdf5f14684118d161457c55e9752
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:b3afd0410674162163af1c0291df76a1dee1010d8f7f5728bae98da1556ed8b6
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/integrations/spring-ai.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:79f18e1e89f71a0f8f7fd7a61e073fcdf155d10c48ad7abf5743cec31703a302
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/integrations/spring-boot.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:f2e5565b0d5d41804c57eae6bdd512b7099c6aa6bd7434c8aad52abeeaa27c30
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/java.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2dd613cf00295e6cfa704410acbe43f5fb0c9eca5bd9f70b24ccd6c9b4f2214b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:627657eb636e5b3bb0d2947c639c9c291e8c69c359d9fb911ea8db0f16e3577b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ed5a2f090fd1b0d655c8b20efe2b1700d7c86f4e38d4715607c3e438b6e9d238
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:7221ec40639ef58587fa7655fec6068720ad62cbda8621c9dd474b897a568f04
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a762f55f3e3ce157364a4d16f18c293f97bf3b4b1071c16e0b75ca4de87c58da
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e91930afa2c39adb735c6c84cec55e74633ab6aedba5c3372cc6fd86e3be25c4
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/ai-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2753dd62db4e5dac70175240c6d5adfdeb24b15d14db2c5fe33497d845e2f60c
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e009fae68c15c983eebb7876b2bcdc6b7b66afac0ae7c003e6bea367060a17fe
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:98c41dab94de390a5d71bdedf9c06a1ba1754a8918965e8d632a12417698d2fb
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:6cc267bfa631d1514d803733219dff7ebd8d893c94e58d10a4793eb6ff21a3bd
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:cad683db77a5d9ce2554bff866b828a7c0e3b82cf622f16c322f1f7bc9780fc2
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e1dab9cca28d20fcbb1d21b98a906c94c6643564efc095e7b0074861766298c2
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/integrations/google-adk.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:add8233138e3ea73b192e28c3fe7f712fdd6d6b6fc51cd9827509136622914fd
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/integrations/langgraph.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:9b0e7e21cb1980815abe04556149a92e4991780193e959e22e666cee0b65b505
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/integrations/langsmith.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ae957528c761f49eb805b75e8f3c3e7a745bcbf1be1355191336957a8cd112d5
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/integrations/openai-agents-sdk.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0aedc781da07638a1b6fe8224e5966403c88818de0a63eac958c511d7b4155a1
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8a17a66cb84e626d619c865773a87f21265fbece0c389bca338a49a444974694
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:5a5e3930ac490073122c2ccff5a1ad44364638fbb3196551ed6a42992ff2ab54
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/python.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a207e520ab8baf18bb77648bd02e6a272756df26804bf7a648516c7bb2791d49
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/sync-vs-async.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0c7b9619bd8fb97f88c6d38309ebadbf3b961cd7ad678fd3dcee19e80380c13a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2bb9bff4217ad2a77da6509990121af5999e00e7fbc08f9a824a562326560997
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8adb65e353d820125e35d0b4346104e5a625279c6c77912888eb3bbe9fe412cc
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/workflow-streams.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:e7917f4bb514d22e774cb1a802832a76caf2ef72273f1f6192149bc8ce130107
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/ruby/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:f0bf760459183795c485e2639420b027377d0d696487a30ec0552d36659318ac
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/ruby/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:4c4bc37a8ca83f7c702a16a3ac74496affa89d5a9bcebf443735cae368dbd117
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/ruby/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8a4f15233f9d829171329d51dfc1ddeacd1021e5d8e577a3bd1faf771bf16fd9
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/ruby/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a81a7b47841f0b3a55dcdfc19d06c1c32fb7042283f921b06020033511bed61c
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/ruby/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:cb2257485116550e6a1ba0e28ec9176f5282f18e39a6d83038645d2c8f991c05
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/ruby/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:5e2268d676bb0639b92156826415a523e6490c769a5740697096a68ae3539554
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/ruby/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8dbe5216e8ab2b58dbfc45326b98ad190de40450d5dacfac8c2ba528509260b2
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/ruby/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:746f358cb69372c15fe90cc329836cb33c5393509d53bd0d3a135a500ff677b1
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/ruby/ruby.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:ca76bc437fe973ac2b29861e28a87e130e8835bb58a641ee3ce177fd51ef7a1a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/ruby/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8cba93dec57c5da81e54754424aeafcb4fca6e8d827cfe50c78e880b22713aca
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/ruby/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2fd1485b70bf8fbc2f3d5d5f74d88bc371fae29051bcf19e40961f07f328e3cc
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/advanced-features.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a4433dfcd6df2cd26f877ebe3f3b9deba5fe7e6931b5e995d7045843ec06b760
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/data-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2604262698516c35dc63c9746f72fe147ea6fe570b7559cd9fce0677c3f9874b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/determinism-protection.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:cc58d49c9716f9b28c7bdd36b3192df20c2c4909f5c4acc6f3ce6f9e56ec1c16
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/determinism.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:55391d93f4aa93f3eeb72c2d8cd1093cd9fcd5fd962848a245d077bfc12e8c2d
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:b40078a343f8d251162c320cd98c1e66ff41af60e2c6560df3c86862b6da840a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/gotchas.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1443ec107a010374bbbb0293e6a864505f98ec61c8903ff170f26a28a8023968
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:5f583e5584b06f325f773e577a57a12bb8e8e6ebc838ebc7753b3b948035ada9
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8bc84381f9d6432301f3011b60a64f0170bc2584fca170cff9e55469cb958613
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a0b378f3c54cde05a84145f229fc7a0006b1fb5c9957867e53c7918a1903deaf
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/typescript.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0f8168dd3c3ceaa86c5b1248976c6bceffb40e1aa936da62735c2e1c5838dd96
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/versioning.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:21d8f5e1984544042eb5d1fd33b52a7f2c5fc90becd293c5310645862f532f29
+- kind: project-relative
+  target: claude
+  value: .claude/skills/subagent-driven-development
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/subagent-driven-development/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:ca49b5d6acd6259e47b71b8f04345902a3b43fab8a63eac33532edfcec861376
+- kind: project-relative
+  target: claude
+  value: .claude/skills/subagent-driven-development/implementer-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:946601616a6f76ab3f165ef98377390968f1ec124ecef87422bc3553404e0332
+- kind: project-relative
+  target: claude
+  value: .claude/skills/subagent-driven-development/re-review-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:e1d8e0e65e58ccde6dc920843da9148d23e65aeb0f8932bcc30be1341a703c4c
+- kind: project-relative
+  target: claude
+  value: .claude/skills/subagent-driven-development/scripts/review-package
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:fac3d4bd7f94369e8037b9ead2a8a502dca6ab333902b560b9455dbb3c450ebe
+- kind: project-relative
+  target: claude
+  value: .claude/skills/subagent-driven-development/scripts/sdd-workspace
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:95a09d9d3983ad1aafd093ca72b4587946dea885c6e302caa02a779a2f911c31
+- kind: project-relative
+  target: claude
+  value: .claude/skills/subagent-driven-development/scripts/task-brief
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:d6954ef7841c7da3d77373e6ff5118b3f2f2e998606fd95d33e6527851bce044
+- kind: project-relative
+  target: claude
+  value: .claude/skills/subagent-driven-development/task-reviewer-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:e3b4a1bfe7cd55ed0459e5ca9cdddb6ff086c345b99e9097036db6a18545729e
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging/CREATION-LOG.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging/condition-based-waiting-example.ts
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging/condition-based-waiting.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging/defense-in-depth.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging/find-polluter.sh
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging/root-cause-tracing.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:6b0622269e098ca1399e123e553fd385f0b6412d88ef0e9c4f5a8ea9cf1cec7b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging/test-academic.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging/test-pressure-1.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging/test-pressure-2.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016
+- kind: project-relative
+  target: claude
+  value: .claude/skills/systematic-debugging/test-pressure-3.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708
+- kind: project-relative
+  target: claude
+  value: .claude/skills/test-driven-development
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/test-driven-development/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:bf1b8216e523851a411e91d429a7c1c2a173e79d88957bc78e348218d50edd54
+- kind: project-relative
+  target: claude
+  value: .claude/skills/test-driven-development/writing-good-tests.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1
+- kind: project-relative
+  target: claude
+  value: .claude/skills/using-git-worktrees
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/using-git-worktrees/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd
+- kind: project-relative
+  target: claude
+  value: .claude/skills/using-superpowers
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/using-superpowers/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:55379fe7c1c473a02c61961c822996bff30e1320d6921d9062509bc508482c05
+- kind: project-relative
+  target: claude
+  value: .claude/skills/using-superpowers/references/antigravity-tools.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/using-superpowers/references/codex-tools.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:d3f113a8ebbd748e8ba847b09b57b7685442775ca4ee194d693ce3663f8fac68
+- kind: project-relative
+  target: claude
+  value: .claude/skills/using-superpowers/references/gemini-tools.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965
+- kind: project-relative
+  target: claude
+  value: .claude/skills/using-superpowers/references/pi-tools.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5
+- kind: project-relative
+  target: claude
+  value: .claude/skills/verification-before-completion
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/verification-before-completion/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-plans
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-plans/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:72190c88b2b5a67a96b91d66aa72b9161913e10e8769da3f28a226f4cc7b99d0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-plans/plan-document-reviewer-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:aa728b96aad603c8be28875a4305637f6c984aa81ffcadcb13e743202fa2a0c7
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-skills
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-skills/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:16148d03c58f718abe2a9cfbb3edd06159b4a454391c5c2b933dfa1c25f9601e
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-skills/anthropic-best-practices.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-skills/examples/CLAUDE_MD_TESTING.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-skills/graphviz-conventions.dot
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-skills/persuasion-principles.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:a51bc9bf75189ea73a27b3fb504a2fdfdb966fb1f7f1cdf03203230a216ccc03
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-skills/render-graphs.js
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:ccda971a87bb185f8febf81c56b556a20d026fa980c17b35fa3e8824fbb37852
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-skills/testing-skills-with-subagents.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade

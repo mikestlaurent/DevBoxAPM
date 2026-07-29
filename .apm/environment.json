@@ -1,7 +1,7 @@
 {
   "$schema": "https://aka.ms/apm.environment.schema.json",
   "name": "DevBoxAPM",
-  "version": "0.2.0",
+  "version": "0.6.0",
 
   "registries": {
     "github": {
@@ -11,6 +11,6 @@
   },
 
   "runtimes": {
-    "node": ">=18"
+    "node": ">=22"
   }
 }

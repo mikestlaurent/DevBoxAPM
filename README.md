@@ -6,13 +6,13 @@ A configuration-driven distribution of agentic tools built on [Microsoft's Agent
 
 ## Prerequisites
 
-- Node.js 18+
+- Node.js 22+
 - APM CLI: `npm install -g @microsoft/apm`
 
 ## Install
 
 ```bash
-apm install mstlaure/DevBoxAPM#v0.5.0
+apm install mstlaure/DevBoxAPM#v0.6.0
 ```
 
 APM resolves all dependencies, installs MCP servers, and deploys skills into the appropriate runtime directories.
@@ -40,6 +40,11 @@ APM resolves all dependencies, installs MCP servers, and deploys skills into the
 | `io.github.github/github-mcp-server` | Registry, user-scoped via `wire-mcp-user-scope.sh` |
 | `likec4 mcp` | Built-in CLI subcommand, user-scoped via `wire-mcp-user-scope.sh` (requires Homebrew `likec4`) |
 
+The two MCP configs use different transports by design: `.mcp.json` (Claude Code) points at the
+hosted `https://api.githubcopilot.com/mcp/` endpoint and authenticates via OAuth, while
+`.vscode/mcp.json` runs the containerized `ghcr.io/github/github-mcp-server:1.7.0` over stdio and
+needs a GitHub PAT. Bump the image tag in `.vscode/mcp.json` when refreshing dependencies.
+
 ## Add a dependency
 
 Edit `apm.yml` under `dependencies.apm` or `dependencies.mcp`, then run:
@@ -53,8 +58,8 @@ git commit -m "chore: add <component>"
 ## Release
 
 ```bash
-git tag v0.3.0 -m "<reason>"
-git push origin v0.3.0
+git tag v0.6.0 -m "<reason>"
+git push origin v0.6.0
 ```
 
 The [release workflow](.github/workflows/release.yml) packs a source zip and publishes a GitHub Release.

@@ -12,7 +12,7 @@ name: devbox-apm
 manifest: apm.yml                  # authoritative dependency manifest
 lockfile: apm.lock.yaml
 package_manager: apm  # npm install -g @microsoft/apm
-install_command: "apm install mstlaure/DevBoxAPM#v0.5.0"
+install_command: "apm install mstlaure/DevBoxAPM#v0.6.0"
 ```
 
 ---
@@ -31,7 +31,7 @@ dependencies:
     - anthropics/claude-code/plugins/pr-review-toolkit
     - git: https://github.com/likec4/likec4.git
       path: skills/likec4-dsl
-      ref: v1.58.0
+      ref: v1.59.2
     - temporalio/skill-temporal-developer#v0.5.0
 
   mcp:
@@ -49,7 +49,7 @@ dependencies:
 
 | Intent | Command |
 |--------|---------|
-| Install DevBoxAPM | `apm install mstlaure/DevBoxAPM#v0.5.0` |
+| Install DevBoxAPM | `apm install mstlaure/DevBoxAPM#v0.6.0` |
 | Verify install state | `apm install && apm pack --dry-run` |
 | Add a dependency | Edit `dependencies` in `apm.yml`, then `apm install` |
 | Release a new version | `git tag vX.Y.Z -m "<reason>" && git push origin vX.Y.Z` |

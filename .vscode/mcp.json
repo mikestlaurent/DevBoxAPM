@@ -1,0 +1,22 @@
+{
+  "servers": {
+    "io.github.github/github-mcp-server": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/github/github-mcp-server:1.7.0"
+      ]
+    },
+    "likec4": {
+      "type": "stdio",
+      "command": "likec4",
+      "args": [
+        "mcp"
+      ]
+    }
+  },
+  "inputs": []
+}

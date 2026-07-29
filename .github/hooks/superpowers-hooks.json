@@ -6,11 +6,13 @@
         "hooks": [
           {
             "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/run-hook.cmd\" session-start",
+            "command": "\".github/hooks/scripts/superpowers/hooks/run-hook.cmd\" session-start",
+            "shell": "bash",
             "async": false
           }
         ]
       }
     ]
-  }
+  },
+  "version": 1
 }
