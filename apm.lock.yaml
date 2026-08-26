@@ -1,11 +1,11 @@
 lockfile_version: '1'
-generated_at: '2026-07-29T11:59:13.481713+00:00'
-apm_version: 0.26.0
+generated_at: '2026-08-26T11:47:35.177086+00:00'
+apm_version: 0.28.0
 dependencies:
 - repo_url: anthropics/claude-code
   name: code-review
   host: github.com
-  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
+  resolved_commit: 005c5dade90c2c59c88d819d8723e7b579addb5e
   version: 1.0.0
   virtual_path: plugins/code-review
   is_virtual: true
@@ -18,7 +18,7 @@ dependencies:
 - repo_url: anthropics/claude-code
   name: commit-commands
   host: github.com
-  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
+  resolved_commit: 005c5dade90c2c59c88d819d8723e7b579addb5e
   version: 1.0.0
   virtual_path: plugins/commit-commands
   is_virtual: true
@@ -35,7 +35,7 @@ dependencies:
 - repo_url: anthropics/claude-code
   name: feature-dev
   host: github.com
-  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
+  resolved_commit: 005c5dade90c2c59c88d819d8723e7b579addb5e
   version: 1.0.0
   virtual_path: plugins/feature-dev
   is_virtual: true
@@ -52,7 +52,7 @@ dependencies:
 - repo_url: anthropics/claude-code
   name: frontend-design
   host: github.com
-  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
+  resolved_commit: 005c5dade90c2c59c88d819d8723e7b579addb5e
   version: 1.1.0
   virtual_path: plugins/frontend-design
   is_virtual: true
@@ -69,7 +69,7 @@ dependencies:
 - repo_url: anthropics/claude-code
   name: pr-review-toolkit
   host: github.com
-  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
+  resolved_commit: 005c5dade90c2c59c88d819d8723e7b579addb5e
   version: 1.0.0
   virtual_path: plugins/pr-review-toolkit
   is_virtual: true
@@ -94,7 +94,7 @@ dependencies:
 - repo_url: anthropics/claude-code
   name: security-guidance
   host: github.com
-  resolved_commit: 7ef6eec9d9ba84ea6f233f26c45f1df5c5991843
+  resolved_commit: 005c5dade90c2c59c88d819d8723e7b579addb5e
   version: 2.0.0
   virtual_path: plugins/security-guidance
   is_virtual: true
@@ -213,8 +213,8 @@ dependencies:
 - repo_url: obra/superpowers
   name: superpowers
   host: github.com
-  resolved_commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
-  version: 6.2.0
+  resolved_commit: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
+  version: 6.3.0
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/brainstorming
@@ -267,6 +267,7 @@ dependencies:
   - .agents/skills/using-superpowers/references/antigravity-tools.md
   - .agents/skills/using-superpowers/references/codex-tools.md
   - .agents/skills/using-superpowers/references/gemini-tools.md
+  - .agents/skills/using-superpowers/references/hermes-tools.md
   - .agents/skills/using-superpowers/references/pi-tools.md
   - .agents/skills/verification-before-completion
   - .agents/skills/verification-before-completion/SKILL.md
@@ -333,6 +334,7 @@ dependencies:
   - .claude/skills/using-superpowers/references/antigravity-tools.md
   - .claude/skills/using-superpowers/references/codex-tools.md
   - .claude/skills/using-superpowers/references/gemini-tools.md
+  - .claude/skills/using-superpowers/references/hermes-tools.md
   - .claude/skills/using-superpowers/references/pi-tools.md
   - .claude/skills/verification-before-completion
   - .claude/skills/verification-before-completion/SKILL.md
@@ -348,27 +350,27 @@ dependencies:
   - .claude/skills/writing-skills/render-graphs.js
   - .claude/skills/writing-skills/testing-skills-with-subagents.md
   deployed_file_hashes:
-    .agents/skills/brainstorming/SKILL.md: sha256:4a54a4858b99807f3155ed1614b2f116e35ea5c1b788e793f565dd837fd3891f
+    .agents/skills/brainstorming/SKILL.md: sha256:74edf03ea6d24ef53db48677b93558d14a979bdf052ca3f57ecdca0c66791608
     .agents/skills/brainstorming/scripts/frame-template.html: sha256:6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e
     .agents/skills/brainstorming/scripts/helper.js: sha256:43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3
     .agents/skills/brainstorming/scripts/server.cjs: sha256:2d2961ea8d11f56c5f4c3a1a68d22709efa5d7601a2246d8c880774e7e9e8412
     .agents/skills/brainstorming/scripts/start-server.sh: sha256:a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847
     .agents/skills/brainstorming/scripts/stop-server.sh: sha256:0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf
     .agents/skills/brainstorming/spec-document-reviewer-prompt.md: sha256:95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457
-    .agents/skills/brainstorming/visual-companion.md: sha256:60cbad29b9dd7eaf08da020e301c498a72230b2e13c1813fa967a135ffcc1d71
+    .agents/skills/brainstorming/visual-companion.md: sha256:77eb44a4ec3408bb3dafb872288ecd94beb8cf21da4f2bafa54fd08255d7808b
     .agents/skills/dispatching-parallel-agents/SKILL.md: sha256:1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c
     .agents/skills/executing-plans/SKILL.md: sha256:c4c3d8b628c51114cd165fb8246fe02744cd8be180032328391252e653028d9b
-    .agents/skills/finishing-a-development-branch/SKILL.md: sha256:d0ac8360ed9d59121776ef95c84bcb38e9747de0d7ae7e227dca81e437593b9b
+    .agents/skills/finishing-a-development-branch/SKILL.md: sha256:8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65
     .agents/skills/receiving-code-review/SKILL.md: sha256:091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438
     .agents/skills/requesting-code-review/SKILL.md: sha256:d71cc01ba56d2325cf8af5f7c11837819b63ecd57de0bfdb812f7f3ff7751df8
-    .agents/skills/requesting-code-review/code-reviewer.md: sha256:b2f2ec7596925fe52dac158fdfbca19b3a7d779d619c481e6706a6c0001662d3
-    .agents/skills/subagent-driven-development/SKILL.md: sha256:ca49b5d6acd6259e47b71b8f04345902a3b43fab8a63eac33532edfcec861376
-    .agents/skills/subagent-driven-development/implementer-prompt.md: sha256:946601616a6f76ab3f165ef98377390968f1ec124ecef87422bc3553404e0332
-    .agents/skills/subagent-driven-development/re-review-prompt.md: sha256:e1d8e0e65e58ccde6dc920843da9148d23e65aeb0f8932bcc30be1341a703c4c
+    .agents/skills/requesting-code-review/code-reviewer.md: sha256:5eca5fcfd48a50e0a526ce5ffd64bf625d6b81bb46d11795274dae451fe6ffd4
+    .agents/skills/subagent-driven-development/SKILL.md: sha256:1b19d4953dcc602516d729c27aefe1b168e5bf1c17a52a997b9dde326ae3fc41
+    .agents/skills/subagent-driven-development/implementer-prompt.md: sha256:81dd9d5a3fb0b09b96b5829f03b9796842f3199ef7591d1ba1c2db2a515f64d0
+    .agents/skills/subagent-driven-development/re-review-prompt.md: sha256:db0d5849478bc79cbde97b9b2cf0e58b50be8b8ed18464b0252c2bf27b6440a6
     .agents/skills/subagent-driven-development/scripts/review-package: sha256:fac3d4bd7f94369e8037b9ead2a8a502dca6ab333902b560b9455dbb3c450ebe
     .agents/skills/subagent-driven-development/scripts/sdd-workspace: sha256:95a09d9d3983ad1aafd093ca72b4587946dea885c6e302caa02a779a2f911c31
     .agents/skills/subagent-driven-development/scripts/task-brief: sha256:d6954ef7841c7da3d77373e6ff5118b3f2f2e998606fd95d33e6527851bce044
-    .agents/skills/subagent-driven-development/task-reviewer-prompt.md: sha256:e3b4a1bfe7cd55ed0459e5ca9cdddb6ff086c345b99e9097036db6a18545729e
+    .agents/skills/subagent-driven-development/task-reviewer-prompt.md: sha256:eea23e33ec570c3041f40e9569fa711d61b8029f9eecf908345138aa1c6e61ab
     .agents/skills/systematic-debugging/CREATION-LOG.md: sha256:c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789
     .agents/skills/systematic-debugging/SKILL.md: sha256:808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787
     .agents/skills/systematic-debugging/condition-based-waiting-example.ts: sha256:40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e
@@ -383,44 +385,45 @@ dependencies:
     .agents/skills/test-driven-development/SKILL.md: sha256:bf1b8216e523851a411e91d429a7c1c2a173e79d88957bc78e348218d50edd54
     .agents/skills/test-driven-development/writing-good-tests.md: sha256:51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1
     .agents/skills/using-git-worktrees/SKILL.md: sha256:8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd
-    .agents/skills/using-superpowers/SKILL.md: sha256:55379fe7c1c473a02c61961c822996bff30e1320d6921d9062509bc508482c05
+    .agents/skills/using-superpowers/SKILL.md: sha256:30f2ab78e20ddc27ee7158ae8d4a2abe161c360981c7cc3548070913142d3dc3
     .agents/skills/using-superpowers/references/antigravity-tools.md: sha256:4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0
-    .agents/skills/using-superpowers/references/codex-tools.md: sha256:d3f113a8ebbd748e8ba847b09b57b7685442775ca4ee194d693ce3663f8fac68
+    .agents/skills/using-superpowers/references/codex-tools.md: sha256:1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7
     .agents/skills/using-superpowers/references/gemini-tools.md: sha256:62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965
+    .agents/skills/using-superpowers/references/hermes-tools.md: sha256:e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190
     .agents/skills/using-superpowers/references/pi-tools.md: sha256:703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5
     .agents/skills/verification-before-completion/SKILL.md: sha256:2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3
-    .agents/skills/writing-plans/SKILL.md: sha256:72190c88b2b5a67a96b91d66aa72b9161913e10e8769da3f28a226f4cc7b99d0
+    .agents/skills/writing-plans/SKILL.md: sha256:48508f44bbfd7d24b029fbf3a314f3cd14c9615599059366e922f47b8dc08cf2
     .agents/skills/writing-plans/plan-document-reviewer-prompt.md: sha256:aa728b96aad603c8be28875a4305637f6c984aa81ffcadcb13e743202fa2a0c7
     .agents/skills/writing-skills/SKILL.md: sha256:16148d03c58f718abe2a9cfbb3edd06159b4a454391c5c2b933dfa1c25f9601e
     .agents/skills/writing-skills/anthropic-best-practices.md: sha256:217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a
     .agents/skills/writing-skills/examples/CLAUDE_MD_TESTING.md: sha256:0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0
     .agents/skills/writing-skills/graphviz-conventions.dot: sha256:e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694
     .agents/skills/writing-skills/persuasion-principles.md: sha256:a51bc9bf75189ea73a27b3fb504a2fdfdb966fb1f7f1cdf03203230a216ccc03
-    .agents/skills/writing-skills/render-graphs.js: sha256:ccda971a87bb185f8febf81c56b556a20d026fa980c17b35fa3e8824fbb37852
+    .agents/skills/writing-skills/render-graphs.js: sha256:c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196
     .agents/skills/writing-skills/testing-skills-with-subagents.md: sha256:c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade
     .claude/hooks/superpowers/hooks/run-hook.cmd: sha256:d3d9c6199678dab2858e60509dde5e7414f13c2a2b5e48a38b1d368b6e1d6abb
     .claude/hooks/superpowers/hooks/session-start: sha256:88a060272ca8047e0d1cd73a016e1cebba8396807a44be1e296d7c02dcbb9934
-    .claude/skills/brainstorming/SKILL.md: sha256:4a54a4858b99807f3155ed1614b2f116e35ea5c1b788e793f565dd837fd3891f
+    .claude/skills/brainstorming/SKILL.md: sha256:74edf03ea6d24ef53db48677b93558d14a979bdf052ca3f57ecdca0c66791608
     .claude/skills/brainstorming/scripts/frame-template.html: sha256:6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e
     .claude/skills/brainstorming/scripts/helper.js: sha256:43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3
     .claude/skills/brainstorming/scripts/server.cjs: sha256:2d2961ea8d11f56c5f4c3a1a68d22709efa5d7601a2246d8c880774e7e9e8412
     .claude/skills/brainstorming/scripts/start-server.sh: sha256:a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847
     .claude/skills/brainstorming/scripts/stop-server.sh: sha256:0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf
     .claude/skills/brainstorming/spec-document-reviewer-prompt.md: sha256:95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457
-    .claude/skills/brainstorming/visual-companion.md: sha256:60cbad29b9dd7eaf08da020e301c498a72230b2e13c1813fa967a135ffcc1d71
+    .claude/skills/brainstorming/visual-companion.md: sha256:77eb44a4ec3408bb3dafb872288ecd94beb8cf21da4f2bafa54fd08255d7808b
     .claude/skills/dispatching-parallel-agents/SKILL.md: sha256:1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c
     .claude/skills/executing-plans/SKILL.md: sha256:c4c3d8b628c51114cd165fb8246fe02744cd8be180032328391252e653028d9b
-    .claude/skills/finishing-a-development-branch/SKILL.md: sha256:d0ac8360ed9d59121776ef95c84bcb38e9747de0d7ae7e227dca81e437593b9b
+    .claude/skills/finishing-a-development-branch/SKILL.md: sha256:8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65
     .claude/skills/receiving-code-review/SKILL.md: sha256:091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438
     .claude/skills/requesting-code-review/SKILL.md: sha256:d71cc01ba56d2325cf8af5f7c11837819b63ecd57de0bfdb812f7f3ff7751df8
-    .claude/skills/requesting-code-review/code-reviewer.md: sha256:b2f2ec7596925fe52dac158fdfbca19b3a7d779d619c481e6706a6c0001662d3
-    .claude/skills/subagent-driven-development/SKILL.md: sha256:ca49b5d6acd6259e47b71b8f04345902a3b43fab8a63eac33532edfcec861376
-    .claude/skills/subagent-driven-development/implementer-prompt.md: sha256:946601616a6f76ab3f165ef98377390968f1ec124ecef87422bc3553404e0332
-    .claude/skills/subagent-driven-development/re-review-prompt.md: sha256:e1d8e0e65e58ccde6dc920843da9148d23e65aeb0f8932bcc30be1341a703c4c
+    .claude/skills/requesting-code-review/code-reviewer.md: sha256:5eca5fcfd48a50e0a526ce5ffd64bf625d6b81bb46d11795274dae451fe6ffd4
+    .claude/skills/subagent-driven-development/SKILL.md: sha256:1b19d4953dcc602516d729c27aefe1b168e5bf1c17a52a997b9dde326ae3fc41
+    .claude/skills/subagent-driven-development/implementer-prompt.md: sha256:81dd9d5a3fb0b09b96b5829f03b9796842f3199ef7591d1ba1c2db2a515f64d0
+    .claude/skills/subagent-driven-development/re-review-prompt.md: sha256:db0d5849478bc79cbde97b9b2cf0e58b50be8b8ed18464b0252c2bf27b6440a6
     .claude/skills/subagent-driven-development/scripts/review-package: sha256:fac3d4bd7f94369e8037b9ead2a8a502dca6ab333902b560b9455dbb3c450ebe
     .claude/skills/subagent-driven-development/scripts/sdd-workspace: sha256:95a09d9d3983ad1aafd093ca72b4587946dea885c6e302caa02a779a2f911c31
     .claude/skills/subagent-driven-development/scripts/task-brief: sha256:d6954ef7841c7da3d77373e6ff5118b3f2f2e998606fd95d33e6527851bce044
-    .claude/skills/subagent-driven-development/task-reviewer-prompt.md: sha256:e3b4a1bfe7cd55ed0459e5ca9cdddb6ff086c345b99e9097036db6a18545729e
+    .claude/skills/subagent-driven-development/task-reviewer-prompt.md: sha256:eea23e33ec570c3041f40e9569fa711d61b8029f9eecf908345138aa1c6e61ab
     .claude/skills/systematic-debugging/CREATION-LOG.md: sha256:c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789
     .claude/skills/systematic-debugging/SKILL.md: sha256:808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787
     .claude/skills/systematic-debugging/condition-based-waiting-example.ts: sha256:40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e
@@ -435,28 +438,29 @@ dependencies:
     .claude/skills/test-driven-development/SKILL.md: sha256:bf1b8216e523851a411e91d429a7c1c2a173e79d88957bc78e348218d50edd54
     .claude/skills/test-driven-development/writing-good-tests.md: sha256:51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1
     .claude/skills/using-git-worktrees/SKILL.md: sha256:8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd
-    .claude/skills/using-superpowers/SKILL.md: sha256:55379fe7c1c473a02c61961c822996bff30e1320d6921d9062509bc508482c05
+    .claude/skills/using-superpowers/SKILL.md: sha256:30f2ab78e20ddc27ee7158ae8d4a2abe161c360981c7cc3548070913142d3dc3
     .claude/skills/using-superpowers/references/antigravity-tools.md: sha256:4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0
-    .claude/skills/using-superpowers/references/codex-tools.md: sha256:d3f113a8ebbd748e8ba847b09b57b7685442775ca4ee194d693ce3663f8fac68
+    .claude/skills/using-superpowers/references/codex-tools.md: sha256:1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7
     .claude/skills/using-superpowers/references/gemini-tools.md: sha256:62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965
+    .claude/skills/using-superpowers/references/hermes-tools.md: sha256:e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190
     .claude/skills/using-superpowers/references/pi-tools.md: sha256:703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5
     .claude/skills/verification-before-completion/SKILL.md: sha256:2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3
-    .claude/skills/writing-plans/SKILL.md: sha256:72190c88b2b5a67a96b91d66aa72b9161913e10e8769da3f28a226f4cc7b99d0
+    .claude/skills/writing-plans/SKILL.md: sha256:48508f44bbfd7d24b029fbf3a314f3cd14c9615599059366e922f47b8dc08cf2
     .claude/skills/writing-plans/plan-document-reviewer-prompt.md: sha256:aa728b96aad603c8be28875a4305637f6c984aa81ffcadcb13e743202fa2a0c7
     .claude/skills/writing-skills/SKILL.md: sha256:16148d03c58f718abe2a9cfbb3edd06159b4a454391c5c2b933dfa1c25f9601e
     .claude/skills/writing-skills/anthropic-best-practices.md: sha256:217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a
     .claude/skills/writing-skills/examples/CLAUDE_MD_TESTING.md: sha256:0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0
     .claude/skills/writing-skills/graphviz-conventions.dot: sha256:e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694
     .claude/skills/writing-skills/persuasion-principles.md: sha256:a51bc9bf75189ea73a27b3fb504a2fdfdb966fb1f7f1cdf03203230a216ccc03
-    .claude/skills/writing-skills/render-graphs.js: sha256:ccda971a87bb185f8febf81c56b556a20d026fa980c17b35fa3e8824fbb37852
+    .claude/skills/writing-skills/render-graphs.js: sha256:c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196
     .claude/skills/writing-skills/testing-skills-with-subagents.md: sha256:c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade
-  content_hash: sha256:44ac70681642c507d2d708267610f8a01c863fb126a83549b4e303d29d808040
+  content_hash: sha256:5f5d6db39d5b1c18aa738777f5e34aeae62ae7024d74fb788e8ad56334780241
   declared_license: MIT
 - repo_url: temporalio/skill-temporal-developer
   name: temporal-developer
   host: github.com
-  resolved_commit: 16bc5715a1a9fd0daa7cd58e538c265c3310ada2
-  resolved_ref: v0.5.0
+  resolved_commit: b01c63294d0dbf079858ac0ea2491800d5a915c2
+  resolved_ref: v0.6.0
   version: unknown
   package_type: claude_skill
   deployed_files:
@@ -476,6 +480,7 @@ dependencies:
   - .agents/skills/skill-temporal-developer/references/core/interactive-workflows.md
   - .agents/skills/skill-temporal-developer/references/core/patterns.md
   - .agents/skills/skill-temporal-developer/references/core/priority-fairness.md
+  - .agents/skills/skill-temporal-developer/references/core/standalone-activities.md
   - .agents/skills/skill-temporal-developer/references/core/troubleshooting.md
   - .agents/skills/skill-temporal-developer/references/core/versioning.md
   - .agents/skills/skill-temporal-developer/references/dotnet/advanced-features.md
@@ -487,6 +492,7 @@ dependencies:
   - .agents/skills/skill-temporal-developer/references/dotnet/gotchas.md
   - .agents/skills/skill-temporal-developer/references/dotnet/observability.md
   - .agents/skills/skill-temporal-developer/references/dotnet/patterns.md
+  - .agents/skills/skill-temporal-developer/references/dotnet/standalone-activities.md
   - .agents/skills/skill-temporal-developer/references/dotnet/testing.md
   - .agents/skills/skill-temporal-developer/references/dotnet/versioning.md
   - .agents/skills/skill-temporal-developer/references/go/advanced-features.md
@@ -498,6 +504,7 @@ dependencies:
   - .agents/skills/skill-temporal-developer/references/go/gotchas.md
   - .agents/skills/skill-temporal-developer/references/go/observability.md
   - .agents/skills/skill-temporal-developer/references/go/patterns.md
+  - .agents/skills/skill-temporal-developer/references/go/standalone-activities.md
   - .agents/skills/skill-temporal-developer/references/go/testing.md
   - .agents/skills/skill-temporal-developer/references/go/versioning.md
   - .agents/skills/skill-temporal-developer/references/integrations.md
@@ -512,6 +519,7 @@ dependencies:
   - .agents/skills/skill-temporal-developer/references/java/java.md
   - .agents/skills/skill-temporal-developer/references/java/observability.md
   - .agents/skills/skill-temporal-developer/references/java/patterns.md
+  - .agents/skills/skill-temporal-developer/references/java/standalone-activities.md
   - .agents/skills/skill-temporal-developer/references/java/testing.md
   - .agents/skills/skill-temporal-developer/references/java/versioning.md
   - .agents/skills/skill-temporal-developer/references/python/advanced-features.md
@@ -521,13 +529,17 @@ dependencies:
   - .agents/skills/skill-temporal-developer/references/python/determinism.md
   - .agents/skills/skill-temporal-developer/references/python/error-handling.md
   - .agents/skills/skill-temporal-developer/references/python/gotchas.md
+  - .agents/skills/skill-temporal-developer/references/python/integrations/braintrust.md
   - .agents/skills/skill-temporal-developer/references/python/integrations/google-adk.md
   - .agents/skills/skill-temporal-developer/references/python/integrations/langgraph.md
   - .agents/skills/skill-temporal-developer/references/python/integrations/langsmith.md
   - .agents/skills/skill-temporal-developer/references/python/integrations/openai-agents-sdk.md
+  - .agents/skills/skill-temporal-developer/references/python/integrations/opentelemetry.md
+  - .agents/skills/skill-temporal-developer/references/python/integrations/pydantic-ai.md
   - .agents/skills/skill-temporal-developer/references/python/observability.md
   - .agents/skills/skill-temporal-developer/references/python/patterns.md
   - .agents/skills/skill-temporal-developer/references/python/python.md
+  - .agents/skills/skill-temporal-developer/references/python/standalone-activities.md
   - .agents/skills/skill-temporal-developer/references/python/sync-vs-async.md
   - .agents/skills/skill-temporal-developer/references/python/testing.md
   - .agents/skills/skill-temporal-developer/references/python/versioning.md
@@ -543,14 +555,20 @@ dependencies:
   - .agents/skills/skill-temporal-developer/references/ruby/ruby.md
   - .agents/skills/skill-temporal-developer/references/ruby/testing.md
   - .agents/skills/skill-temporal-developer/references/ruby/versioning.md
+  - .agents/skills/skill-temporal-developer/references/rust/rust.md
   - .agents/skills/skill-temporal-developer/references/typescript/advanced-features.md
   - .agents/skills/skill-temporal-developer/references/typescript/data-handling.md
   - .agents/skills/skill-temporal-developer/references/typescript/determinism-protection.md
   - .agents/skills/skill-temporal-developer/references/typescript/determinism.md
   - .agents/skills/skill-temporal-developer/references/typescript/error-handling.md
   - .agents/skills/skill-temporal-developer/references/typescript/gotchas.md
+  - .agents/skills/skill-temporal-developer/references/typescript/integrations/braintrust.md
+  - .agents/skills/skill-temporal-developer/references/typescript/integrations/mastra.md
+  - .agents/skills/skill-temporal-developer/references/typescript/integrations/opentelemetry.md
+  - .agents/skills/skill-temporal-developer/references/typescript/integrations/vercel-ai-sdk.md
   - .agents/skills/skill-temporal-developer/references/typescript/observability.md
   - .agents/skills/skill-temporal-developer/references/typescript/patterns.md
+  - .agents/skills/skill-temporal-developer/references/typescript/standalone-activities.md
   - .agents/skills/skill-temporal-developer/references/typescript/testing.md
   - .agents/skills/skill-temporal-developer/references/typescript/typescript.md
   - .agents/skills/skill-temporal-developer/references/typescript/versioning.md
@@ -570,6 +588,7 @@ dependencies:
   - .claude/skills/skill-temporal-developer/references/core/interactive-workflows.md
   - .claude/skills/skill-temporal-developer/references/core/patterns.md
   - .claude/skills/skill-temporal-developer/references/core/priority-fairness.md
+  - .claude/skills/skill-temporal-developer/references/core/standalone-activities.md
   - .claude/skills/skill-temporal-developer/references/core/troubleshooting.md
   - .claude/skills/skill-temporal-developer/references/core/versioning.md
   - .claude/skills/skill-temporal-developer/references/dotnet/advanced-features.md
@@ -581,6 +600,7 @@ dependencies:
   - .claude/skills/skill-temporal-developer/references/dotnet/gotchas.md
   - .claude/skills/skill-temporal-developer/references/dotnet/observability.md
   - .claude/skills/skill-temporal-developer/references/dotnet/patterns.md
+  - .claude/skills/skill-temporal-developer/references/dotnet/standalone-activities.md
   - .claude/skills/skill-temporal-developer/references/dotnet/testing.md
   - .claude/skills/skill-temporal-developer/references/dotnet/versioning.md
   - .claude/skills/skill-temporal-developer/references/go/advanced-features.md
@@ -592,6 +612,7 @@ dependencies:
   - .claude/skills/skill-temporal-developer/references/go/gotchas.md
   - .claude/skills/skill-temporal-developer/references/go/observability.md
   - .claude/skills/skill-temporal-developer/references/go/patterns.md
+  - .claude/skills/skill-temporal-developer/references/go/standalone-activities.md
   - .claude/skills/skill-temporal-developer/references/go/testing.md
   - .claude/skills/skill-temporal-developer/references/go/versioning.md
   - .claude/skills/skill-temporal-developer/references/integrations.md
@@ -606,6 +627,7 @@ dependencies:
   - .claude/skills/skill-temporal-developer/references/java/java.md
   - .claude/skills/skill-temporal-developer/references/java/observability.md
   - .claude/skills/skill-temporal-developer/references/java/patterns.md
+  - .claude/skills/skill-temporal-developer/references/java/standalone-activities.md
   - .claude/skills/skill-temporal-developer/references/java/testing.md
   - .claude/skills/skill-temporal-developer/references/java/versioning.md
   - .claude/skills/skill-temporal-developer/references/python/advanced-features.md
@@ -615,13 +637,17 @@ dependencies:
   - .claude/skills/skill-temporal-developer/references/python/determinism.md
   - .claude/skills/skill-temporal-developer/references/python/error-handling.md
   - .claude/skills/skill-temporal-developer/references/python/gotchas.md
+  - .claude/skills/skill-temporal-developer/references/python/integrations/braintrust.md
   - .claude/skills/skill-temporal-developer/references/python/integrations/google-adk.md
   - .claude/skills/skill-temporal-developer/references/python/integrations/langgraph.md
   - .claude/skills/skill-temporal-developer/references/python/integrations/langsmith.md
   - .claude/skills/skill-temporal-developer/references/python/integrations/openai-agents-sdk.md
+  - .claude/skills/skill-temporal-developer/references/python/integrations/opentelemetry.md
+  - .claude/skills/skill-temporal-developer/references/python/integrations/pydantic-ai.md
   - .claude/skills/skill-temporal-developer/references/python/observability.md
   - .claude/skills/skill-temporal-developer/references/python/patterns.md
   - .claude/skills/skill-temporal-developer/references/python/python.md
+  - .claude/skills/skill-temporal-developer/references/python/standalone-activities.md
   - .claude/skills/skill-temporal-developer/references/python/sync-vs-async.md
   - .claude/skills/skill-temporal-developer/references/python/testing.md
   - .claude/skills/skill-temporal-developer/references/python/versioning.md
@@ -637,26 +663,32 @@ dependencies:
   - .claude/skills/skill-temporal-developer/references/ruby/ruby.md
   - .claude/skills/skill-temporal-developer/references/ruby/testing.md
   - .claude/skills/skill-temporal-developer/references/ruby/versioning.md
+  - .claude/skills/skill-temporal-developer/references/rust/rust.md
   - .claude/skills/skill-temporal-developer/references/typescript/advanced-features.md
   - .claude/skills/skill-temporal-developer/references/typescript/data-handling.md
   - .claude/skills/skill-temporal-developer/references/typescript/determinism-protection.md
   - .claude/skills/skill-temporal-developer/references/typescript/determinism.md
   - .claude/skills/skill-temporal-developer/references/typescript/error-handling.md
   - .claude/skills/skill-temporal-developer/references/typescript/gotchas.md
+  - .claude/skills/skill-temporal-developer/references/typescript/integrations/braintrust.md
+  - .claude/skills/skill-temporal-developer/references/typescript/integrations/mastra.md
+  - .claude/skills/skill-temporal-developer/references/typescript/integrations/opentelemetry.md
+  - .claude/skills/skill-temporal-developer/references/typescript/integrations/vercel-ai-sdk.md
   - .claude/skills/skill-temporal-developer/references/typescript/observability.md
   - .claude/skills/skill-temporal-developer/references/typescript/patterns.md
+  - .claude/skills/skill-temporal-developer/references/typescript/standalone-activities.md
   - .claude/skills/skill-temporal-developer/references/typescript/testing.md
   - .claude/skills/skill-temporal-developer/references/typescript/typescript.md
   - .claude/skills/skill-temporal-developer/references/typescript/versioning.md
   deployed_file_hashes:
     .agents/skills/skill-temporal-developer/.github/CODEOWNERS: sha256:b431f24c0aaeb94fc4ef2a255fc488fd48ecf8cf2c0900f4f80c80c69c5e911a
-    .agents/skills/skill-temporal-developer/.github/workflows/package-skill.yml: sha256:f719bac75e39495f66060c73f5748b2817b6b3d2414ed2e39348a9d36e45ee50
+    .agents/skills/skill-temporal-developer/.github/workflows/package-skill.yml: sha256:4dc8fedc79c8f76af81153296a11091a1aba6c8640a0e8515c64aee7a70bf597
     .agents/skills/skill-temporal-developer/LICENSE: sha256:9a7285d76bcfe865691b02e6a42deb9a6f86ce0a0d87a12b79fc6a996ba187a5
-    .agents/skills/skill-temporal-developer/README.md: sha256:a619a6a3873ded8cec24f2d0973dcb71e9f7f41aff38f1b52771baf88cc72297
-    .agents/skills/skill-temporal-developer/SKILL.md: sha256:316835173c827934b674f592201add5e8e1dd4d39a8bb48af2beec45d58b4146
+    .agents/skills/skill-temporal-developer/README.md: sha256:98bc24f5859d93f2b96972190254b6b896be7e8d0c50c2ac3423faf98f3359f6
+    .agents/skills/skill-temporal-developer/SKILL.md: sha256:25baa82277144571782613812d7f350e91fa8e617143ec7f6786815796782a89
     .agents/skills/skill-temporal-developer/references/core/ai-patterns.md: sha256:17031793f57425df51ebb7111e96932abd1294cc3042104865d1cc967fc6aaed
     .agents/skills/skill-temporal-developer/references/core/cli-workflow-commands.md: sha256:b32f811c677915e21cc3bb9717036464f18508b4d4efa72f96845d7bceabacb6
-    .agents/skills/skill-temporal-developer/references/core/determinism.md: sha256:469bfd18f95487c284d2c4e6d4dc0b07d1cfc006b7257e2ba359403e981d18c2
+    .agents/skills/skill-temporal-developer/references/core/determinism.md: sha256:c2bfdb586836968a50c9151dce3f6e4562f9642f622c9d2ab0b7ec6300d893e0
     .agents/skills/skill-temporal-developer/references/core/dev-management.md: sha256:0563581f09e5c47c6ad10586c1705a50b87487f898c23510ecdc34654a88c45f
     .agents/skills/skill-temporal-developer/references/core/error-reference.md: sha256:43c2cba4b3a086b42a749a3fdb25d9b74efee3a0792de97c8153db6b01591e92
     .agents/skills/skill-temporal-developer/references/core/gotchas.md: sha256:ce989241dbf911d165c77077c710f383cde1c669c806ee295b898889f079a62b
@@ -664,31 +696,34 @@ dependencies:
     .agents/skills/skill-temporal-developer/references/core/interactive-workflows.md: sha256:45990a019f108e8ae9539162f7245305a30b99fac9fcddff549a56f908997f80
     .agents/skills/skill-temporal-developer/references/core/patterns.md: sha256:394a1dab91ac55e068db7a8d8b1d0d2117a410d0bee26a45ed5612453bfa56a7
     .agents/skills/skill-temporal-developer/references/core/priority-fairness.md: sha256:77c04fdf523bbab86b1a8a02280a1161908a8b67a5c077245b865bd35843a5a5
+    .agents/skills/skill-temporal-developer/references/core/standalone-activities.md: sha256:2946bba5c33c527ddbccfce7fd4a49e113a77068d1eca8423e95ee191b37d4a3
     .agents/skills/skill-temporal-developer/references/core/troubleshooting.md: sha256:a7795771e70344cf100e238d9041dded8f2924a09a62714e82dfe0e84bd55894
-    .agents/skills/skill-temporal-developer/references/core/versioning.md: sha256:a81b75a1496e48368e8e1cc1bb9ba0420d9e1f3bc8c7440feaf1473566566411
+    .agents/skills/skill-temporal-developer/references/core/versioning.md: sha256:f8cf72d1d81c1f5da43c2844cdc384a98607aa7e09ec46b1079361b13656ff95
     .agents/skills/skill-temporal-developer/references/dotnet/advanced-features.md: sha256:e10107b171410168c4357d0b3710dd03a295772841380fa3adbe2823245290e5
     .agents/skills/skill-temporal-developer/references/dotnet/data-handling.md: sha256:d93c7451f838f1e749409fe8f6d66ecccb292ccc30d3a26cf5d3d841a001645f
     .agents/skills/skill-temporal-developer/references/dotnet/determinism-protection.md: sha256:1d06fdf1e70ec125c85f78a724ce72987129d0610cc368b864e7926a8beb327e
     .agents/skills/skill-temporal-developer/references/dotnet/determinism.md: sha256:f970ec51e84972523b60f0503938f2a3e6319bc299a7ddd87319ff2bb82da3d6
-    .agents/skills/skill-temporal-developer/references/dotnet/dotnet.md: sha256:a86722a72a81da715ac56656ab1d573b4250fdfc14c519b8761f14cd5cf2d0a3
+    .agents/skills/skill-temporal-developer/references/dotnet/dotnet.md: sha256:a651db713df59b25bed6f08cc1a5b2b9068d927db0193b087a2eda596cf1c3ae
     .agents/skills/skill-temporal-developer/references/dotnet/error-handling.md: sha256:360517ad5329768b819c448f57a7e649a7d4b1e86cea5a50ffe0c41bcb017d08
     .agents/skills/skill-temporal-developer/references/dotnet/gotchas.md: sha256:47256a9c8ad6c06d62412f815d65555bc9043fc8e3851714f7ba4ba1a739f572
     .agents/skills/skill-temporal-developer/references/dotnet/observability.md: sha256:16d47df13882cec2a2755492fc13179c5d949fffb9c13791408ff786862ff334
     .agents/skills/skill-temporal-developer/references/dotnet/patterns.md: sha256:ad417968530161dbf8020500ca86ed71befb86a548b8e45eb92ce4b4f0d86371
+    .agents/skills/skill-temporal-developer/references/dotnet/standalone-activities.md: sha256:0a8402532604cb064f6c12c2817194d1be998e125f6c08e93e3a27cfee7d2b92
     .agents/skills/skill-temporal-developer/references/dotnet/testing.md: sha256:6ef6eb6384e384fa98aab7d5c4203e66751b75d2ee46d0b85c7312cd3a47d47d
-    .agents/skills/skill-temporal-developer/references/dotnet/versioning.md: sha256:1fe6e1b45ae8a0cef0289e0f3e016b4a0ee78746639131511d664e062e9c1bf2
+    .agents/skills/skill-temporal-developer/references/dotnet/versioning.md: sha256:147443690205c6af5e56202395c4a500db97da860f45b92ab2fc46595755a70a
     .agents/skills/skill-temporal-developer/references/go/advanced-features.md: sha256:25d2565ec2d14e54a83ff70c3c9509bcb5391baf4ef687099eb07df5d10feb54
     .agents/skills/skill-temporal-developer/references/go/data-handling.md: sha256:213c11759608dd830e4f820fceb4d4aae2f78a1292fd189dae380b251e5d4b09
     .agents/skills/skill-temporal-developer/references/go/determinism-protection.md: sha256:0616d4c89bbc6556a9eed7e40a09a0883434b7fde4ecc0070844f83f89853bf9
     .agents/skills/skill-temporal-developer/references/go/determinism.md: sha256:ca96508a8d54444d281d6a3250b98ffb90ff4526c5bdeb2061059381f3ad0a56
     .agents/skills/skill-temporal-developer/references/go/error-handling.md: sha256:1af48891f14bbab81bfa1b1c15b447bc3766275161343965f043395be89ee8ae
-    .agents/skills/skill-temporal-developer/references/go/go.md: sha256:0e7749362f4d9fe27523faaa2a2de23d88173ec643a08354abf2afb762327a82
+    .agents/skills/skill-temporal-developer/references/go/go.md: sha256:d7e6fda905035217c4989332c204bc187934e32a2d5c79ebf5f89d447e827466
     .agents/skills/skill-temporal-developer/references/go/gotchas.md: sha256:e47dfd4f94e4418a6c7a6d00ca583e8259e874023a16b57b4905f189966b8407
     .agents/skills/skill-temporal-developer/references/go/observability.md: sha256:3a58e126b27cf10714b998a46d2286410f49f20707c122bd583a277930202728
     .agents/skills/skill-temporal-developer/references/go/patterns.md: sha256:80a4a5b173ff4c728b36a0a4ab83b588271f16e8234ad00736ada349ef247504
+    .agents/skills/skill-temporal-developer/references/go/standalone-activities.md: sha256:a57c007dd7b8d1c4ae23fd15367735efed49c8d6147cda10ca25e76966d9ac46
     .agents/skills/skill-temporal-developer/references/go/testing.md: sha256:7481ab059006139aae4c7d777c8510e82ea7d75b24be1f531577e85b11fff788
-    .agents/skills/skill-temporal-developer/references/go/versioning.md: sha256:a8d2ca506c3d0256f2c1e8903e91cd46fe375ccf8ff0e7f494da8e642bf7494b
-    .agents/skills/skill-temporal-developer/references/integrations.md: sha256:1337d729156e55f28715b6074d83aba03fb1d8ec36d826ec54929ab0aeaebef8
+    .agents/skills/skill-temporal-developer/references/go/versioning.md: sha256:881372b879bfdf9e98c0df1aa18dd37914eb261cdde172a4cc7586ca5d6f44c2
+    .agents/skills/skill-temporal-developer/references/integrations.md: sha256:4f5cf38b628f7b7b39307e611b7ea8717bbfc854445e657dce2f3a0594474174
     .agents/skills/skill-temporal-developer/references/java/advanced-features.md: sha256:0501137bb2f263d0ec0452c4e10417b9fb9e250eed4ee8bef58cfb8aa30ee57d
     .agents/skills/skill-temporal-developer/references/java/data-handling.md: sha256:fd1254c4d955215536203b231c13c0e53e48f4238e45d550282ae26d571cc0e4
     .agents/skills/skill-temporal-developer/references/java/determinism-protection.md: sha256:c7c1e42b68d2382e3ac3d3e9f5bdec11995a1f3e71dda63a50ab26df0f8a7291
@@ -697,59 +732,70 @@ dependencies:
     .agents/skills/skill-temporal-developer/references/java/gotchas.md: sha256:b3afd0410674162163af1c0291df76a1dee1010d8f7f5728bae98da1556ed8b6
     .agents/skills/skill-temporal-developer/references/java/integrations/spring-ai.md: sha256:79f18e1e89f71a0f8f7fd7a61e073fcdf155d10c48ad7abf5743cec31703a302
     .agents/skills/skill-temporal-developer/references/java/integrations/spring-boot.md: sha256:f2e5565b0d5d41804c57eae6bdd512b7099c6aa6bd7434c8aad52abeeaa27c30
-    .agents/skills/skill-temporal-developer/references/java/java.md: sha256:2dd613cf00295e6cfa704410acbe43f5fb0c9eca5bd9f70b24ccd6c9b4f2214b
+    .agents/skills/skill-temporal-developer/references/java/java.md: sha256:d5bc7923ef746fd34166d87eb4a915fc4f83d8857ec04feb7b974eab83139e4e
     .agents/skills/skill-temporal-developer/references/java/observability.md: sha256:627657eb636e5b3bb0d2947c639c9c291e8c69c359d9fb911ea8db0f16e3577b
     .agents/skills/skill-temporal-developer/references/java/patterns.md: sha256:ed5a2f090fd1b0d655c8b20efe2b1700d7c86f4e38d4715607c3e438b6e9d238
+    .agents/skills/skill-temporal-developer/references/java/standalone-activities.md: sha256:51481bc1027709246534b4303a8798738fa9d2581d7a473d5fce47ebda9803f4
     .agents/skills/skill-temporal-developer/references/java/testing.md: sha256:7221ec40639ef58587fa7655fec6068720ad62cbda8621c9dd474b897a568f04
-    .agents/skills/skill-temporal-developer/references/java/versioning.md: sha256:a762f55f3e3ce157364a4d16f18c293f97bf3b4b1071c16e0b75ca4de87c58da
-    .agents/skills/skill-temporal-developer/references/python/advanced-features.md: sha256:e91930afa2c39adb735c6c84cec55e74633ab6aedba5c3372cc6fd86e3be25c4
+    .agents/skills/skill-temporal-developer/references/java/versioning.md: sha256:deeb21f351a7e0665e102eecb00d5c81bbdda304013c9a179f37b6d674e2927c
+    .agents/skills/skill-temporal-developer/references/python/advanced-features.md: sha256:e78a8697b4b9ede141a355ac83514c524d0d7e2a0ebd57dbb5b0a4d21c710822
     .agents/skills/skill-temporal-developer/references/python/ai-patterns.md: sha256:2753dd62db4e5dac70175240c6d5adfdeb24b15d14db2c5fe33497d845e2f60c
     .agents/skills/skill-temporal-developer/references/python/data-handling.md: sha256:e009fae68c15c983eebb7876b2bcdc6b7b66afac0ae7c003e6bea367060a17fe
     .agents/skills/skill-temporal-developer/references/python/determinism-protection.md: sha256:98c41dab94de390a5d71bdedf9c06a1ba1754a8918965e8d632a12417698d2fb
     .agents/skills/skill-temporal-developer/references/python/determinism.md: sha256:6cc267bfa631d1514d803733219dff7ebd8d893c94e58d10a4793eb6ff21a3bd
     .agents/skills/skill-temporal-developer/references/python/error-handling.md: sha256:cad683db77a5d9ce2554bff866b828a7c0e3b82cf622f16c322f1f7bc9780fc2
     .agents/skills/skill-temporal-developer/references/python/gotchas.md: sha256:e1dab9cca28d20fcbb1d21b98a906c94c6643564efc095e7b0074861766298c2
-    .agents/skills/skill-temporal-developer/references/python/integrations/google-adk.md: sha256:add8233138e3ea73b192e28c3fe7f712fdd6d6b6fc51cd9827509136622914fd
-    .agents/skills/skill-temporal-developer/references/python/integrations/langgraph.md: sha256:9b0e7e21cb1980815abe04556149a92e4991780193e959e22e666cee0b65b505
-    .agents/skills/skill-temporal-developer/references/python/integrations/langsmith.md: sha256:ae957528c761f49eb805b75e8f3c3e7a745bcbf1be1355191336957a8cd112d5
-    .agents/skills/skill-temporal-developer/references/python/integrations/openai-agents-sdk.md: sha256:0aedc781da07638a1b6fe8224e5966403c88818de0a63eac958c511d7b4155a1
-    .agents/skills/skill-temporal-developer/references/python/observability.md: sha256:8a17a66cb84e626d619c865773a87f21265fbece0c389bca338a49a444974694
+    .agents/skills/skill-temporal-developer/references/python/integrations/braintrust.md: sha256:dac13e0ce8c7a4e62c11257125244497bb18b2c68ebd0b070315cf8d0563fea8
+    .agents/skills/skill-temporal-developer/references/python/integrations/google-adk.md: sha256:b5fa927dcdf54fad3622dfa89980bfe6a766aa5089163da7f9143605aad799b4
+    .agents/skills/skill-temporal-developer/references/python/integrations/langgraph.md: sha256:a92e93ad87bc5490faa56d2769d56a34c68640c2ae732cbc3c7fc74e43d3a8e5
+    .agents/skills/skill-temporal-developer/references/python/integrations/langsmith.md: sha256:80d8560d73d485268dd9fe5e8d359f83ee05670fc154bd929f4ebf4d9d504657
+    .agents/skills/skill-temporal-developer/references/python/integrations/openai-agents-sdk.md: sha256:e783c29a73196b9ec5e56449b239b01afa5b9abbc4b3f01300b0d03c69a62945
+    .agents/skills/skill-temporal-developer/references/python/integrations/opentelemetry.md: sha256:052226266873b776a69d80876fa16afcd0b31e3dd3da41c40596c1085f1f42fe
+    .agents/skills/skill-temporal-developer/references/python/integrations/pydantic-ai.md: sha256:73fdc136246d098c6bf3732c74945a0c91c887f94a843d0dc5f0796aa8d9b0e8
+    .agents/skills/skill-temporal-developer/references/python/observability.md: sha256:cb4dc692f669c7d1086940398b769e660a2f363648c81725f6aed7b792eb1dcd
     .agents/skills/skill-temporal-developer/references/python/patterns.md: sha256:5a5e3930ac490073122c2ccff5a1ad44364638fbb3196551ed6a42992ff2ab54
-    .agents/skills/skill-temporal-developer/references/python/python.md: sha256:a207e520ab8baf18bb77648bd02e6a272756df26804bf7a648516c7bb2791d49
+    .agents/skills/skill-temporal-developer/references/python/python.md: sha256:0a4fa9d1857101b9cb1e65a2f0b9e7c6da9e280a4271e97f70c0e56205e73974
+    .agents/skills/skill-temporal-developer/references/python/standalone-activities.md: sha256:c4132387dd9359cbc2e8819cfeb8ac8a8ddfff900ffa387c60dca5e2a033d263
     .agents/skills/skill-temporal-developer/references/python/sync-vs-async.md: sha256:0c7b9619bd8fb97f88c6d38309ebadbf3b961cd7ad678fd3dcee19e80380c13a
     .agents/skills/skill-temporal-developer/references/python/testing.md: sha256:2bb9bff4217ad2a77da6509990121af5999e00e7fbc08f9a824a562326560997
-    .agents/skills/skill-temporal-developer/references/python/versioning.md: sha256:8adb65e353d820125e35d0b4346104e5a625279c6c77912888eb3bbe9fe412cc
-    .agents/skills/skill-temporal-developer/references/python/workflow-streams.md: sha256:e7917f4bb514d22e774cb1a802832a76caf2ef72273f1f6192149bc8ce130107
+    .agents/skills/skill-temporal-developer/references/python/versioning.md: sha256:33af5c6ae2736414ca70138917ebe12d8a29532f1f760a149cd4448d785ea725
+    .agents/skills/skill-temporal-developer/references/python/workflow-streams.md: sha256:3dc3f49611b690dc83a1ba60f0024b7c93448c0ac4b78fd0c201c1e06755b0d7
     .agents/skills/skill-temporal-developer/references/ruby/advanced-features.md: sha256:f0bf760459183795c485e2639420b027377d0d696487a30ec0552d36659318ac
     .agents/skills/skill-temporal-developer/references/ruby/data-handling.md: sha256:4c4bc37a8ca83f7c702a16a3ac74496affa89d5a9bcebf443735cae368dbd117
     .agents/skills/skill-temporal-developer/references/ruby/determinism-protection.md: sha256:8a4f15233f9d829171329d51dfc1ddeacd1021e5d8e577a3bd1faf771bf16fd9
     .agents/skills/skill-temporal-developer/references/ruby/determinism.md: sha256:a81a7b47841f0b3a55dcdfc19d06c1c32fb7042283f921b06020033511bed61c
     .agents/skills/skill-temporal-developer/references/ruby/error-handling.md: sha256:cb2257485116550e6a1ba0e28ec9176f5282f18e39a6d83038645d2c8f991c05
-    .agents/skills/skill-temporal-developer/references/ruby/gotchas.md: sha256:5e2268d676bb0639b92156826415a523e6490c769a5740697096a68ae3539554
+    .agents/skills/skill-temporal-developer/references/ruby/gotchas.md: sha256:bf554370bb79bda8bdb8cd39bd5f431831d9f0f4cef785df350a93b56311620c
     .agents/skills/skill-temporal-developer/references/ruby/observability.md: sha256:8dbe5216e8ab2b58dbfc45326b98ad190de40450d5dacfac8c2ba528509260b2
     .agents/skills/skill-temporal-developer/references/ruby/patterns.md: sha256:746f358cb69372c15fe90cc329836cb33c5393509d53bd0d3a135a500ff677b1
-    .agents/skills/skill-temporal-developer/references/ruby/ruby.md: sha256:ca76bc437fe973ac2b29861e28a87e130e8835bb58a641ee3ce177fd51ef7a1a
+    .agents/skills/skill-temporal-developer/references/ruby/ruby.md: sha256:5072596725cedc496e855412a58b731ad8558e463bb4a29c19b1f704e6226ad4
     .agents/skills/skill-temporal-developer/references/ruby/testing.md: sha256:8cba93dec57c5da81e54754424aeafcb4fca6e8d827cfe50c78e880b22713aca
     .agents/skills/skill-temporal-developer/references/ruby/versioning.md: sha256:2fd1485b70bf8fbc2f3d5d5f74d88bc371fae29051bcf19e40961f07f328e3cc
+    .agents/skills/skill-temporal-developer/references/rust/rust.md: sha256:8007feae65d1bc4847c4dfc51c3e4b05f64d272a2ab388fc35b10577ec4b0661
     .agents/skills/skill-temporal-developer/references/typescript/advanced-features.md: sha256:a4433dfcd6df2cd26f877ebe3f3b9deba5fe7e6931b5e995d7045843ec06b760
     .agents/skills/skill-temporal-developer/references/typescript/data-handling.md: sha256:2604262698516c35dc63c9746f72fe147ea6fe570b7559cd9fce0677c3f9874b
     .agents/skills/skill-temporal-developer/references/typescript/determinism-protection.md: sha256:cc58d49c9716f9b28c7bdd36b3192df20c2c4909f5c4acc6f3ce6f9e56ec1c16
     .agents/skills/skill-temporal-developer/references/typescript/determinism.md: sha256:55391d93f4aa93f3eeb72c2d8cd1093cd9fcd5fd962848a245d077bfc12e8c2d
     .agents/skills/skill-temporal-developer/references/typescript/error-handling.md: sha256:b40078a343f8d251162c320cd98c1e66ff41af60e2c6560df3c86862b6da840a
     .agents/skills/skill-temporal-developer/references/typescript/gotchas.md: sha256:1443ec107a010374bbbb0293e6a864505f98ec61c8903ff170f26a28a8023968
-    .agents/skills/skill-temporal-developer/references/typescript/observability.md: sha256:5f583e5584b06f325f773e577a57a12bb8e8e6ebc838ebc7753b3b948035ada9
+    .agents/skills/skill-temporal-developer/references/typescript/integrations/braintrust.md: sha256:d38800fa427f3f09b15ef63dbae0c38c7a8afeb1ef285b8f612222793e94c401
+    .agents/skills/skill-temporal-developer/references/typescript/integrations/mastra.md: sha256:6852a6198d862cf8dbec31a06c0e7f834cb20553796fa6439f774c32747d57db
+    .agents/skills/skill-temporal-developer/references/typescript/integrations/opentelemetry.md: sha256:714d23e1e03265d1852ab0045ffab21a737e784def4b1619614d244ffb949f15
+    .agents/skills/skill-temporal-developer/references/typescript/integrations/vercel-ai-sdk.md: sha256:1ca2be854423311ddf38ccdebe7416d886600d2520266ef479bde76673a96d5f
+    .agents/skills/skill-temporal-developer/references/typescript/observability.md: sha256:fb0fe28c5fcebb36222172a788ec7580fc6683307017f92328bf656e683013a7
     .agents/skills/skill-temporal-developer/references/typescript/patterns.md: sha256:8bc84381f9d6432301f3011b60a64f0170bc2584fca170cff9e55469cb958613
+    .agents/skills/skill-temporal-developer/references/typescript/standalone-activities.md: sha256:3f6516929895aa336b9f708f7992dbacbaa7b6ea7afb72df07d50e73a5c0fa71
     .agents/skills/skill-temporal-developer/references/typescript/testing.md: sha256:a0b378f3c54cde05a84145f229fc7a0006b1fb5c9957867e53c7918a1903deaf
-    .agents/skills/skill-temporal-developer/references/typescript/typescript.md: sha256:0f8168dd3c3ceaa86c5b1248976c6bceffb40e1aa936da62735c2e1c5838dd96
-    .agents/skills/skill-temporal-developer/references/typescript/versioning.md: sha256:21d8f5e1984544042eb5d1fd33b52a7f2c5fc90becd293c5310645862f532f29
+    .agents/skills/skill-temporal-developer/references/typescript/typescript.md: sha256:1f64da9b56932c562696848ac258cff8eefa40614b790b98ce708bd0ad36c457
+    .agents/skills/skill-temporal-developer/references/typescript/versioning.md: sha256:ee9190d230275026aadfdd27e04fe58188735d4d589d3a40ff58ac3063fd9f62
     .claude/skills/skill-temporal-developer/.github/CODEOWNERS: sha256:b431f24c0aaeb94fc4ef2a255fc488fd48ecf8cf2c0900f4f80c80c69c5e911a
-    .claude/skills/skill-temporal-developer/.github/workflows/package-skill.yml: sha256:f719bac75e39495f66060c73f5748b2817b6b3d2414ed2e39348a9d36e45ee50
+    .claude/skills/skill-temporal-developer/.github/workflows/package-skill.yml: sha256:4dc8fedc79c8f76af81153296a11091a1aba6c8640a0e8515c64aee7a70bf597
     .claude/skills/skill-temporal-developer/LICENSE: sha256:9a7285d76bcfe865691b02e6a42deb9a6f86ce0a0d87a12b79fc6a996ba187a5
-    .claude/skills/skill-temporal-developer/README.md: sha256:a619a6a3873ded8cec24f2d0973dcb71e9f7f41aff38f1b52771baf88cc72297
-    .claude/skills/skill-temporal-developer/SKILL.md: sha256:316835173c827934b674f592201add5e8e1dd4d39a8bb48af2beec45d58b4146
+    .claude/skills/skill-temporal-developer/README.md: sha256:98bc24f5859d93f2b96972190254b6b896be7e8d0c50c2ac3423faf98f3359f6
+    .claude/skills/skill-temporal-developer/SKILL.md: sha256:25baa82277144571782613812d7f350e91fa8e617143ec7f6786815796782a89
     .claude/skills/skill-temporal-developer/references/core/ai-patterns.md: sha256:17031793f57425df51ebb7111e96932abd1294cc3042104865d1cc967fc6aaed
     .claude/skills/skill-temporal-developer/references/core/cli-workflow-commands.md: sha256:b32f811c677915e21cc3bb9717036464f18508b4d4efa72f96845d7bceabacb6
-    .claude/skills/skill-temporal-developer/references/core/determinism.md: sha256:469bfd18f95487c284d2c4e6d4dc0b07d1cfc006b7257e2ba359403e981d18c2
+    .claude/skills/skill-temporal-developer/references/core/determinism.md: sha256:c2bfdb586836968a50c9151dce3f6e4562f9642f622c9d2ab0b7ec6300d893e0
     .claude/skills/skill-temporal-developer/references/core/dev-management.md: sha256:0563581f09e5c47c6ad10586c1705a50b87487f898c23510ecdc34654a88c45f
     .claude/skills/skill-temporal-developer/references/core/error-reference.md: sha256:43c2cba4b3a086b42a749a3fdb25d9b74efee3a0792de97c8153db6b01591e92
     .claude/skills/skill-temporal-developer/references/core/gotchas.md: sha256:ce989241dbf911d165c77077c710f383cde1c669c806ee295b898889f079a62b
@@ -757,31 +803,34 @@ dependencies:
     .claude/skills/skill-temporal-developer/references/core/interactive-workflows.md: sha256:45990a019f108e8ae9539162f7245305a30b99fac9fcddff549a56f908997f80
     .claude/skills/skill-temporal-developer/references/core/patterns.md: sha256:394a1dab91ac55e068db7a8d8b1d0d2117a410d0bee26a45ed5612453bfa56a7
     .claude/skills/skill-temporal-developer/references/core/priority-fairness.md: sha256:77c04fdf523bbab86b1a8a02280a1161908a8b67a5c077245b865bd35843a5a5
+    .claude/skills/skill-temporal-developer/references/core/standalone-activities.md: sha256:2946bba5c33c527ddbccfce7fd4a49e113a77068d1eca8423e95ee191b37d4a3
     .claude/skills/skill-temporal-developer/references/core/troubleshooting.md: sha256:a7795771e70344cf100e238d9041dded8f2924a09a62714e82dfe0e84bd55894
-    .claude/skills/skill-temporal-developer/references/core/versioning.md: sha256:a81b75a1496e48368e8e1cc1bb9ba0420d9e1f3bc8c7440feaf1473566566411
+    .claude/skills/skill-temporal-developer/references/core/versioning.md: sha256:f8cf72d1d81c1f5da43c2844cdc384a98607aa7e09ec46b1079361b13656ff95
     .claude/skills/skill-temporal-developer/references/dotnet/advanced-features.md: sha256:e10107b171410168c4357d0b3710dd03a295772841380fa3adbe2823245290e5
     .claude/skills/skill-temporal-developer/references/dotnet/data-handling.md: sha256:d93c7451f838f1e749409fe8f6d66ecccb292ccc30d3a26cf5d3d841a001645f
     .claude/skills/skill-temporal-developer/references/dotnet/determinism-protection.md: sha256:1d06fdf1e70ec125c85f78a724ce72987129d0610cc368b864e7926a8beb327e
     .claude/skills/skill-temporal-developer/references/dotnet/determinism.md: sha256:f970ec51e84972523b60f0503938f2a3e6319bc299a7ddd87319ff2bb82da3d6
-    .claude/skills/skill-temporal-developer/references/dotnet/dotnet.md: sha256:a86722a72a81da715ac56656ab1d573b4250fdfc14c519b8761f14cd5cf2d0a3
+    .claude/skills/skill-temporal-developer/references/dotnet/dotnet.md: sha256:a651db713df59b25bed6f08cc1a5b2b9068d927db0193b087a2eda596cf1c3ae
     .claude/skills/skill-temporal-developer/references/dotnet/error-handling.md: sha256:360517ad5329768b819c448f57a7e649a7d4b1e86cea5a50ffe0c41bcb017d08
     .claude/skills/skill-temporal-developer/references/dotnet/gotchas.md: sha256:47256a9c8ad6c06d62412f815d65555bc9043fc8e3851714f7ba4ba1a739f572
     .claude/skills/skill-temporal-developer/references/dotnet/observability.md: sha256:16d47df13882cec2a2755492fc13179c5d949fffb9c13791408ff786862ff334
     .claude/skills/skill-temporal-developer/references/dotnet/patterns.md: sha256:ad417968530161dbf8020500ca86ed71befb86a548b8e45eb92ce4b4f0d86371
+    .claude/skills/skill-temporal-developer/references/dotnet/standalone-activities.md: sha256:0a8402532604cb064f6c12c2817194d1be998e125f6c08e93e3a27cfee7d2b92
     .claude/skills/skill-temporal-developer/references/dotnet/testing.md: sha256:6ef6eb6384e384fa98aab7d5c4203e66751b75d2ee46d0b85c7312cd3a47d47d
-    .claude/skills/skill-temporal-developer/references/dotnet/versioning.md: sha256:1fe6e1b45ae8a0cef0289e0f3e016b4a0ee78746639131511d664e062e9c1bf2
+    .claude/skills/skill-temporal-developer/references/dotnet/versioning.md: sha256:147443690205c6af5e56202395c4a500db97da860f45b92ab2fc46595755a70a
     .claude/skills/skill-temporal-developer/references/go/advanced-features.md: sha256:25d2565ec2d14e54a83ff70c3c9509bcb5391baf4ef687099eb07df5d10feb54
     .claude/skills/skill-temporal-developer/references/go/data-handling.md: sha256:213c11759608dd830e4f820fceb4d4aae2f78a1292fd189dae380b251e5d4b09
     .claude/skills/skill-temporal-developer/references/go/determinism-protection.md: sha256:0616d4c89bbc6556a9eed7e40a09a0883434b7fde4ecc0070844f83f89853bf9
     .claude/skills/skill-temporal-developer/references/go/determinism.md: sha256:ca96508a8d54444d281d6a3250b98ffb90ff4526c5bdeb2061059381f3ad0a56
     .claude/skills/skill-temporal-developer/references/go/error-handling.md: sha256:1af48891f14bbab81bfa1b1c15b447bc3766275161343965f043395be89ee8ae
-    .claude/skills/skill-temporal-developer/references/go/go.md: sha256:0e7749362f4d9fe27523faaa2a2de23d88173ec643a08354abf2afb762327a82
+    .claude/skills/skill-temporal-developer/references/go/go.md: sha256:d7e6fda905035217c4989332c204bc187934e32a2d5c79ebf5f89d447e827466
     .claude/skills/skill-temporal-developer/references/go/gotchas.md: sha256:e47dfd4f94e4418a6c7a6d00ca583e8259e874023a16b57b4905f189966b8407
     .claude/skills/skill-temporal-developer/references/go/observability.md: sha256:3a58e126b27cf10714b998a46d2286410f49f20707c122bd583a277930202728
     .claude/skills/skill-temporal-developer/references/go/patterns.md: sha256:80a4a5b173ff4c728b36a0a4ab83b588271f16e8234ad00736ada349ef247504
+    .claude/skills/skill-temporal-developer/references/go/standalone-activities.md: sha256:a57c007dd7b8d1c4ae23fd15367735efed49c8d6147cda10ca25e76966d9ac46
     .claude/skills/skill-temporal-developer/references/go/testing.md: sha256:7481ab059006139aae4c7d777c8510e82ea7d75b24be1f531577e85b11fff788
-    .claude/skills/skill-temporal-developer/references/go/versioning.md: sha256:a8d2ca506c3d0256f2c1e8903e91cd46fe375ccf8ff0e7f494da8e642bf7494b
-    .claude/skills/skill-temporal-developer/references/integrations.md: sha256:1337d729156e55f28715b6074d83aba03fb1d8ec36d826ec54929ab0aeaebef8
+    .claude/skills/skill-temporal-developer/references/go/versioning.md: sha256:881372b879bfdf9e98c0df1aa18dd37914eb261cdde172a4cc7586ca5d6f44c2
+    .claude/skills/skill-temporal-developer/references/integrations.md: sha256:4f5cf38b628f7b7b39307e611b7ea8717bbfc854445e657dce2f3a0594474174
     .claude/skills/skill-temporal-developer/references/java/advanced-features.md: sha256:0501137bb2f263d0ec0452c4e10417b9fb9e250eed4ee8bef58cfb8aa30ee57d
     .claude/skills/skill-temporal-developer/references/java/data-handling.md: sha256:fd1254c4d955215536203b231c13c0e53e48f4238e45d550282ae26d571cc0e4
     .claude/skills/skill-temporal-developer/references/java/determinism-protection.md: sha256:c7c1e42b68d2382e3ac3d3e9f5bdec11995a1f3e71dda63a50ab26df0f8a7291
@@ -790,52 +839,63 @@ dependencies:
     .claude/skills/skill-temporal-developer/references/java/gotchas.md: sha256:b3afd0410674162163af1c0291df76a1dee1010d8f7f5728bae98da1556ed8b6
     .claude/skills/skill-temporal-developer/references/java/integrations/spring-ai.md: sha256:79f18e1e89f71a0f8f7fd7a61e073fcdf155d10c48ad7abf5743cec31703a302
     .claude/skills/skill-temporal-developer/references/java/integrations/spring-boot.md: sha256:f2e5565b0d5d41804c57eae6bdd512b7099c6aa6bd7434c8aad52abeeaa27c30
-    .claude/skills/skill-temporal-developer/references/java/java.md: sha256:2dd613cf00295e6cfa704410acbe43f5fb0c9eca5bd9f70b24ccd6c9b4f2214b
+    .claude/skills/skill-temporal-developer/references/java/java.md: sha256:d5bc7923ef746fd34166d87eb4a915fc4f83d8857ec04feb7b974eab83139e4e
     .claude/skills/skill-temporal-developer/references/java/observability.md: sha256:627657eb636e5b3bb0d2947c639c9c291e8c69c359d9fb911ea8db0f16e3577b
     .claude/skills/skill-temporal-developer/references/java/patterns.md: sha256:ed5a2f090fd1b0d655c8b20efe2b1700d7c86f4e38d4715607c3e438b6e9d238
+    .claude/skills/skill-temporal-developer/references/java/standalone-activities.md: sha256:51481bc1027709246534b4303a8798738fa9d2581d7a473d5fce47ebda9803f4
     .claude/skills/skill-temporal-developer/references/java/testing.md: sha256:7221ec40639ef58587fa7655fec6068720ad62cbda8621c9dd474b897a568f04
-    .claude/skills/skill-temporal-developer/references/java/versioning.md: sha256:a762f55f3e3ce157364a4d16f18c293f97bf3b4b1071c16e0b75ca4de87c58da
-    .claude/skills/skill-temporal-developer/references/python/advanced-features.md: sha256:e91930afa2c39adb735c6c84cec55e74633ab6aedba5c3372cc6fd86e3be25c4
+    .claude/skills/skill-temporal-developer/references/java/versioning.md: sha256:deeb21f351a7e0665e102eecb00d5c81bbdda304013c9a179f37b6d674e2927c
+    .claude/skills/skill-temporal-developer/references/python/advanced-features.md: sha256:e78a8697b4b9ede141a355ac83514c524d0d7e2a0ebd57dbb5b0a4d21c710822
     .claude/skills/skill-temporal-developer/references/python/ai-patterns.md: sha256:2753dd62db4e5dac70175240c6d5adfdeb24b15d14db2c5fe33497d845e2f60c
     .claude/skills/skill-temporal-developer/references/python/data-handling.md: sha256:e009fae68c15c983eebb7876b2bcdc6b7b66afac0ae7c003e6bea367060a17fe
     .claude/skills/skill-temporal-developer/references/python/determinism-protection.md: sha256:98c41dab94de390a5d71bdedf9c06a1ba1754a8918965e8d632a12417698d2fb
     .claude/skills/skill-temporal-developer/references/python/determinism.md: sha256:6cc267bfa631d1514d803733219dff7ebd8d893c94e58d10a4793eb6ff21a3bd
     .claude/skills/skill-temporal-developer/references/python/error-handling.md: sha256:cad683db77a5d9ce2554bff866b828a7c0e3b82cf622f16c322f1f7bc9780fc2
     .claude/skills/skill-temporal-developer/references/python/gotchas.md: sha256:e1dab9cca28d20fcbb1d21b98a906c94c6643564efc095e7b0074861766298c2
-    .claude/skills/skill-temporal-developer/references/python/integrations/google-adk.md: sha256:add8233138e3ea73b192e28c3fe7f712fdd6d6b6fc51cd9827509136622914fd
-    .claude/skills/skill-temporal-developer/references/python/integrations/langgraph.md: sha256:9b0e7e21cb1980815abe04556149a92e4991780193e959e22e666cee0b65b505
-    .claude/skills/skill-temporal-developer/references/python/integrations/langsmith.md: sha256:ae957528c761f49eb805b75e8f3c3e7a745bcbf1be1355191336957a8cd112d5
-    .claude/skills/skill-temporal-developer/references/python/integrations/openai-agents-sdk.md: sha256:0aedc781da07638a1b6fe8224e5966403c88818de0a63eac958c511d7b4155a1
-    .claude/skills/skill-temporal-developer/references/python/observability.md: sha256:8a17a66cb84e626d619c865773a87f21265fbece0c389bca338a49a444974694
+    .claude/skills/skill-temporal-developer/references/python/integrations/braintrust.md: sha256:dac13e0ce8c7a4e62c11257125244497bb18b2c68ebd0b070315cf8d0563fea8
+    .claude/skills/skill-temporal-developer/references/python/integrations/google-adk.md: sha256:b5fa927dcdf54fad3622dfa89980bfe6a766aa5089163da7f9143605aad799b4
+    .claude/skills/skill-temporal-developer/references/python/integrations/langgraph.md: sha256:a92e93ad87bc5490faa56d2769d56a34c68640c2ae732cbc3c7fc74e43d3a8e5
+    .claude/skills/skill-temporal-developer/references/python/integrations/langsmith.md: sha256:80d8560d73d485268dd9fe5e8d359f83ee05670fc154bd929f4ebf4d9d504657
+    .claude/skills/skill-temporal-developer/references/python/integrations/openai-agents-sdk.md: sha256:e783c29a73196b9ec5e56449b239b01afa5b9abbc4b3f01300b0d03c69a62945
+    .claude/skills/skill-temporal-developer/references/python/integrations/opentelemetry.md: sha256:052226266873b776a69d80876fa16afcd0b31e3dd3da41c40596c1085f1f42fe
+    .claude/skills/skill-temporal-developer/references/python/integrations/pydantic-ai.md: sha256:73fdc136246d098c6bf3732c74945a0c91c887f94a843d0dc5f0796aa8d9b0e8
+    .claude/skills/skill-temporal-developer/references/python/observability.md: sha256:cb4dc692f669c7d1086940398b769e660a2f363648c81725f6aed7b792eb1dcd
     .claude/skills/skill-temporal-developer/references/python/patterns.md: sha256:5a5e3930ac490073122c2ccff5a1ad44364638fbb3196551ed6a42992ff2ab54
-    .claude/skills/skill-temporal-developer/references/python/python.md: sha256:a207e520ab8baf18bb77648bd02e6a272756df26804bf7a648516c7bb2791d49
+    .claude/skills/skill-temporal-developer/references/python/python.md: sha256:0a4fa9d1857101b9cb1e65a2f0b9e7c6da9e280a4271e97f70c0e56205e73974
+    .claude/skills/skill-temporal-developer/references/python/standalone-activities.md: sha256:c4132387dd9359cbc2e8819cfeb8ac8a8ddfff900ffa387c60dca5e2a033d263
     .claude/skills/skill-temporal-developer/references/python/sync-vs-async.md: sha256:0c7b9619bd8fb97f88c6d38309ebadbf3b961cd7ad678fd3dcee19e80380c13a
     .claude/skills/skill-temporal-developer/references/python/testing.md: sha256:2bb9bff4217ad2a77da6509990121af5999e00e7fbc08f9a824a562326560997
-    .claude/skills/skill-temporal-developer/references/python/versioning.md: sha256:8adb65e353d820125e35d0b4346104e5a625279c6c77912888eb3bbe9fe412cc
-    .claude/skills/skill-temporal-developer/references/python/workflow-streams.md: sha256:e7917f4bb514d22e774cb1a802832a76caf2ef72273f1f6192149bc8ce130107
+    .claude/skills/skill-temporal-developer/references/python/versioning.md: sha256:33af5c6ae2736414ca70138917ebe12d8a29532f1f760a149cd4448d785ea725
+    .claude/skills/skill-temporal-developer/references/python/workflow-streams.md: sha256:3dc3f49611b690dc83a1ba60f0024b7c93448c0ac4b78fd0c201c1e06755b0d7
     .claude/skills/skill-temporal-developer/references/ruby/advanced-features.md: sha256:f0bf760459183795c485e2639420b027377d0d696487a30ec0552d36659318ac
     .claude/skills/skill-temporal-developer/references/ruby/data-handling.md: sha256:4c4bc37a8ca83f7c702a16a3ac74496affa89d5a9bcebf443735cae368dbd117
     .claude/skills/skill-temporal-developer/references/ruby/determinism-protection.md: sha256:8a4f15233f9d829171329d51dfc1ddeacd1021e5d8e577a3bd1faf771bf16fd9
     .claude/skills/skill-temporal-developer/references/ruby/determinism.md: sha256:a81a7b47841f0b3a55dcdfc19d06c1c32fb7042283f921b06020033511bed61c
     .claude/skills/skill-temporal-developer/references/ruby/error-handling.md: sha256:cb2257485116550e6a1ba0e28ec9176f5282f18e39a6d83038645d2c8f991c05
-    .claude/skills/skill-temporal-developer/references/ruby/gotchas.md: sha256:5e2268d676bb0639b92156826415a523e6490c769a5740697096a68ae3539554
+    .claude/skills/skill-temporal-developer/references/ruby/gotchas.md: sha256:bf554370bb79bda8bdb8cd39bd5f431831d9f0f4cef785df350a93b56311620c
     .claude/skills/skill-temporal-developer/references/ruby/observability.md: sha256:8dbe5216e8ab2b58dbfc45326b98ad190de40450d5dacfac8c2ba528509260b2
     .claude/skills/skill-temporal-developer/references/ruby/patterns.md: sha256:746f358cb69372c15fe90cc329836cb33c5393509d53bd0d3a135a500ff677b1
-    .claude/skills/skill-temporal-developer/references/ruby/ruby.md: sha256:ca76bc437fe973ac2b29861e28a87e130e8835bb58a641ee3ce177fd51ef7a1a
+    .claude/skills/skill-temporal-developer/references/ruby/ruby.md: sha256:5072596725cedc496e855412a58b731ad8558e463bb4a29c19b1f704e6226ad4
     .claude/skills/skill-temporal-developer/references/ruby/testing.md: sha256:8cba93dec57c5da81e54754424aeafcb4fca6e8d827cfe50c78e880b22713aca
     .claude/skills/skill-temporal-developer/references/ruby/versioning.md: sha256:2fd1485b70bf8fbc2f3d5d5f74d88bc371fae29051bcf19e40961f07f328e3cc
+    .claude/skills/skill-temporal-developer/references/rust/rust.md: sha256:8007feae65d1bc4847c4dfc51c3e4b05f64d272a2ab388fc35b10577ec4b0661
     .claude/skills/skill-temporal-developer/references/typescript/advanced-features.md: sha256:a4433dfcd6df2cd26f877ebe3f3b9deba5fe7e6931b5e995d7045843ec06b760
     .claude/skills/skill-temporal-developer/references/typescript/data-handling.md: sha256:2604262698516c35dc63c9746f72fe147ea6fe570b7559cd9fce0677c3f9874b
     .claude/skills/skill-temporal-developer/references/typescript/determinism-protection.md: sha256:cc58d49c9716f9b28c7bdd36b3192df20c2c4909f5c4acc6f3ce6f9e56ec1c16
     .claude/skills/skill-temporal-developer/references/typescript/determinism.md: sha256:55391d93f4aa93f3eeb72c2d8cd1093cd9fcd5fd962848a245d077bfc12e8c2d
     .claude/skills/skill-temporal-developer/references/typescript/error-handling.md: sha256:b40078a343f8d251162c320cd98c1e66ff41af60e2c6560df3c86862b6da840a
     .claude/skills/skill-temporal-developer/references/typescript/gotchas.md: sha256:1443ec107a010374bbbb0293e6a864505f98ec61c8903ff170f26a28a8023968
-    .claude/skills/skill-temporal-developer/references/typescript/observability.md: sha256:5f583e5584b06f325f773e577a57a12bb8e8e6ebc838ebc7753b3b948035ada9
+    .claude/skills/skill-temporal-developer/references/typescript/integrations/braintrust.md: sha256:d38800fa427f3f09b15ef63dbae0c38c7a8afeb1ef285b8f612222793e94c401
+    .claude/skills/skill-temporal-developer/references/typescript/integrations/mastra.md: sha256:6852a6198d862cf8dbec31a06c0e7f834cb20553796fa6439f774c32747d57db
+    .claude/skills/skill-temporal-developer/references/typescript/integrations/opentelemetry.md: sha256:714d23e1e03265d1852ab0045ffab21a737e784def4b1619614d244ffb949f15
+    .claude/skills/skill-temporal-developer/references/typescript/integrations/vercel-ai-sdk.md: sha256:1ca2be854423311ddf38ccdebe7416d886600d2520266ef479bde76673a96d5f
+    .claude/skills/skill-temporal-developer/references/typescript/observability.md: sha256:fb0fe28c5fcebb36222172a788ec7580fc6683307017f92328bf656e683013a7
     .claude/skills/skill-temporal-developer/references/typescript/patterns.md: sha256:8bc84381f9d6432301f3011b60a64f0170bc2584fca170cff9e55469cb958613
+    .claude/skills/skill-temporal-developer/references/typescript/standalone-activities.md: sha256:3f6516929895aa336b9f708f7992dbacbaa7b6ea7afb72df07d50e73a5c0fa71
     .claude/skills/skill-temporal-developer/references/typescript/testing.md: sha256:a0b378f3c54cde05a84145f229fc7a0006b1fb5c9957867e53c7918a1903deaf
-    .claude/skills/skill-temporal-developer/references/typescript/typescript.md: sha256:0f8168dd3c3ceaa86c5b1248976c6bceffb40e1aa936da62735c2e1c5838dd96
-    .claude/skills/skill-temporal-developer/references/typescript/versioning.md: sha256:21d8f5e1984544042eb5d1fd33b52a7f2c5fc90becd293c5310645862f532f29
-  content_hash: sha256:52dacd4d446854e1d62aa2d99db78593da39b0771a9ece3e42ddc03e37b5b517
+    .claude/skills/skill-temporal-developer/references/typescript/typescript.md: sha256:1f64da9b56932c562696848ac258cff8eefa40614b790b98ce708bd0ad36c457
+    .claude/skills/skill-temporal-developer/references/typescript/versioning.md: sha256:ee9190d230275026aadfdd27e04fe58188735d4d589d3a40ff58ac3063fd9f62
+  content_hash: sha256:8fa554da1b361691a36724f3c9c34d725e0cf14466b10477a83dd7a37485f863
 deployments:
 - kind: project-relative
   target: agent-skills
@@ -854,7 +914,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:4a54a4858b99807f3155ed1614b2f116e35ea5c1b788e793f565dd837fd3891f
+  content_hash: sha256:74edf03ea6d24ef53db48677b93558d14a979bdf052ca3f57ecdca0c66791608
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/brainstorming/scripts/frame-template.html
@@ -917,7 +977,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:60cbad29b9dd7eaf08da020e301c498a72230b2e13c1813fa967a135ffcc1d71
+  content_hash: sha256:77eb44a4ec3408bb3dafb872288ecd94beb8cf21da4f2bafa54fd08255d7808b
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/dispatching-parallel-agents
@@ -971,7 +1031,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:d0ac8360ed9d59121776ef95c84bcb38e9747de0d7ae7e227dca81e437593b9b
+  content_hash: sha256:8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/frontend-design
@@ -1205,7 +1265,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:b2f2ec7596925fe52dac158fdfbca19b3a7d779d619c481e6706a6c0001662d3
+  content_hash: sha256:5eca5fcfd48a50e0a526ce5ffd64bf625d6b81bb46d11795274dae451fe6ffd4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer
@@ -1232,7 +1292,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:f719bac75e39495f66060c73f5748b2817b6b3d2414ed2e39348a9d36e45ee50
+  content_hash: sha256:4dc8fedc79c8f76af81153296a11091a1aba6c8640a0e8515c64aee7a70bf597
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/LICENSE
@@ -1250,7 +1310,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a619a6a3873ded8cec24f2d0973dcb71e9f7f41aff38f1b52771baf88cc72297
+  content_hash: sha256:98bc24f5859d93f2b96972190254b6b896be7e8d0c50c2ac3423faf98f3359f6
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/SKILL.md
@@ -1259,7 +1319,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:316835173c827934b674f592201add5e8e1dd4d39a8bb48af2beec45d58b4146
+  content_hash: sha256:25baa82277144571782613812d7f350e91fa8e617143ec7f6786815796782a89
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/core/ai-patterns.md
@@ -1286,7 +1346,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:469bfd18f95487c284d2c4e6d4dc0b07d1cfc006b7257e2ba359403e981d18c2
+  content_hash: sha256:c2bfdb586836968a50c9151dce3f6e4562f9642f622c9d2ab0b7ec6300d893e0
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/core/dev-management.md
@@ -1352,6 +1412,15 @@ deployments:
   content_hash: sha256:77c04fdf523bbab86b1a8a02280a1161908a8b67a5c077245b865bd35843a5a5
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/core/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2946bba5c33c527ddbccfce7fd4a49e113a77068d1eca8423e95ee191b37d4a3
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/core/troubleshooting.md
   runtime: null
   scope: project
@@ -1367,7 +1436,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a81b75a1496e48368e8e1cc1bb9ba0420d9e1f3bc8c7440feaf1473566566411
+  content_hash: sha256:f8cf72d1d81c1f5da43c2844cdc384a98607aa7e09ec46b1079361b13656ff95
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/dotnet/advanced-features.md
@@ -1412,7 +1481,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a86722a72a81da715ac56656ab1d573b4250fdfc14c519b8761f14cd5cf2d0a3
+  content_hash: sha256:a651db713df59b25bed6f08cc1a5b2b9068d927db0193b087a2eda596cf1c3ae
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/dotnet/error-handling.md
@@ -1451,6 +1520,15 @@ deployments:
   content_hash: sha256:ad417968530161dbf8020500ca86ed71befb86a548b8e45eb92ce4b4f0d86371
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/dotnet/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0a8402532604cb064f6c12c2817194d1be998e125f6c08e93e3a27cfee7d2b92
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/dotnet/testing.md
   runtime: null
   scope: project
@@ -1466,7 +1544,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:1fe6e1b45ae8a0cef0289e0f3e016b4a0ee78746639131511d664e062e9c1bf2
+  content_hash: sha256:147443690205c6af5e56202395c4a500db97da860f45b92ab2fc46595755a70a
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/go/advanced-features.md
@@ -1520,7 +1598,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:0e7749362f4d9fe27523faaa2a2de23d88173ec643a08354abf2afb762327a82
+  content_hash: sha256:d7e6fda905035217c4989332c204bc187934e32a2d5c79ebf5f89d447e827466
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/go/gotchas.md
@@ -1550,6 +1628,15 @@ deployments:
   content_hash: sha256:80a4a5b173ff4c728b36a0a4ab83b588271f16e8234ad00736ada349ef247504
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/go/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a57c007dd7b8d1c4ae23fd15367735efed49c8d6147cda10ca25e76966d9ac46
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/go/testing.md
   runtime: null
   scope: project
@@ -1565,7 +1652,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a8d2ca506c3d0256f2c1e8903e91cd46fe375ccf8ff0e7f494da8e642bf7494b
+  content_hash: sha256:881372b879bfdf9e98c0df1aa18dd37914eb261cdde172a4cc7586ca5d6f44c2
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/integrations.md
@@ -1574,7 +1661,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:1337d729156e55f28715b6074d83aba03fb1d8ec36d826ec54929ab0aeaebef8
+  content_hash: sha256:4f5cf38b628f7b7b39307e611b7ea8717bbfc854445e657dce2f3a0594474174
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/java/advanced-features.md
@@ -1655,7 +1742,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:2dd613cf00295e6cfa704410acbe43f5fb0c9eca5bd9f70b24ccd6c9b4f2214b
+  content_hash: sha256:d5bc7923ef746fd34166d87eb4a915fc4f83d8857ec04feb7b974eab83139e4e
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/java/observability.md
@@ -1676,6 +1763,15 @@ deployments:
   content_hash: sha256:ed5a2f090fd1b0d655c8b20efe2b1700d7c86f4e38d4715607c3e438b6e9d238
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/java/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:51481bc1027709246534b4303a8798738fa9d2581d7a473d5fce47ebda9803f4
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/java/testing.md
   runtime: null
   scope: project
@@ -1691,7 +1787,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a762f55f3e3ce157364a4d16f18c293f97bf3b4b1071c16e0b75ca4de87c58da
+  content_hash: sha256:deeb21f351a7e0665e102eecb00d5c81bbdda304013c9a179f37b6d674e2927c
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/python/advanced-features.md
@@ -1700,7 +1796,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:e91930afa2c39adb735c6c84cec55e74633ab6aedba5c3372cc6fd86e3be25c4
+  content_hash: sha256:e78a8697b4b9ede141a355ac83514c524d0d7e2a0ebd57dbb5b0a4d21c710822
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/python/ai-patterns.md
@@ -1757,13 +1853,22 @@ deployments:
   content_hash: sha256:e1dab9cca28d20fcbb1d21b98a906c94c6643564efc095e7b0074861766298c2
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/integrations/braintrust.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:dac13e0ce8c7a4e62c11257125244497bb18b2c68ebd0b070315cf8d0563fea8
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/python/integrations/google-adk.md
   runtime: null
   scope: project
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:add8233138e3ea73b192e28c3fe7f712fdd6d6b6fc51cd9827509136622914fd
+  content_hash: sha256:b5fa927dcdf54fad3622dfa89980bfe6a766aa5089163da7f9143605aad799b4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/python/integrations/langgraph.md
@@ -1772,7 +1877,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:9b0e7e21cb1980815abe04556149a92e4991780193e959e22e666cee0b65b505
+  content_hash: sha256:a92e93ad87bc5490faa56d2769d56a34c68640c2ae732cbc3c7fc74e43d3a8e5
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/python/integrations/langsmith.md
@@ -1781,7 +1886,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:ae957528c761f49eb805b75e8f3c3e7a745bcbf1be1355191336957a8cd112d5
+  content_hash: sha256:80d8560d73d485268dd9fe5e8d359f83ee05670fc154bd929f4ebf4d9d504657
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/python/integrations/openai-agents-sdk.md
@@ -1790,7 +1895,25 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:0aedc781da07638a1b6fe8224e5966403c88818de0a63eac958c511d7b4155a1
+  content_hash: sha256:e783c29a73196b9ec5e56449b239b01afa5b9abbc4b3f01300b0d03c69a62945
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/integrations/opentelemetry.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:052226266873b776a69d80876fa16afcd0b31e3dd3da41c40596c1085f1f42fe
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/integrations/pydantic-ai.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:73fdc136246d098c6bf3732c74945a0c91c887f94a843d0dc5f0796aa8d9b0e8
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/python/observability.md
@@ -1799,7 +1922,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:8a17a66cb84e626d619c865773a87f21265fbece0c389bca338a49a444974694
+  content_hash: sha256:cb4dc692f669c7d1086940398b769e660a2f363648c81725f6aed7b792eb1dcd
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/python/patterns.md
@@ -1817,7 +1940,16 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a207e520ab8baf18bb77648bd02e6a272756df26804bf7a648516c7bb2791d49
+  content_hash: sha256:0a4fa9d1857101b9cb1e65a2f0b9e7c6da9e280a4271e97f70c0e56205e73974
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/python/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:c4132387dd9359cbc2e8819cfeb8ac8a8ddfff900ffa387c60dca5e2a033d263
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/python/sync-vs-async.md
@@ -1844,7 +1976,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:8adb65e353d820125e35d0b4346104e5a625279c6c77912888eb3bbe9fe412cc
+  content_hash: sha256:33af5c6ae2736414ca70138917ebe12d8a29532f1f760a149cd4448d785ea725
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/python/workflow-streams.md
@@ -1853,7 +1985,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:e7917f4bb514d22e774cb1a802832a76caf2ef72273f1f6192149bc8ce130107
+  content_hash: sha256:3dc3f49611b690dc83a1ba60f0024b7c93448c0ac4b78fd0c201c1e06755b0d7
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/ruby/advanced-features.md
@@ -1907,7 +2039,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:5e2268d676bb0639b92156826415a523e6490c769a5740697096a68ae3539554
+  content_hash: sha256:bf554370bb79bda8bdb8cd39bd5f431831d9f0f4cef785df350a93b56311620c
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/ruby/observability.md
@@ -1934,7 +2066,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:ca76bc437fe973ac2b29861e28a87e130e8835bb58a641ee3ce177fd51ef7a1a
+  content_hash: sha256:5072596725cedc496e855412a58b731ad8558e463bb4a29c19b1f704e6226ad4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/ruby/testing.md
@@ -1953,6 +2085,15 @@ deployments:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
   content_hash: sha256:2fd1485b70bf8fbc2f3d5d5f74d88bc371fae29051bcf19e40961f07f328e3cc
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/rust/rust.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8007feae65d1bc4847c4dfc51c3e4b05f64d272a2ab388fc35b10577ec4b0661
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/typescript/advanced-features.md
@@ -2009,13 +2150,49 @@ deployments:
   content_hash: sha256:1443ec107a010374bbbb0293e6a864505f98ec61c8903ff170f26a28a8023968
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/integrations/braintrust.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:d38800fa427f3f09b15ef63dbae0c38c7a8afeb1ef285b8f612222793e94c401
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/integrations/mastra.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:6852a6198d862cf8dbec31a06c0e7f834cb20553796fa6439f774c32747d57db
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/integrations/opentelemetry.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:714d23e1e03265d1852ab0045ffab21a737e784def4b1619614d244ffb949f15
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/integrations/vercel-ai-sdk.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1ca2be854423311ddf38ccdebe7416d886600d2520266ef479bde76673a96d5f
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/typescript/observability.md
   runtime: null
   scope: project
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:5f583e5584b06f325f773e577a57a12bb8e8e6ebc838ebc7753b3b948035ada9
+  content_hash: sha256:fb0fe28c5fcebb36222172a788ec7580fc6683307017f92328bf656e683013a7
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/typescript/patterns.md
@@ -2025,6 +2202,15 @@ deployments:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
   content_hash: sha256:8bc84381f9d6432301f3011b60a64f0170bc2584fca170cff9e55469cb958613
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-temporal-developer/references/typescript/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:3f6516929895aa336b9f708f7992dbacbaa7b6ea7afb72df07d50e73a5c0fa71
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/typescript/testing.md
@@ -2042,7 +2228,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:0f8168dd3c3ceaa86c5b1248976c6bceffb40e1aa936da62735c2e1c5838dd96
+  content_hash: sha256:1f64da9b56932c562696848ac258cff8eefa40614b790b98ce708bd0ad36c457
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-temporal-developer/references/typescript/versioning.md
@@ -2051,7 +2237,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:21d8f5e1984544042eb5d1fd33b52a7f2c5fc90becd293c5310645862f532f29
+  content_hash: sha256:ee9190d230275026aadfdd27e04fe58188735d4d589d3a40ff58ac3063fd9f62
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/subagent-driven-development
@@ -2069,7 +2255,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:ca49b5d6acd6259e47b71b8f04345902a3b43fab8a63eac33532edfcec861376
+  content_hash: sha256:1b19d4953dcc602516d729c27aefe1b168e5bf1c17a52a997b9dde326ae3fc41
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/subagent-driven-development/implementer-prompt.md
@@ -2078,7 +2264,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:946601616a6f76ab3f165ef98377390968f1ec124ecef87422bc3553404e0332
+  content_hash: sha256:81dd9d5a3fb0b09b96b5829f03b9796842f3199ef7591d1ba1c2db2a515f64d0
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/subagent-driven-development/re-review-prompt.md
@@ -2087,7 +2273,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:e1d8e0e65e58ccde6dc920843da9148d23e65aeb0f8932bcc30be1341a703c4c
+  content_hash: sha256:db0d5849478bc79cbde97b9b2cf0e58b50be8b8ed18464b0252c2bf27b6440a6
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/subagent-driven-development/scripts/review-package
@@ -2123,7 +2309,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:e3b4a1bfe7cd55ed0459e5ca9cdddb6ff086c345b99e9097036db6a18545729e
+  content_hash: sha256:eea23e33ec570c3041f40e9569fa711d61b8029f9eecf908345138aa1c6e61ab
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/systematic-debugging
@@ -2294,7 +2480,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:55379fe7c1c473a02c61961c822996bff30e1320d6921d9062509bc508482c05
+  content_hash: sha256:30f2ab78e20ddc27ee7158ae8d4a2abe161c360981c7cc3548070913142d3dc3
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/using-superpowers/references/antigravity-tools.md
@@ -2312,7 +2498,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:d3f113a8ebbd748e8ba847b09b57b7685442775ca4ee194d693ce3663f8fac68
+  content_hash: sha256:1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/using-superpowers/references/gemini-tools.md
@@ -2322,6 +2508,15 @@ deployments:
   - obra/superpowers
   active_owner: obra/superpowers
   content_hash: sha256:62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/using-superpowers/references/hermes-tools.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/using-superpowers/references/pi-tools.md
@@ -2366,7 +2561,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:72190c88b2b5a67a96b91d66aa72b9161913e10e8769da3f28a226f4cc7b99d0
+  content_hash: sha256:48508f44bbfd7d24b029fbf3a314f3cd14c9615599059366e922f47b8dc08cf2
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/writing-plans/plan-document-reviewer-prompt.md
@@ -2438,7 +2633,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:ccda971a87bb185f8febf81c56b556a20d026fa980c17b35fa3e8824fbb37852
+  content_hash: sha256:c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/writing-skills/testing-skills-with-subagents.md
@@ -2708,7 +2903,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:4a54a4858b99807f3155ed1614b2f116e35ea5c1b788e793f565dd837fd3891f
+  content_hash: sha256:74edf03ea6d24ef53db48677b93558d14a979bdf052ca3f57ecdca0c66791608
 - kind: project-relative
   target: claude
   value: .claude/skills/brainstorming/scripts/frame-template.html
@@ -2771,7 +2966,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:60cbad29b9dd7eaf08da020e301c498a72230b2e13c1813fa967a135ffcc1d71
+  content_hash: sha256:77eb44a4ec3408bb3dafb872288ecd94beb8cf21da4f2bafa54fd08255d7808b
 - kind: project-relative
   target: claude
   value: .claude/skills/dispatching-parallel-agents
@@ -2825,7 +3020,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:d0ac8360ed9d59121776ef95c84bcb38e9747de0d7ae7e227dca81e437593b9b
+  content_hash: sha256:8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65
 - kind: project-relative
   target: claude
   value: .claude/skills/frontend-design
@@ -3059,7 +3254,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:b2f2ec7596925fe52dac158fdfbca19b3a7d779d619c481e6706a6c0001662d3
+  content_hash: sha256:5eca5fcfd48a50e0a526ce5ffd64bf625d6b81bb46d11795274dae451fe6ffd4
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer
@@ -3086,7 +3281,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:f719bac75e39495f66060c73f5748b2817b6b3d2414ed2e39348a9d36e45ee50
+  content_hash: sha256:4dc8fedc79c8f76af81153296a11091a1aba6c8640a0e8515c64aee7a70bf597
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/LICENSE
@@ -3104,7 +3299,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a619a6a3873ded8cec24f2d0973dcb71e9f7f41aff38f1b52771baf88cc72297
+  content_hash: sha256:98bc24f5859d93f2b96972190254b6b896be7e8d0c50c2ac3423faf98f3359f6
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/SKILL.md
@@ -3113,7 +3308,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:316835173c827934b674f592201add5e8e1dd4d39a8bb48af2beec45d58b4146
+  content_hash: sha256:25baa82277144571782613812d7f350e91fa8e617143ec7f6786815796782a89
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/core/ai-patterns.md
@@ -3140,7 +3335,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:469bfd18f95487c284d2c4e6d4dc0b07d1cfc006b7257e2ba359403e981d18c2
+  content_hash: sha256:c2bfdb586836968a50c9151dce3f6e4562f9642f622c9d2ab0b7ec6300d893e0
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/core/dev-management.md
@@ -3206,6 +3401,15 @@ deployments:
   content_hash: sha256:77c04fdf523bbab86b1a8a02280a1161908a8b67a5c077245b865bd35843a5a5
 - kind: project-relative
   target: claude
+  value: .claude/skills/skill-temporal-developer/references/core/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:2946bba5c33c527ddbccfce7fd4a49e113a77068d1eca8423e95ee191b37d4a3
+- kind: project-relative
+  target: claude
   value: .claude/skills/skill-temporal-developer/references/core/troubleshooting.md
   runtime: null
   scope: project
@@ -3221,7 +3425,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a81b75a1496e48368e8e1cc1bb9ba0420d9e1f3bc8c7440feaf1473566566411
+  content_hash: sha256:f8cf72d1d81c1f5da43c2844cdc384a98607aa7e09ec46b1079361b13656ff95
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/dotnet/advanced-features.md
@@ -3266,7 +3470,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a86722a72a81da715ac56656ab1d573b4250fdfc14c519b8761f14cd5cf2d0a3
+  content_hash: sha256:a651db713df59b25bed6f08cc1a5b2b9068d927db0193b087a2eda596cf1c3ae
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/dotnet/error-handling.md
@@ -3305,6 +3509,15 @@ deployments:
   content_hash: sha256:ad417968530161dbf8020500ca86ed71befb86a548b8e45eb92ce4b4f0d86371
 - kind: project-relative
   target: claude
+  value: .claude/skills/skill-temporal-developer/references/dotnet/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:0a8402532604cb064f6c12c2817194d1be998e125f6c08e93e3a27cfee7d2b92
+- kind: project-relative
+  target: claude
   value: .claude/skills/skill-temporal-developer/references/dotnet/testing.md
   runtime: null
   scope: project
@@ -3320,7 +3533,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:1fe6e1b45ae8a0cef0289e0f3e016b4a0ee78746639131511d664e062e9c1bf2
+  content_hash: sha256:147443690205c6af5e56202395c4a500db97da860f45b92ab2fc46595755a70a
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/go/advanced-features.md
@@ -3374,7 +3587,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:0e7749362f4d9fe27523faaa2a2de23d88173ec643a08354abf2afb762327a82
+  content_hash: sha256:d7e6fda905035217c4989332c204bc187934e32a2d5c79ebf5f89d447e827466
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/go/gotchas.md
@@ -3404,6 +3617,15 @@ deployments:
   content_hash: sha256:80a4a5b173ff4c728b36a0a4ab83b588271f16e8234ad00736ada349ef247504
 - kind: project-relative
   target: claude
+  value: .claude/skills/skill-temporal-developer/references/go/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:a57c007dd7b8d1c4ae23fd15367735efed49c8d6147cda10ca25e76966d9ac46
+- kind: project-relative
+  target: claude
   value: .claude/skills/skill-temporal-developer/references/go/testing.md
   runtime: null
   scope: project
@@ -3419,7 +3641,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a8d2ca506c3d0256f2c1e8903e91cd46fe375ccf8ff0e7f494da8e642bf7494b
+  content_hash: sha256:881372b879bfdf9e98c0df1aa18dd37914eb261cdde172a4cc7586ca5d6f44c2
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/integrations.md
@@ -3428,7 +3650,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:1337d729156e55f28715b6074d83aba03fb1d8ec36d826ec54929ab0aeaebef8
+  content_hash: sha256:4f5cf38b628f7b7b39307e611b7ea8717bbfc854445e657dce2f3a0594474174
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/java/advanced-features.md
@@ -3509,7 +3731,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:2dd613cf00295e6cfa704410acbe43f5fb0c9eca5bd9f70b24ccd6c9b4f2214b
+  content_hash: sha256:d5bc7923ef746fd34166d87eb4a915fc4f83d8857ec04feb7b974eab83139e4e
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/java/observability.md
@@ -3530,6 +3752,15 @@ deployments:
   content_hash: sha256:ed5a2f090fd1b0d655c8b20efe2b1700d7c86f4e38d4715607c3e438b6e9d238
 - kind: project-relative
   target: claude
+  value: .claude/skills/skill-temporal-developer/references/java/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:51481bc1027709246534b4303a8798738fa9d2581d7a473d5fce47ebda9803f4
+- kind: project-relative
+  target: claude
   value: .claude/skills/skill-temporal-developer/references/java/testing.md
   runtime: null
   scope: project
@@ -3545,7 +3776,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a762f55f3e3ce157364a4d16f18c293f97bf3b4b1071c16e0b75ca4de87c58da
+  content_hash: sha256:deeb21f351a7e0665e102eecb00d5c81bbdda304013c9a179f37b6d674e2927c
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/python/advanced-features.md
@@ -3554,7 +3785,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:e91930afa2c39adb735c6c84cec55e74633ab6aedba5c3372cc6fd86e3be25c4
+  content_hash: sha256:e78a8697b4b9ede141a355ac83514c524d0d7e2a0ebd57dbb5b0a4d21c710822
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/python/ai-patterns.md
@@ -3611,13 +3842,22 @@ deployments:
   content_hash: sha256:e1dab9cca28d20fcbb1d21b98a906c94c6643564efc095e7b0074861766298c2
 - kind: project-relative
   target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/integrations/braintrust.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:dac13e0ce8c7a4e62c11257125244497bb18b2c68ebd0b070315cf8d0563fea8
+- kind: project-relative
+  target: claude
   value: .claude/skills/skill-temporal-developer/references/python/integrations/google-adk.md
   runtime: null
   scope: project
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:add8233138e3ea73b192e28c3fe7f712fdd6d6b6fc51cd9827509136622914fd
+  content_hash: sha256:b5fa927dcdf54fad3622dfa89980bfe6a766aa5089163da7f9143605aad799b4
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/python/integrations/langgraph.md
@@ -3626,7 +3866,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:9b0e7e21cb1980815abe04556149a92e4991780193e959e22e666cee0b65b505
+  content_hash: sha256:a92e93ad87bc5490faa56d2769d56a34c68640c2ae732cbc3c7fc74e43d3a8e5
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/python/integrations/langsmith.md
@@ -3635,7 +3875,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:ae957528c761f49eb805b75e8f3c3e7a745bcbf1be1355191336957a8cd112d5
+  content_hash: sha256:80d8560d73d485268dd9fe5e8d359f83ee05670fc154bd929f4ebf4d9d504657
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/python/integrations/openai-agents-sdk.md
@@ -3644,7 +3884,25 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:0aedc781da07638a1b6fe8224e5966403c88818de0a63eac958c511d7b4155a1
+  content_hash: sha256:e783c29a73196b9ec5e56449b239b01afa5b9abbc4b3f01300b0d03c69a62945
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/integrations/opentelemetry.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:052226266873b776a69d80876fa16afcd0b31e3dd3da41c40596c1085f1f42fe
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/integrations/pydantic-ai.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:73fdc136246d098c6bf3732c74945a0c91c887f94a843d0dc5f0796aa8d9b0e8
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/python/observability.md
@@ -3653,7 +3911,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:8a17a66cb84e626d619c865773a87f21265fbece0c389bca338a49a444974694
+  content_hash: sha256:cb4dc692f669c7d1086940398b769e660a2f363648c81725f6aed7b792eb1dcd
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/python/patterns.md
@@ -3671,7 +3929,16 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:a207e520ab8baf18bb77648bd02e6a272756df26804bf7a648516c7bb2791d49
+  content_hash: sha256:0a4fa9d1857101b9cb1e65a2f0b9e7c6da9e280a4271e97f70c0e56205e73974
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/python/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:c4132387dd9359cbc2e8819cfeb8ac8a8ddfff900ffa387c60dca5e2a033d263
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/python/sync-vs-async.md
@@ -3698,7 +3965,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:8adb65e353d820125e35d0b4346104e5a625279c6c77912888eb3bbe9fe412cc
+  content_hash: sha256:33af5c6ae2736414ca70138917ebe12d8a29532f1f760a149cd4448d785ea725
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/python/workflow-streams.md
@@ -3707,7 +3974,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:e7917f4bb514d22e774cb1a802832a76caf2ef72273f1f6192149bc8ce130107
+  content_hash: sha256:3dc3f49611b690dc83a1ba60f0024b7c93448c0ac4b78fd0c201c1e06755b0d7
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/ruby/advanced-features.md
@@ -3761,7 +4028,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:5e2268d676bb0639b92156826415a523e6490c769a5740697096a68ae3539554
+  content_hash: sha256:bf554370bb79bda8bdb8cd39bd5f431831d9f0f4cef785df350a93b56311620c
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/ruby/observability.md
@@ -3788,7 +4055,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:ca76bc437fe973ac2b29861e28a87e130e8835bb58a641ee3ce177fd51ef7a1a
+  content_hash: sha256:5072596725cedc496e855412a58b731ad8558e463bb4a29c19b1f704e6226ad4
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/ruby/testing.md
@@ -3807,6 +4074,15 @@ deployments:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
   content_hash: sha256:2fd1485b70bf8fbc2f3d5d5f74d88bc371fae29051bcf19e40961f07f328e3cc
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/rust/rust.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:8007feae65d1bc4847c4dfc51c3e4b05f64d272a2ab388fc35b10577ec4b0661
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/typescript/advanced-features.md
@@ -3863,13 +4139,49 @@ deployments:
   content_hash: sha256:1443ec107a010374bbbb0293e6a864505f98ec61c8903ff170f26a28a8023968
 - kind: project-relative
   target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/integrations/braintrust.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:d38800fa427f3f09b15ef63dbae0c38c7a8afeb1ef285b8f612222793e94c401
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/integrations/mastra.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:6852a6198d862cf8dbec31a06c0e7f834cb20553796fa6439f774c32747d57db
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/integrations/opentelemetry.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:714d23e1e03265d1852ab0045ffab21a737e784def4b1619614d244ffb949f15
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/integrations/vercel-ai-sdk.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:1ca2be854423311ddf38ccdebe7416d886600d2520266ef479bde76673a96d5f
+- kind: project-relative
+  target: claude
   value: .claude/skills/skill-temporal-developer/references/typescript/observability.md
   runtime: null
   scope: project
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:5f583e5584b06f325f773e577a57a12bb8e8e6ebc838ebc7753b3b948035ada9
+  content_hash: sha256:fb0fe28c5fcebb36222172a788ec7580fc6683307017f92328bf656e683013a7
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/typescript/patterns.md
@@ -3879,6 +4191,15 @@ deployments:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
   content_hash: sha256:8bc84381f9d6432301f3011b60a64f0170bc2584fca170cff9e55469cb958613
+- kind: project-relative
+  target: claude
+  value: .claude/skills/skill-temporal-developer/references/typescript/standalone-activities.md
+  runtime: null
+  scope: project
+  owners:
+  - temporalio/skill-temporal-developer
+  active_owner: temporalio/skill-temporal-developer
+  content_hash: sha256:3f6516929895aa336b9f708f7992dbacbaa7b6ea7afb72df07d50e73a5c0fa71
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/typescript/testing.md
@@ -3896,7 +4217,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:0f8168dd3c3ceaa86c5b1248976c6bceffb40e1aa936da62735c2e1c5838dd96
+  content_hash: sha256:1f64da9b56932c562696848ac258cff8eefa40614b790b98ce708bd0ad36c457
 - kind: project-relative
   target: claude
   value: .claude/skills/skill-temporal-developer/references/typescript/versioning.md
@@ -3905,7 +4226,7 @@ deployments:
   owners:
   - temporalio/skill-temporal-developer
   active_owner: temporalio/skill-temporal-developer
-  content_hash: sha256:21d8f5e1984544042eb5d1fd33b52a7f2c5fc90becd293c5310645862f532f29
+  content_hash: sha256:ee9190d230275026aadfdd27e04fe58188735d4d589d3a40ff58ac3063fd9f62
 - kind: project-relative
   target: claude
   value: .claude/skills/subagent-driven-development
@@ -3923,7 +4244,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:ca49b5d6acd6259e47b71b8f04345902a3b43fab8a63eac33532edfcec861376
+  content_hash: sha256:1b19d4953dcc602516d729c27aefe1b168e5bf1c17a52a997b9dde326ae3fc41
 - kind: project-relative
   target: claude
   value: .claude/skills/subagent-driven-development/implementer-prompt.md
@@ -3932,7 +4253,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:946601616a6f76ab3f165ef98377390968f1ec124ecef87422bc3553404e0332
+  content_hash: sha256:81dd9d5a3fb0b09b96b5829f03b9796842f3199ef7591d1ba1c2db2a515f64d0
 - kind: project-relative
   target: claude
   value: .claude/skills/subagent-driven-development/re-review-prompt.md
@@ -3941,7 +4262,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:e1d8e0e65e58ccde6dc920843da9148d23e65aeb0f8932bcc30be1341a703c4c
+  content_hash: sha256:db0d5849478bc79cbde97b9b2cf0e58b50be8b8ed18464b0252c2bf27b6440a6
 - kind: project-relative
   target: claude
   value: .claude/skills/subagent-driven-development/scripts/review-package
@@ -3977,7 +4298,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:e3b4a1bfe7cd55ed0459e5ca9cdddb6ff086c345b99e9097036db6a18545729e
+  content_hash: sha256:eea23e33ec570c3041f40e9569fa711d61b8029f9eecf908345138aa1c6e61ab
 - kind: project-relative
   target: claude
   value: .claude/skills/systematic-debugging
@@ -4148,7 +4469,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:55379fe7c1c473a02c61961c822996bff30e1320d6921d9062509bc508482c05
+  content_hash: sha256:30f2ab78e20ddc27ee7158ae8d4a2abe161c360981c7cc3548070913142d3dc3
 - kind: project-relative
   target: claude
   value: .claude/skills/using-superpowers/references/antigravity-tools.md
@@ -4166,7 +4487,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:d3f113a8ebbd748e8ba847b09b57b7685442775ca4ee194d693ce3663f8fac68
+  content_hash: sha256:1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7
 - kind: project-relative
   target: claude
   value: .claude/skills/using-superpowers/references/gemini-tools.md
@@ -4176,6 +4497,15 @@ deployments:
   - obra/superpowers
   active_owner: obra/superpowers
   content_hash: sha256:62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965
+- kind: project-relative
+  target: claude
+  value: .claude/skills/using-superpowers/references/hermes-tools.md
+  runtime: null
+  scope: project
+  owners:
+  - obra/superpowers
+  active_owner: obra/superpowers
+  content_hash: sha256:e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190
 - kind: project-relative
   target: claude
   value: .claude/skills/using-superpowers/references/pi-tools.md
@@ -4220,7 +4550,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:72190c88b2b5a67a96b91d66aa72b9161913e10e8769da3f28a226f4cc7b99d0
+  content_hash: sha256:48508f44bbfd7d24b029fbf3a314f3cd14c9615599059366e922f47b8dc08cf2
 - kind: project-relative
   target: claude
   value: .claude/skills/writing-plans/plan-document-reviewer-prompt.md
@@ -4292,7 +4622,7 @@ deployments:
   owners:
   - obra/superpowers
   active_owner: obra/superpowers
-  content_hash: sha256:ccda971a87bb185f8febf81c56b556a20d026fa980c17b35fa3e8824fbb37852
+  content_hash: sha256:c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196
 - kind: project-relative
   target: claude
   value: .claude/skills/writing-skills/testing-skills-with-subagents.md
