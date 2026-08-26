@@ -1,5 +1,5 @@
 name: devbox-apm
-version: 0.6.0
+version: 0.7.0
 description: DevBox agentic toolkit — curated MCP servers and skills for Claude Code and cross-runtime agents
 author: mstlaure
 owner: mstlaure
@@ -20,7 +20,7 @@ dependencies:
     - git: https://github.com/likec4/likec4.git
       path: skills/likec4-dsl
       ref: v1.59.2
-    - temporalio/skill-temporal-developer#v0.5.0
+    - temporalio/skill-temporal-developer#v0.6.0
 
   mcp:
     - io.github.github/github-mcp-server
