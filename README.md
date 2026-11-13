@@ -12,7 +12,7 @@ A configuration-driven distribution of agentic tools built on [Microsoft's Agent
 ## Install
 
 ```bash
-apm install mstlaure/DevBoxAPM#v0.6.0
+apm install mstlaure/DevBoxAPM#v0.8.0
 ```
 
 APM resolves all dependencies, installs MCP servers, and deploys skills into the appropriate runtime directories.
@@ -42,7 +42,7 @@ APM resolves all dependencies, installs MCP servers, and deploys skills into the
 
 The two MCP configs use different transports by design: `.mcp.json` (Claude Code) points at the
 hosted `https://api.githubcopilot.com/mcp/` endpoint and authenticates via OAuth, while
-`.vscode/mcp.json` runs the containerized `ghcr.io/github/github-mcp-server:1.7.0` over stdio and
+`.vscode/mcp.json` runs the containerized `ghcr.io/github/github-mcp-server:2.1.0` over stdio and
 needs a GitHub PAT. Bump the image tag in `.vscode/mcp.json` when refreshing dependencies.
 
 ## Add a dependency
@@ -58,8 +58,8 @@ git commit -m "chore: add <component>"
 ## Release
 
 ```bash
-git tag v0.6.0 -m "<reason>"
-git push origin v0.6.0
+git tag v0.8.0 -m "<reason>"
+git push origin v0.8.0
 ```
 
 The [release workflow](.github/workflows/release.yml) packs a source zip and publishes a GitHub Release.
